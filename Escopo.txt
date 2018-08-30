@@ -2,8 +2,8 @@
 ***************************************************************
 FASE 1		INSTALAÇÃO E MANIPULAÇÃO DE ENGINE (UNITY) 
 ***************************************************************
-RESPONSÁVEL	STATUS		TAREFA
-
+RESPONSÁVEL	TAREFA				STATUS		
+PAULO		CRIAR OBJETOS NA CENA		ANDAMENTO
 
 
 ***************************************************************
@@ -12,7 +12,7 @@ RESPONSÁVEL	STATUS		TAREFA
 ***************************************************************
 FASE 2		PARTE LÓGICA E GRÁFICA DO JOGO 
 ***************************************************************
-RESPONSÁVEL	STATUS		TAREFA
+RESPONSÁVEL	TAREFA				STATUS		
 
 
 
@@ -23,7 +23,7 @@ RESPONSÁVEL	STATUS		TAREFA
 ***************************************************************
 FASE 3		IMPLEMENTAÇÃO DA PLATAFORMA DE ENSINO - BANCO DE DADOS
 *************************************************************** 
-RESPONSÁVEL	STATUS		TAREFA	
+RESPONSÁVEL	TAREFA				STATUS		
 
 
 ***************************************************************
