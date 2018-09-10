@@ -1,29 +1,34 @@
 
-***************************************************************
-FASE 1		INSTALAÇÃO E MANIPULAÇÃO DE ENGINE (UNITY) 
-***************************************************************
-RESPONSÁVEL	TAREFA				STATUS		
-PAULO		CRIAR OBJETOS NA CENA		ANDAMENTO
+			PROJETO INTERDISCIPLINAR
+
+***************************************************************************************
+FRENTE 1		PLANEJAMENTO - DOCUMENTAÇÃO (ENG DE SW)
+***************************************************************************************
+RESPONSÁVEL	PRAZO	TAREFA						STATUS	
+SILVIO/PAULO	10/09	LEVANTAMENTO DE REQUISITOS DO PROJETO		EM ANDAMENTO
+TODOS		17/09	PROTOTIPAÇÃO DAS TELAS EM PPT OU PHOTOSHOP	PENDENTE
 
 
-***************************************************************
-
-
-***************************************************************
-FASE 2		PARTE LÓGICA E GRÁFICA DO JOGO 
-***************************************************************
-RESPONSÁVEL	TAREFA				STATUS		
-
+***************************************************************************************
+FRENTE 2		INTERFACE DA PLATAFORMA (C#)
+***************************************************************************************
+RESPONSÁVEL	PRAZO	TAREFA						STATUS		
+TODOS		14/09	AGUARDAR INÍCIO DAS AULAS C# COM INTERFACE 	PENDENTE
 
 
 
-***************************************************************
-	
+***************************************************************************************
+FRENTE 3		ADAPTAÇÃO STARWARS_LC ==> ALGORACE
+***************************************************************************************
+RESPONSÁVEL	PRAZO	TAREFA						STATUS		
+SILVIO/PAULO	20/09	FINALIZAR ADAPTAÇÃO PARA O CONGRESSO CONEPT	EM ANDAMENTO
+SILVIO		05/11	MÓDULO INTEGRAÇÃO COM PLATAFORMA(POR ARQUIVO)	PENDENTE
 
-***************************************************************
-FASE 3		IMPLEMENTAÇÃO DA PLATAFORMA DE ENSINO - BANCO DE DADOS
-*************************************************************** 
-RESPONSÁVEL	TAREFA				STATUS		
 
 
-***************************************************************
+***************************************************************************************
+FRENTE 4		BANCO DE DADOS DA PLATAFORMA (SQL)
+***************************************************************************************
+RESPONSÁVEL	PRAZO	TAREFA						STATUS		
+TODOS		13/09	ELABORAR MER/DER				PENDENTE
+
