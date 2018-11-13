@@ -9,3 +9,4 @@ C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFrie
 C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Prototipacao\gameLearningProject\gameLearning\obj\Debug\gameLearning.csproj.CoreCompileInputs.cache
 C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Prototipacao\gameLearningProject\gameLearning\obj\Debug\gameLearning.exe
 C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Prototipacao\gameLearningProject\gameLearning\obj\Debug\gameLearning.pdb
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Prototipacao\gameLearningProject\gameLearning\obj\Debug\gameLearning.telaCadastro.resources

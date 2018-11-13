@@ -16,5 +16,33 @@ namespace gameLearning
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        private void telaCadastro_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnCadastro_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

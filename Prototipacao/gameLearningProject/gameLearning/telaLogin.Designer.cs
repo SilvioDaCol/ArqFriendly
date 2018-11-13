@@ -28,60 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaLogin));
-            System.Windows.Forms.PictureBox btnLogin;
             System.Windows.Forms.PictureBox pictureBox2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaLogin));
             System.Windows.Forms.PictureBox pictureBox3;
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.Windows.Forms.PictureBox btnLogin;
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            btnLogin = new System.Windows.Forms.PictureBox();
+            this.campoRaMatricula = new System.Windows.Forms.TextBox();
+            this.raMatricula = new System.Windows.Forms.Label();
+            this.senha = new System.Windows.Forms.Label();
+            this.campoSenha = new System.Windows.Forms.TextBox();
+            this.gameLogoMenor = new System.Windows.Forms.PictureBox();
             pictureBox2 = new System.Windows.Forms.PictureBox();
             pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(btnLogin)).BeginInit();
+            btnLogin = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(btnLogin)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 87);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnLogin
-            // 
-            btnLogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            btnLogin.BackColor = System.Drawing.Color.Transparent;
-            btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
-            btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            btnLogin.Location = new System.Drawing.Point(530, 2);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new System.Drawing.Size(300, 200);
-            btnLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            btnLogin.TabIndex = 1;
-            btnLogin.TabStop = false;
             // 
             // radioButton1
             // 
-            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Font = new System.Drawing.Font("Pixelade", 30F, System.Drawing.FontStyle.Bold);
+            this.radioButton1.Font = new System.Drawing.Font("Pixelade", 15F, System.Drawing.FontStyle.Bold);
             this.radioButton1.ForeColor = System.Drawing.Color.PaleGreen;
-            this.radioButton1.Location = new System.Drawing.Point(530, 278);
+            this.radioButton1.Location = new System.Drawing.Point(335, 187);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(185, 44);
+            this.radioButton1.Size = new System.Drawing.Size(136, 29);
             this.radioButton1.TabIndex = 5;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "PROFESSOR";
@@ -89,118 +68,162 @@
             // 
             // radioButton3
             // 
-            this.radioButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.radioButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.radioButton3.AutoSize = true;
             this.radioButton3.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton3.Font = new System.Drawing.Font("Pixelade", 30F, System.Drawing.FontStyle.Bold);
+            this.radioButton3.Font = new System.Drawing.Font("Pixelade", 15F, System.Drawing.FontStyle.Bold);
             this.radioButton3.ForeColor = System.Drawing.Color.PaleGreen;
-            this.radioButton3.Location = new System.Drawing.Point(718, 278);
+            this.radioButton3.Location = new System.Drawing.Point(488, 187);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(121, 44);
+            this.radioButton3.Size = new System.Drawing.Size(92, 29);
             this.radioButton3.TabIndex = 6;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "ALUNO";
             this.radioButton3.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // campoRaMatricula
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.Color.PaleGreen;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(681, 370);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 35);
-            this.textBox1.TabIndex = 7;
+            this.campoRaMatricula.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.campoRaMatricula.BackColor = System.Drawing.Color.PaleGreen;
+            this.campoRaMatricula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.campoRaMatricula.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoRaMatricula.Location = new System.Drawing.Point(908, 455);
+            this.campoRaMatricula.Margin = new System.Windows.Forms.Padding(4);
+            this.campoRaMatricula.Name = "campoRaMatricula";
+            this.campoRaMatricula.Size = new System.Drawing.Size(0, 41);
+            this.campoRaMatricula.TabIndex = 7;
             // 
-            // label1
+            // raMatricula
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Pixelade", 30.25F);
-            this.label1.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label1.Location = new System.Drawing.Point(432, 362);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 41);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "RA / MATRÍCULA";
+            this.raMatricula.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.raMatricula.AutoSize = true;
+            this.raMatricula.BackColor = System.Drawing.Color.Transparent;
+            this.raMatricula.Font = new System.Drawing.Font("Pixelade", 30.25F);
+            this.raMatricula.ForeColor = System.Drawing.Color.PaleGreen;
+            this.raMatricula.Location = new System.Drawing.Point(576, 446);
+            this.raMatricula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.raMatricula.Name = "raMatricula";
+            this.raMatricula.Size = new System.Drawing.Size(304, 51);
+            this.raMatricula.TabIndex = 8;
+            this.raMatricula.Text = "RA / MATRÍCULA";
             // 
-            // label2
+            // senha
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Pixelade", 30.25F);
-            this.label2.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label2.Location = new System.Drawing.Point(432, 426);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 41);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "SENHA";
+            this.senha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.senha.AutoSize = true;
+            this.senha.BackColor = System.Drawing.Color.Transparent;
+            this.senha.Font = new System.Drawing.Font("Pixelade", 30.25F);
+            this.senha.ForeColor = System.Drawing.Color.PaleGreen;
+            this.senha.Location = new System.Drawing.Point(576, 524);
+            this.senha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.senha.Name = "senha";
+            this.senha.Size = new System.Drawing.Size(126, 51);
+            this.senha.TabIndex = 9;
+            this.senha.Text = "SENHA";
             // 
-            // textBox2
+            // campoSenha
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.Color.PaleGreen;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(681, 434);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 35);
-            this.textBox2.TabIndex = 10;
+            this.campoSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.campoSenha.BackColor = System.Drawing.Color.PaleGreen;
+            this.campoSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.campoSenha.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoSenha.Location = new System.Drawing.Point(908, 534);
+            this.campoSenha.Margin = new System.Windows.Forms.Padding(4);
+            this.campoSenha.Name = "campoSenha";
+            this.campoSenha.Size = new System.Drawing.Size(0, 41);
+            this.campoSenha.TabIndex = 10;
             // 
             // pictureBox2
             // 
-            pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             pictureBox2.BackColor = System.Drawing.Color.Transparent;
             pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            pictureBox2.Location = new System.Drawing.Point(321, 475);
+            pictureBox2.Location = new System.Drawing.Point(-53, 585);
+            pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             pictureBox2.Name = "pictureBox2";
+            pictureBox2.Padding = new System.Windows.Forms.Padding(0, 200, 0, 0);
             pictureBox2.Size = new System.Drawing.Size(300, 200);
-            pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             pictureBox2.TabIndex = 11;
             pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             pictureBox3.BackColor = System.Drawing.Color.Transparent;
             pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            pictureBox3.Location = new System.Drawing.Point(795, 475);
+            pictureBox3.Location = new System.Drawing.Point(579, 585);
+            pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             pictureBox3.Name = "pictureBox3";
+            pictureBox3.Padding = new System.Windows.Forms.Padding(0, 200, 0, 0);
             pictureBox3.Size = new System.Drawing.Size(300, 200);
-            pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             pictureBox3.TabIndex = 12;
             pictureBox3.TabStop = false;
             // 
+            // gameLogoMenor
+            // 
+            this.gameLogoMenor.BackColor = System.Drawing.Color.Transparent;
+            this.gameLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLogoMenor.BackgroundImage")));
+            this.gameLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.gameLogoMenor.Location = new System.Drawing.Point(30, 30);
+            this.gameLogoMenor.Margin = new System.Windows.Forms.Padding(4);
+            this.gameLogoMenor.Name = "gameLogoMenor";
+            this.gameLogoMenor.Size = new System.Drawing.Size(159, 77);
+            this.gameLogoMenor.TabIndex = 0;
+            this.gameLogoMenor.TabStop = false;
+            this.gameLogoMenor.Click += new System.EventHandler(this.gameLogoMenor_Click);
+            // 
+            // btnLogin
+            // 
+            btnLogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            btnLogin.BackColor = System.Drawing.Color.Transparent;
+            btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
+            btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
+            btnLogin.Location = new System.Drawing.Point(375, 30);
+            btnLogin.Margin = new System.Windows.Forms.Padding(4);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new System.Drawing.Size(150, 50);
+            btnLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            btnLogin.TabIndex = 1;
+            btnLogin.TabStop = false;
+            // 
             // telaLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1384, 661);
+            this.ClientSize = new System.Drawing.Size(882, 496);
             this.Controls.Add(pictureBox3);
             this.Controls.Add(pictureBox2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.campoSenha);
+            this.Controls.Add(this.senha);
+            this.Controls.Add(this.raMatricula);
+            this.Controls.Add(this.campoRaMatricula);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(btnLogin);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.gameLogoMenor);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "telaLogin";
             this.Text = "telaLogin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.telaLogin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(btnLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(btnLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,12 +231,12 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox campoRaMatricula;
+        private System.Windows.Forms.Label raMatricula;
+        private System.Windows.Forms.Label senha;
+        private System.Windows.Forms.TextBox campoSenha;
+        private System.Windows.Forms.PictureBox gameLogoMenor;
     }
 }

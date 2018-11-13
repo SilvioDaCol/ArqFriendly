@@ -12,6 +12,7 @@ namespace gameLearning
 {
     public partial class telaLogin : Form
     {
+        public int contador;
         public telaLogin()
         {
             InitializeComponent();
@@ -33,6 +34,26 @@ namespace gameLearning
             this.Left = 0;
             this.Width = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width;
             this.Height = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height;
+            
+        }
+
+        private void gameLogoMenor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+                     
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+      
+
+            
         }
     }
 }

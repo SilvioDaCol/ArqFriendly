@@ -80,6 +80,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="telaCadastro.resx">
+      <DependentUpon>telaCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="telaInicial.resx">
       <DependentUpon>telaInicial.cs</DependentUpon>
     </EmbeddedResource>
