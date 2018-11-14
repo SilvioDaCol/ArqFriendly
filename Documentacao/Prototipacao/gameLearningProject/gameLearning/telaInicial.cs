@@ -34,6 +34,11 @@ namespace gameLearning
 
         }
 
-        
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Close();
+            Form login = new Form();
+            Application.Run(login);
+        }
     }
 }
