@@ -22,16 +22,9 @@ namespace gameLearning
 
         }
 
-        
-
-        private void telaCadastro_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnCadastro_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -41,8 +34,8 @@ namespace gameLearning
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            
-         
+
+
 
         }
 
@@ -60,6 +53,32 @@ namespace gameLearning
             telaInicial voltarInicio = new telaInicial();
             voltarInicio.Closed += (s, args) => this.Close();
             voltarInicio.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+          
+
+            if((((campoRaMatricula.Text == "")||(campoNome.Text == "")||(campoCampus.Text == "")||(campoSenha.Text == ""))))
+            {
+                MessageBox.Show("Existem campos não preenchidos!!!");
+               
+
+            }
+
+            if ((((campoRaMatricula.Text != "")&&(campoNome.Text != "")&&(campoCampus.Text != "")&&(campoSenha.Text != ""))))
+            {
+                
+                MessageBox.Show("Dados Enviados com Sucesso!");
+                this.Hide();
+                telaInicial voltarInicio = new telaInicial();
+                voltarInicio.Closed += (s, args) => this.Close();
+                voltarInicio.Show();
+                
+                
+            }  
+
         }
     }
 }

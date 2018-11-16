@@ -28,57 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.PictureBox pictureBox3;
+            System.Windows.Forms.PictureBox btnEnviar;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaCadastro));
-            System.Windows.Forms.PictureBox pictureBox2;
+            System.Windows.Forms.PictureBox btnCancelar;
             this.gameLearningLogoMenor = new System.Windows.Forms.PictureBox();
             this.btnCadastro = new System.Windows.Forms.PictureBox();
             this.raMatricula = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.campoSenha = new System.Windows.Forms.TextBox();
+            this.radioAluno = new System.Windows.Forms.RadioButton();
+            this.radioProf = new System.Windows.Forms.RadioButton();
+            this.campoNome = new System.Windows.Forms.TextBox();
             this.campoRaMatricula = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.campoCampus = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            pictureBox3 = new System.Windows.Forms.PictureBox();
-            pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox2)).BeginInit();
+            this.campoSenha = new System.Windows.Forms.TextBox();
+            btnEnviar = new System.Windows.Forms.PictureBox();
+            btnCancelar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(btnEnviar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(btnCancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLearningLogoMenor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCadastro)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox3
+            // btnEnviar
             // 
-            pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            pictureBox3.Location = new System.Drawing.Point(935, 474);
-            pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
-            pictureBox3.Size = new System.Drawing.Size(193, 82);
-            pictureBox3.TabIndex = 18;
-            pictureBox3.TabStop = false;
+            btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            btnEnviar.BackColor = System.Drawing.Color.Transparent;
+            btnEnviar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEnviar.BackgroundImage")));
+            btnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            btnEnviar.Location = new System.Drawing.Point(935, 474);
+            btnEnviar.Margin = new System.Windows.Forms.Padding(4);
+            btnEnviar.Name = "btnEnviar";
+            btnEnviar.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
+            btnEnviar.Size = new System.Drawing.Size(193, 82);
+            btnEnviar.TabIndex = 18;
+            btnEnviar.TabStop = false;
+            btnEnviar.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox2
+            // btnCancelar
             // 
-            pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            pictureBox2.Location = new System.Drawing.Point(935, 293);
-            pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
-            pictureBox2.Size = new System.Drawing.Size(193, 82);
-            pictureBox2.TabIndex = 17;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            btnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelar.BackgroundImage")));
+            btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            btnCancelar.Location = new System.Drawing.Point(935, 293);
+            btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
+            btnCancelar.Size = new System.Drawing.Size(193, 82);
+            btnCancelar.TabIndex = 17;
+            btnCancelar.TabStop = false;
+            btnCancelar.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // gameLearningLogoMenor
             // 
@@ -156,51 +157,51 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "CAMPUS";
             // 
-            // radioButton3
+            // radioAluno
             // 
-            this.radioButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton3.Font = new System.Drawing.Font("Pixelade", 20F, System.Drawing.FontStyle.Bold);
-            this.radioButton3.ForeColor = System.Drawing.Color.PaleGreen;
-            this.radioButton3.Location = new System.Drawing.Point(633, 234);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(112, 38);
-            this.radioButton3.TabIndex = 13;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "ALUNO";
-            this.radioButton3.UseVisualStyleBackColor = false;
+            this.radioAluno.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radioAluno.AutoSize = true;
+            this.radioAluno.BackColor = System.Drawing.Color.Transparent;
+            this.radioAluno.Font = new System.Drawing.Font("Pixelade", 20F, System.Drawing.FontStyle.Bold);
+            this.radioAluno.ForeColor = System.Drawing.Color.PaleGreen;
+            this.radioAluno.Location = new System.Drawing.Point(633, 234);
+            this.radioAluno.Margin = new System.Windows.Forms.Padding(4);
+            this.radioAluno.Name = "radioAluno";
+            this.radioAluno.Size = new System.Drawing.Size(112, 38);
+            this.radioAluno.TabIndex = 13;
+            this.radioAluno.TabStop = true;
+            this.radioAluno.Text = "ALUNO";
+            this.radioAluno.UseVisualStyleBackColor = false;
             // 
-            // radioButton1
+            // radioProf
             // 
-            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Font = new System.Drawing.Font("Pixelade", 20F, System.Drawing.FontStyle.Bold);
-            this.radioButton1.ForeColor = System.Drawing.Color.PaleGreen;
-            this.radioButton1.Location = new System.Drawing.Point(427, 234);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(168, 38);
-            this.radioButton1.TabIndex = 12;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "PROFESSOR";
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.radioProf.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radioProf.AutoSize = true;
+            this.radioProf.BackColor = System.Drawing.Color.Transparent;
+            this.radioProf.Font = new System.Drawing.Font("Pixelade", 20F, System.Drawing.FontStyle.Bold);
+            this.radioProf.ForeColor = System.Drawing.Color.PaleGreen;
+            this.radioProf.Location = new System.Drawing.Point(427, 234);
+            this.radioProf.Margin = new System.Windows.Forms.Padding(4);
+            this.radioProf.Name = "radioProf";
+            this.radioProf.Size = new System.Drawing.Size(168, 38);
+            this.radioProf.TabIndex = 12;
+            this.radioProf.TabStop = true;
+            this.radioProf.Text = "PROFESSOR";
+            this.radioProf.UseVisualStyleBackColor = false;
             // 
-            // campoSenha
+            // campoNome
             // 
-            this.campoSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.campoNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.campoSenha.BackColor = System.Drawing.Color.PaleGreen;
-            this.campoSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.campoSenha.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoSenha.Location = new System.Drawing.Point(495, 378);
-            this.campoSenha.Margin = new System.Windows.Forms.Padding(4);
-            this.campoSenha.Name = "campoSenha";
-            this.campoSenha.Size = new System.Drawing.Size(292, 41);
-            this.campoSenha.TabIndex = 15;
+            this.campoNome.BackColor = System.Drawing.Color.PaleGreen;
+            this.campoNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.campoNome.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoNome.Location = new System.Drawing.Point(495, 378);
+            this.campoNome.Margin = new System.Windows.Forms.Padding(4);
+            this.campoNome.Name = "campoNome";
+            this.campoNome.Size = new System.Drawing.Size(292, 41);
+            this.campoNome.TabIndex = 15;
             // 
             // campoRaMatricula
             // 
@@ -214,19 +215,19 @@
             this.campoRaMatricula.Size = new System.Drawing.Size(292, 41);
             this.campoRaMatricula.TabIndex = 14;
             // 
-            // textBox1
+            // campoCampus
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.campoCampus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.Color.PaleGreen;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(495, 446);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 41);
-            this.textBox1.TabIndex = 16;
+            this.campoCampus.BackColor = System.Drawing.Color.PaleGreen;
+            this.campoCampus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.campoCampus.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoCampus.Location = new System.Drawing.Point(495, 446);
+            this.campoCampus.Margin = new System.Windows.Forms.Padding(4);
+            this.campoCampus.Name = "campoCampus";
+            this.campoCampus.Size = new System.Drawing.Size(292, 41);
+            this.campoCampus.TabIndex = 16;
             // 
             // label3
             // 
@@ -244,21 +245,21 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "SENHA";
             // 
-            // textBox2
+            // campoSenha
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.campoSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.BackColor = System.Drawing.Color.PaleGreen;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(495, 512);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '1';
-            this.textBox2.Size = new System.Drawing.Size(292, 41);
-            this.textBox2.TabIndex = 20;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.campoSenha.BackColor = System.Drawing.Color.PaleGreen;
+            this.campoSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.campoSenha.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoSenha.Location = new System.Drawing.Point(495, 512);
+            this.campoSenha.Margin = new System.Windows.Forms.Padding(4);
+            this.campoSenha.Name = "campoSenha";
+            this.campoSenha.PasswordChar = '1';
+            this.campoSenha.Size = new System.Drawing.Size(292, 41);
+            this.campoSenha.TabIndex = 20;
+            this.campoSenha.UseSystemPasswordChar = true;
             // 
             // telaCadastro
             // 
@@ -267,15 +268,15 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 628);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(pictureBox3);
-            this.Controls.Add(pictureBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.campoSenha);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(btnEnviar);
+            this.Controls.Add(btnCancelar);
+            this.Controls.Add(this.campoCampus);
+            this.Controls.Add(this.campoNome);
             this.Controls.Add(this.campoRaMatricula);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioAluno);
+            this.Controls.Add(this.radioProf);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.raMatricula);
@@ -286,9 +287,8 @@
             this.Name = "telaCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "telaCadastro";
-            this.Load += new System.EventHandler(this.telaCadastro_Load);
-            ((System.ComponentModel.ISupportInitialize)(pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(btnEnviar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(btnCancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLearningLogoMenor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCadastro)).EndInit();
             this.ResumeLayout(false);
@@ -303,12 +303,12 @@
         private System.Windows.Forms.Label raMatricula;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox campoSenha;
+        private System.Windows.Forms.RadioButton radioAluno;
+        private System.Windows.Forms.RadioButton radioProf;
+        private System.Windows.Forms.TextBox campoNome;
         private System.Windows.Forms.TextBox campoRaMatricula;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox campoCampus;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox campoSenha;
     }
 }
