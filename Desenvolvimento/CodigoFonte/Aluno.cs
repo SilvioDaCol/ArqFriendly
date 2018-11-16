@@ -8,5 +8,6 @@ namespace gameLearning
 {
     class Aluno : Usuario
     {
+	teste
     }
 }
