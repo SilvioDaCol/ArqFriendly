@@ -58,7 +58,7 @@
             pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             pictureBox3.Location = new System.Drawing.Point(935, 474);
-            pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
             pictureBox3.Size = new System.Drawing.Size(193, 82);
@@ -72,26 +72,26 @@
             pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             pictureBox2.Location = new System.Drawing.Point(935, 293);
-            pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
             pictureBox2.Size = new System.Drawing.Size(193, 82);
             pictureBox2.TabIndex = 17;
             pictureBox2.TabStop = false;
-            pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // gameLearningLogoMenor
             // 
             this.gameLearningLogoMenor.BackColor = System.Drawing.Color.Transparent;
             this.gameLearningLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLearningLogoMenor.BackgroundImage")));
             this.gameLearningLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.gameLearningLogoMenor.Location = new System.Drawing.Point(16, 15);
-            this.gameLearningLogoMenor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gameLearningLogoMenor.Location = new System.Drawing.Point(31, 29);
+            this.gameLearningLogoMenor.Margin = new System.Windows.Forms.Padding(4);
             this.gameLearningLogoMenor.Name = "gameLearningLogoMenor";
-            this.gameLearningLogoMenor.Size = new System.Drawing.Size(213, 107);
+            this.gameLearningLogoMenor.Size = new System.Drawing.Size(159, 77);
             this.gameLearningLogoMenor.TabIndex = 1;
             this.gameLearningLogoMenor.TabStop = false;
-            this.gameLearningLogoMenor.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.gameLearningLogoMenor.Click += new System.EventHandler(this.gameLearningLogoMenor_Click);
             // 
             // btnCadastro
             // 
@@ -100,7 +100,7 @@
             this.btnCadastro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastro.BackgroundImage")));
             this.btnCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCadastro.Location = new System.Drawing.Point(508, 15);
-            this.btnCadastro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCadastro.Margin = new System.Windows.Forms.Padding(4);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(237, 170);
             this.btnCadastro.TabIndex = 4;
@@ -164,7 +164,7 @@
             this.radioButton3.Font = new System.Drawing.Font("Pixelade", 20F, System.Drawing.FontStyle.Bold);
             this.radioButton3.ForeColor = System.Drawing.Color.PaleGreen;
             this.radioButton3.Location = new System.Drawing.Point(633, 234);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(112, 38);
             this.radioButton3.TabIndex = 13;
@@ -180,7 +180,7 @@
             this.radioButton1.Font = new System.Drawing.Font("Pixelade", 20F, System.Drawing.FontStyle.Bold);
             this.radioButton1.ForeColor = System.Drawing.Color.PaleGreen;
             this.radioButton1.Location = new System.Drawing.Point(427, 234);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(168, 38);
             this.radioButton1.TabIndex = 12;
@@ -197,7 +197,7 @@
             this.campoSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoSenha.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoSenha.Location = new System.Drawing.Point(495, 378);
-            this.campoSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.campoSenha.Margin = new System.Windows.Forms.Padding(4);
             this.campoSenha.Name = "campoSenha";
             this.campoSenha.Size = new System.Drawing.Size(292, 41);
             this.campoSenha.TabIndex = 15;
@@ -209,7 +209,7 @@
             this.campoRaMatricula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoRaMatricula.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoRaMatricula.Location = new System.Drawing.Point(495, 297);
-            this.campoRaMatricula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.campoRaMatricula.Margin = new System.Windows.Forms.Padding(4);
             this.campoRaMatricula.Name = "campoRaMatricula";
             this.campoRaMatricula.Size = new System.Drawing.Size(292, 41);
             this.campoRaMatricula.TabIndex = 14;
@@ -223,7 +223,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(495, 446);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(292, 41);
             this.textBox1.TabIndex = 16;
@@ -253,7 +253,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(495, 512);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '1';
             this.textBox2.Size = new System.Drawing.Size(292, 41);

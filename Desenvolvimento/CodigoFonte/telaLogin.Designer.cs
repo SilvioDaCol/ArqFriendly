@@ -44,8 +44,8 @@
             pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -61,7 +61,7 @@
             pictureBox2.Size = new System.Drawing.Size(206, 147);
             pictureBox2.TabIndex = 11;
             pictureBox2.TabStop = false;
-            pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // pictureBox3
             // 
@@ -76,6 +76,20 @@
             pictureBox3.Size = new System.Drawing.Size(206, 147);
             pictureBox3.TabIndex = 12;
             pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            pictureBox1.Location = new System.Drawing.Point(507, 30);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Padding = new System.Windows.Forms.Padding(0, 200, 0, 0);
+            pictureBox1.Size = new System.Drawing.Size(205, 94);
+            pictureBox1.TabIndex = 13;
+            pictureBox1.TabStop = false;
             // 
             // radioButton1
             // 
@@ -183,21 +197,7 @@
             this.gameLogoMenor.Size = new System.Drawing.Size(159, 77);
             this.gameLogoMenor.TabIndex = 0;
             this.gameLogoMenor.TabStop = false;
-            this.gameLogoMenor.Click += new System.EventHandler(this.gameLogoMenor_Click);
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            pictureBox1.Location = new System.Drawing.Point(483, 13);
-            pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Padding = new System.Windows.Forms.Padding(0, 200, 0, 0);
-            pictureBox1.Size = new System.Drawing.Size(245, 108);
-            pictureBox1.TabIndex = 13;
-            pictureBox1.TabStop = false;
+            this.gameLogoMenor.Click += new System.EventHandler(this.gameLogoMenor_Click_1);
             // 
             // telaLogin
             // 
@@ -222,8 +222,8 @@
             this.Text = "telaLogin";
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -28,16 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaSobre));
             System.Windows.Forms.PictureBox pictureBox2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaSobre));
             this.gameLogoMenor = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCadastro = new System.Windows.Forms.PictureBox();
             pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCadastro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            pictureBox2.Location = new System.Drawing.Point(487, 453);
+            pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Padding = new System.Windows.Forms.Padding(0, 200, 0, 0);
+            pictureBox2.Size = new System.Drawing.Size(237, 147);
+            pictureBox2.TabIndex = 12;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // gameLogoMenor
             // 
@@ -77,21 +92,6 @@
             this.btnCadastro.TabIndex = 5;
             this.btnCadastro.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            pictureBox2.Location = new System.Drawing.Point(487, 453);
-            pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Padding = new System.Windows.Forms.Padding(0, 200, 0, 0);
-            pictureBox2.Size = new System.Drawing.Size(237, 147);
-            pictureBox2.TabIndex = 12;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // telaSobre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -106,9 +106,9 @@
             this.Name = "telaSobre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "telaSobre";
+            ((System.ComponentModel.ISupportInitialize)(pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCadastro)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

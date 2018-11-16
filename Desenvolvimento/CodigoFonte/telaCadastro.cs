@@ -36,20 +36,30 @@ namespace gameLearning
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            telaInicial iniciaNovamente = new telaInicial();
-            iniciaNovamente.FormClosed += (s, args) => this.Close();
-            iniciaNovamente.Show();
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             
-            this.Hide();
-            telaInicial iniciaNovamente = new telaInicial();
-            iniciaNovamente.FormClosed += (s, args) => this.Close();
-            iniciaNovamente.Show();
+         
 
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaInicial voltarInicio = new telaInicial();
+            voltarInicio.Closed += (s, args) => this.Close();
+            voltarInicio.Show();
+        }
+
+        private void gameLearningLogoMenor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaInicial voltarInicio = new telaInicial();
+            voltarInicio.Closed += (s, args) => this.Close();
+            voltarInicio.Show();
         }
     }
 }

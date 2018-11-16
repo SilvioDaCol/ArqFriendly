@@ -22,3 +22,16 @@ C:\Users\Silvio\Documents\Google Drive\Carreira\Cursos\Software\Curso_GIT\EducaA
 C:\Users\Silvio\Documents\Google Drive\Carreira\Cursos\Software\Curso_GIT\EducaAtiva\Desenvolvimento\gameLearningProject\gameLearning\obj\Debug\gameLearning.csproj.CoreCompileInputs.cache
 C:\Users\Silvio\Documents\Google Drive\Carreira\Cursos\Software\Curso_GIT\EducaAtiva\Desenvolvimento\gameLearningProject\gameLearning\obj\Debug\gameLearning.exe
 C:\Users\Silvio\Documents\Google Drive\Carreira\Cursos\Software\Curso_GIT\EducaAtiva\Desenvolvimento\gameLearningProject\gameLearning\obj\Debug\gameLearning.pdb
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.csprojAssemblyReference.cache
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.Properties.Resources.resources
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telaCadastro.resources
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telaLogin.resources
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telaSobre.resources
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.csproj.GenerateResource.cache
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.exe
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.pdb
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.csproj.CoreCompileInputs.cache
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\bin\Debug\gameLearning.exe.config
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\bin\Debug\gameLearning.exe
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\bin\Debug\gameLearning.pdb
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telaInicial.resources
