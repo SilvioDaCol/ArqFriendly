@@ -16,7 +16,7 @@ namespace gameLearning
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new telaCadastro());
+            Application.Run(new telaInicial());
             
         }
     }

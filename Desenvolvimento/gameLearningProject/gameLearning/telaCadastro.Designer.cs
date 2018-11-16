@@ -57,10 +57,11 @@
             pictureBox3.BackColor = System.Drawing.Color.Transparent;
             pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            pictureBox3.Location = new System.Drawing.Point(828, 384);
+            pictureBox3.Location = new System.Drawing.Point(935, 474);
+            pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
-            pictureBox3.Size = new System.Drawing.Size(145, 67);
+            pictureBox3.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
+            pictureBox3.Size = new System.Drawing.Size(193, 82);
             pictureBox3.TabIndex = 18;
             pictureBox3.TabStop = false;
             // 
@@ -70,10 +71,11 @@
             pictureBox2.BackColor = System.Drawing.Color.Transparent;
             pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            pictureBox2.Location = new System.Drawing.Point(828, 238);
+            pictureBox2.Location = new System.Drawing.Point(935, 293);
+            pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
-            pictureBox2.Size = new System.Drawing.Size(145, 67);
+            pictureBox2.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
+            pictureBox2.Size = new System.Drawing.Size(193, 82);
             pictureBox2.TabIndex = 17;
             pictureBox2.TabStop = false;
             pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -83,9 +85,10 @@
             this.gameLearningLogoMenor.BackColor = System.Drawing.Color.Transparent;
             this.gameLearningLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLearningLogoMenor.BackgroundImage")));
             this.gameLearningLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.gameLearningLogoMenor.Location = new System.Drawing.Point(12, 12);
+            this.gameLearningLogoMenor.Location = new System.Drawing.Point(16, 15);
+            this.gameLearningLogoMenor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gameLearningLogoMenor.Name = "gameLearningLogoMenor";
-            this.gameLearningLogoMenor.Size = new System.Drawing.Size(160, 87);
+            this.gameLearningLogoMenor.Size = new System.Drawing.Size(213, 107);
             this.gameLearningLogoMenor.TabIndex = 1;
             this.gameLearningLogoMenor.TabStop = false;
             this.gameLearningLogoMenor.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -96,9 +99,10 @@
             this.btnCadastro.BackColor = System.Drawing.Color.Transparent;
             this.btnCadastro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastro.BackgroundImage")));
             this.btnCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCadastro.Location = new System.Drawing.Point(456, 12);
+            this.btnCadastro.Location = new System.Drawing.Point(508, 15);
+            this.btnCadastro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCadastro.Name = "btnCadastro";
-            this.btnCadastro.Size = new System.Drawing.Size(178, 138);
+            this.btnCadastro.Size = new System.Drawing.Size(237, 170);
             this.btnCadastro.TabIndex = 4;
             this.btnCadastro.TabStop = false;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
@@ -112,9 +116,10 @@
             this.raMatricula.BackColor = System.Drawing.Color.Transparent;
             this.raMatricula.Font = new System.Drawing.Font("Pixelade", 30.25F);
             this.raMatricula.ForeColor = System.Drawing.Color.PaleGreen;
-            this.raMatricula.Location = new System.Drawing.Point(121, 238);
+            this.raMatricula.Location = new System.Drawing.Point(161, 293);
+            this.raMatricula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.raMatricula.Name = "raMatricula";
-            this.raMatricula.Size = new System.Drawing.Size(243, 41);
+            this.raMatricula.Size = new System.Drawing.Size(304, 51);
             this.raMatricula.TabIndex = 9;
             this.raMatricula.Text = "RA / MATRÍCULA";
             // 
@@ -127,9 +132,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Pixelade", 30.25F);
             this.label1.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label1.Location = new System.Drawing.Point(121, 299);
+            this.label1.Location = new System.Drawing.Point(161, 368);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 41);
+            this.label1.Size = new System.Drawing.Size(117, 51);
             this.label1.TabIndex = 10;
             this.label1.Text = "NOME";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -143,9 +149,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Pixelade", 30.25F);
             this.label2.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label2.Location = new System.Drawing.Point(121, 356);
+            this.label2.Location = new System.Drawing.Point(161, 438);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 41);
+            this.label2.Size = new System.Drawing.Size(149, 51);
             this.label2.TabIndex = 11;
             this.label2.Text = "CAMPUS";
             // 
@@ -156,9 +163,10 @@
             this.radioButton3.BackColor = System.Drawing.Color.Transparent;
             this.radioButton3.Font = new System.Drawing.Font("Pixelade", 20F, System.Drawing.FontStyle.Bold);
             this.radioButton3.ForeColor = System.Drawing.Color.PaleGreen;
-            this.radioButton3.Location = new System.Drawing.Point(572, 190);
+            this.radioButton3.Location = new System.Drawing.Point(633, 234);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(89, 31);
+            this.radioButton3.Size = new System.Drawing.Size(112, 38);
             this.radioButton3.TabIndex = 13;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "ALUNO";
@@ -171,9 +179,10 @@
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Font = new System.Drawing.Font("Pixelade", 20F, System.Drawing.FontStyle.Bold);
             this.radioButton1.ForeColor = System.Drawing.Color.PaleGreen;
-            this.radioButton1.Location = new System.Drawing.Point(418, 190);
+            this.radioButton1.Location = new System.Drawing.Point(427, 234);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(133, 31);
+            this.radioButton1.Size = new System.Drawing.Size(168, 38);
             this.radioButton1.TabIndex = 12;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "PROFESSOR";
@@ -187,9 +196,10 @@
             this.campoSenha.BackColor = System.Drawing.Color.PaleGreen;
             this.campoSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoSenha.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoSenha.Location = new System.Drawing.Point(418, 305);
+            this.campoSenha.Location = new System.Drawing.Point(495, 378);
+            this.campoSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campoSenha.Name = "campoSenha";
-            this.campoSenha.Size = new System.Drawing.Size(318, 35);
+            this.campoSenha.Size = new System.Drawing.Size(292, 41);
             this.campoSenha.TabIndex = 15;
             // 
             // campoRaMatricula
@@ -198,9 +208,10 @@
             this.campoRaMatricula.BackColor = System.Drawing.Color.PaleGreen;
             this.campoRaMatricula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoRaMatricula.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoRaMatricula.Location = new System.Drawing.Point(418, 244);
+            this.campoRaMatricula.Location = new System.Drawing.Point(495, 297);
+            this.campoRaMatricula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campoRaMatricula.Name = "campoRaMatricula";
-            this.campoRaMatricula.Size = new System.Drawing.Size(318, 35);
+            this.campoRaMatricula.Size = new System.Drawing.Size(292, 41);
             this.campoRaMatricula.TabIndex = 14;
             // 
             // textBox1
@@ -211,9 +222,10 @@
             this.textBox1.BackColor = System.Drawing.Color.PaleGreen;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(418, 362);
+            this.textBox1.Location = new System.Drawing.Point(495, 446);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(318, 35);
+            this.textBox1.Size = new System.Drawing.Size(292, 41);
             this.textBox1.TabIndex = 16;
             // 
             // label3
@@ -225,9 +237,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Pixelade", 30.25F);
             this.label3.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label3.Location = new System.Drawing.Point(121, 410);
+            this.label3.Location = new System.Drawing.Point(161, 505);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 41);
+            this.label3.Size = new System.Drawing.Size(126, 51);
             this.label3.TabIndex = 19;
             this.label3.Text = "SENHA";
             // 
@@ -239,20 +252,21 @@
             this.textBox2.BackColor = System.Drawing.Color.PaleGreen;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(418, 416);
+            this.textBox2.Location = new System.Drawing.Point(495, 512);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '1';
-            this.textBox2.Size = new System.Drawing.Size(318, 35);
+            this.textBox2.Size = new System.Drawing.Size(292, 41);
             this.textBox2.TabIndex = 20;
             this.textBox2.UseSystemPasswordChar = true;
             // 
             // telaCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1084, 561);
+            this.ClientSize = new System.Drawing.Size(1182, 628);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(pictureBox3);
@@ -267,9 +281,10 @@
             this.Controls.Add(this.raMatricula);
             this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.gameLearningLogoMenor);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(1100, 600);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1461, 728);
             this.Name = "telaCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "telaCadastro";
             this.Load += new System.EventHandler(this.telaCadastro_Load);
             ((System.ComponentModel.ISupportInitialize)(pictureBox3)).EndInit();
