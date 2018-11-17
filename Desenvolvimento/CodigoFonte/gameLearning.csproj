@@ -104,6 +104,12 @@
     <EmbeddedResource Include="telaInicial.resx">
       <DependentUpon>telaInicial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="telaLogadoAluno.resx">
+      <DependentUpon>telaLogadoAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaLogadoProfessor.resx">
+      <DependentUpon>telaLogadoProfessor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="telaLogin.resx">
       <DependentUpon>telaLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +179,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btnSobre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainBack1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

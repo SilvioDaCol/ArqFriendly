@@ -28,12 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaLogadoAluno));
+            this.gameLearningLogoMenor = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.gameLearningLogoMenor)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // gameLearningLogoMenor
+            // 
+            this.gameLearningLogoMenor.BackColor = System.Drawing.Color.Transparent;
+            this.gameLearningLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLearningLogoMenor.BackgroundImage")));
+            this.gameLearningLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.gameLearningLogoMenor.Location = new System.Drawing.Point(31, 29);
+            this.gameLearningLogoMenor.Margin = new System.Windows.Forms.Padding(4);
+            this.gameLearningLogoMenor.Name = "gameLearningLogoMenor";
+            this.gameLearningLogoMenor.Size = new System.Drawing.Size(159, 77);
+            this.gameLearningLogoMenor.TabIndex = 3;
+            this.gameLearningLogoMenor.TabStop = false;
+            // 
+            // telaLogadoAluno
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::gameLearning.Properties.Resources.mainBack;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.Controls.Add(this.gameLearningLogoMenor);
+            this.Name = "telaLogadoAluno";
             this.Text = "telaLogadoAluno";
+            ((System.ComponentModel.ISupportInitialize)(this.gameLearningLogoMenor)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox gameLearningLogoMenor;
     }
 }

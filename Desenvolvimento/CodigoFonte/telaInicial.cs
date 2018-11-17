@@ -51,37 +51,37 @@ namespace gameLearning
 
         private void btnCadastro_MouseHover(object sender, EventArgs e)
         {
-            btnCadastro.BackgroundImage = Image.FromFile(@"C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\Resources\btnInversoCadastro.png");
+            btnCadastro.BackgroundImage = Properties.Resources.btnInversoCadastro;
             btnCadastro.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void btnCadastro_MouseLeave(object sender, EventArgs e)
         {
-            btnCadastro.BackgroundImage = Image.FromFile(@"C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\Resources\btnCadastro.png");
+            btnCadastro.BackgroundImage = Properties.Resources.btnCadastro;
             btnCadastro.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void btnLogin_MouseHover(object sender, EventArgs e)
         {
-            btnLogin.BackgroundImage = Image.FromFile(@"C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\Resources\btnInversoLogin.png");
+            btnLogin.BackgroundImage = Properties.Resources.btnInversoLogin;
             btnLogin.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void btnLogin_MouseLeave(object sender, EventArgs e)
         {
-            btnLogin.BackgroundImage = Image.FromFile(@"C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\Resources\btnLogin.png");
+            btnLogin.BackgroundImage = Properties.Resources.btnLogin;
             btnLogin.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void btnSobre_MouseHover(object sender, EventArgs e)
         {
-            btnSobre.BackgroundImage = Image.FromFile(@"C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\Resources\btnInversoSobre.png");
+            btnSobre.BackgroundImage = Properties.Resources.btnInversoSobre;
             btnSobre.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void btnSobre_MouseLeave(object sender, EventArgs e)
         {
-            btnSobre.BackgroundImage = Image.FromFile(@"C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\Resources\btnSobre.png");
+            btnSobre.BackgroundImage = Properties.Resources.btnSobre;
             btnSobre.BackgroundImageLayout = ImageLayout.Stretch;
         }
     }
