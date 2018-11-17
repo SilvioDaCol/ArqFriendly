@@ -143,6 +143,16 @@ namespace gameLearning.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnInversoOla {
+            get {
+                object obj = ResourceManager.GetObject("btnInversoOla", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnInversoSobre {
             get {
                 object obj = ResourceManager.GetObject("btnInversoSobre", resourceCulture);
@@ -156,6 +166,16 @@ namespace gameLearning.Properties {
         internal static System.Drawing.Bitmap btnLogin {
             get {
                 object obj = ResourceManager.GetObject("btnLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnOla {
+            get {
+                object obj = ResourceManager.GetObject("btnOla", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

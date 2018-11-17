@@ -183,5 +183,11 @@
   <ItemGroup>
     <None Include="Resources\mainBack1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnInversoOla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnOla.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -121,8 +121,8 @@
   <data name="btnLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TELA_CADASTRO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TELA CADASTRO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnInversoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnInversoLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TELA_INICIAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TELA INICIAL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,8 +130,11 @@
   <data name="btnInversoSobre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnInversoSobre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnInversoCancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnInversoCancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TELA_CADASTRO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TELA CADASTRO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mainBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainBack1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnSobre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnSobre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,14 +151,17 @@
   <data name="TELA_LOGIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TELA LOGIN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnInversoCadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnInversoCadastro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnInversoOla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnInversoOla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnInversoCancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnInversoCancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TELA_PROFESSOR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TELA PROFESSOR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnCancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnCancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnInversoCadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnInversoCadastro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnCadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnCadastro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,13 +169,13 @@
   <data name="btnInversoEnviar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnInversoEnviar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnInversoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnInversoLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnCancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TELA_ALUNO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TELA ALUNO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mainBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mainBack1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnOla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnOla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

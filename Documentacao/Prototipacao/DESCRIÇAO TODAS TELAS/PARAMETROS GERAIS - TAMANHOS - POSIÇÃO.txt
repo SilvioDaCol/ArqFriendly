@@ -1,0 +1,38 @@
+Form:
+size: 1200;675
+WindowsState: normal
+BackgroundLayout: Stretch
+StartPosition: Center
+
+LogoMenor
+size: 120;60
+position: 30;30
+
+BOTÕES PRINCIPAIS
+
+top
+tamanho: 180;120
+localização: 510;40
+
+1 botão
+botton
+tamanho: 180;120
+location: 510;500
+
+2 botões
+location botão1
+330;500
+location botão2
+730;500
+
+3 botões
+location botão1
+180;500
+location botão2
+510;500
+location botão3
+830;500
+
+
+
+

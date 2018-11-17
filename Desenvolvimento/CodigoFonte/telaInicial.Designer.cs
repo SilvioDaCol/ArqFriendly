@@ -44,9 +44,10 @@
             this.logoMaior.BackColor = System.Drawing.Color.Transparent;
             this.logoMaior.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoMaior.BackgroundImage")));
             this.logoMaior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logoMaior.Location = new System.Drawing.Point(36, 34);
+            this.logoMaior.Location = new System.Drawing.Point(42, 28);
+            this.logoMaior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logoMaior.Name = "logoMaior";
-            this.logoMaior.Size = new System.Drawing.Size(503, 273);
+            this.logoMaior.Size = new System.Drawing.Size(500, 300);
             this.logoMaior.TabIndex = 0;
             this.logoMaior.TabStop = false;
             this.logoMaior.Click += new System.EventHandler(this.logoMaior_Click);
@@ -56,9 +57,10 @@
             this.btnCadastro.BackColor = System.Drawing.Color.Transparent;
             this.btnCadastro.BackgroundImage = global::gameLearning.Properties.Resources.btnCadastro;
             this.btnCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCadastro.Location = new System.Drawing.Point(168, 425);
+            this.btnCadastro.Location = new System.Drawing.Point(180, 500);
+            this.btnCadastro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCadastro.Name = "btnCadastro";
-            this.btnCadastro.Size = new System.Drawing.Size(205, 84);
+            this.btnCadastro.Size = new System.Drawing.Size(180, 80);
             this.btnCadastro.TabIndex = 1;
             this.btnCadastro.TabStop = false;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
@@ -70,9 +72,10 @@
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
             this.btnLogin.BackgroundImage = global::gameLearning.Properties.Resources.btn_login;
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogin.Location = new System.Drawing.Point(497, 425);
+            this.btnLogin.Location = new System.Drawing.Point(510, 500);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(205, 84);
+            this.btnLogin.Size = new System.Drawing.Size(180, 80);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.TabStop = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -84,9 +87,10 @@
             this.btnSobre.BackColor = System.Drawing.Color.Transparent;
             this.btnSobre.BackgroundImage = global::gameLearning.Properties.Resources.btnSobre;
             this.btnSobre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSobre.Location = new System.Drawing.Point(827, 425);
+            this.btnSobre.Location = new System.Drawing.Point(830, 500);
+            this.btnSobre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSobre.Name = "btnSobre";
-            this.btnSobre.Size = new System.Drawing.Size(205, 84);
+            this.btnSobre.Size = new System.Drawing.Size(180, 80);
             this.btnSobre.TabIndex = 3;
             this.btnSobre.TabStop = false;
             this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
@@ -95,15 +99,16 @@
             // 
             // telaInicial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.ClientSize = new System.Drawing.Size(1184, 636);
             this.Controls.Add(this.btnSobre);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.logoMaior);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "telaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "telaInicial";
