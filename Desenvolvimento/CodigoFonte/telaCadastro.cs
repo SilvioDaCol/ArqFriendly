@@ -80,5 +80,10 @@ namespace gameLearning
             }  
 
         }
+
+        private void campoNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

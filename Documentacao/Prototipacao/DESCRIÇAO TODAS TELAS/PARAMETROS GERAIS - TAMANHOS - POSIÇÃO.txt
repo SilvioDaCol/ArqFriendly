@@ -4,6 +4,10 @@ WindowsState: normal
 BackgroundLayout: Stretch
 StartPosition: Center
 
+LogoMaior
+Size: 400;250
+location: 80;50
+
 LogoMenor
 size: 120;60
 position: 30;30
@@ -11,12 +15,12 @@ position: 30;30
 BOTÕES PRINCIPAIS
 
 top
-tamanho: 180;120
+tamanho: 180;80
 localização: 510;40
 
 1 botão
 botton
-tamanho: 180;120
+tamanho: 180;80
 location: 510;500
 
 2 botões

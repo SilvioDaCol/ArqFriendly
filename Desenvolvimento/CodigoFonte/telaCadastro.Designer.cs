@@ -58,8 +58,10 @@
             btnEnviar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEnviar.BackgroundImage")));
             btnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             btnEnviar.Location = new System.Drawing.Point(730, 500);
+            btnEnviar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            btnEnviar.MaximumSize = new System.Drawing.Size(180, 80);
             btnEnviar.Name = "btnEnviar";
-            btnEnviar.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
+            btnEnviar.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
             btnEnviar.Size = new System.Drawing.Size(180, 80);
             btnEnviar.TabIndex = 18;
             btnEnviar.TabStop = false;
@@ -72,8 +74,10 @@
             btnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelar.BackgroundImage")));
             btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             btnCancelar.Location = new System.Drawing.Point(330, 500);
+            btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            btnCancelar.MaximumSize = new System.Drawing.Size(180, 80);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
+            btnCancelar.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
             btnCancelar.Size = new System.Drawing.Size(180, 80);
             btnCancelar.TabIndex = 17;
             btnCancelar.TabStop = false;
@@ -85,6 +89,8 @@
             this.gameLearningLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLearningLogoMenor.BackgroundImage")));
             this.gameLearningLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gameLearningLogoMenor.Location = new System.Drawing.Point(30, 30);
+            this.gameLearningLogoMenor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gameLearningLogoMenor.MaximumSize = new System.Drawing.Size(120, 60);
             this.gameLearningLogoMenor.Name = "gameLearningLogoMenor";
             this.gameLearningLogoMenor.Size = new System.Drawing.Size(120, 60);
             this.gameLearningLogoMenor.TabIndex = 1;
@@ -98,6 +104,8 @@
             this.btnCadastro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastro.BackgroundImage")));
             this.btnCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCadastro.Location = new System.Drawing.Point(510, 40);
+            this.btnCadastro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCadastro.MaximumSize = new System.Drawing.Size(180, 80);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(180, 80);
             this.btnCadastro.TabIndex = 4;
@@ -111,11 +119,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.raMatricula.AutoSize = true;
             this.raMatricula.BackColor = System.Drawing.Color.Transparent;
-            this.raMatricula.Font = new System.Drawing.Font("Pixelade", 30.25F);
+            this.raMatricula.Font = new System.Drawing.Font("Pixelade", 25F);
             this.raMatricula.ForeColor = System.Drawing.Color.PaleGreen;
-            this.raMatricula.Location = new System.Drawing.Point(177, 223);
+            this.raMatricula.Location = new System.Drawing.Point(270, 230);
+            this.raMatricula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.raMatricula.Name = "raMatricula";
-            this.raMatricula.Size = new System.Drawing.Size(243, 41);
+            this.raMatricula.Size = new System.Drawing.Size(247, 42);
             this.raMatricula.TabIndex = 9;
             this.raMatricula.Text = "RA / MATRÍCULA";
             // 
@@ -126,11 +135,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Pixelade", 30.25F);
+            this.label1.Font = new System.Drawing.Font("Pixelade", 25F);
             this.label1.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label1.Location = new System.Drawing.Point(177, 284);
+            this.label1.Location = new System.Drawing.Point(270, 280);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 41);
+            this.label1.Size = new System.Drawing.Size(95, 42);
             this.label1.TabIndex = 10;
             this.label1.Text = "NOME";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -142,11 +152,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Pixelade", 30.25F);
+            this.label2.Font = new System.Drawing.Font("Pixelade", 25F);
             this.label2.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label2.Location = new System.Drawing.Point(177, 341);
+            this.label2.Location = new System.Drawing.Point(270, 330);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 41);
+            this.label2.Size = new System.Drawing.Size(121, 42);
             this.label2.TabIndex = 11;
             this.label2.Text = "CAMPUS";
             // 
@@ -157,9 +168,10 @@
             this.radioAluno.BackColor = System.Drawing.Color.Transparent;
             this.radioAluno.Font = new System.Drawing.Font("Pixelade", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.radioAluno.ForeColor = System.Drawing.Color.SpringGreen;
-            this.radioAluno.Location = new System.Drawing.Point(636, 154);
+            this.radioAluno.Location = new System.Drawing.Point(657, 160);
+            this.radioAluno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioAluno.Name = "radioAluno";
-            this.radioAluno.Size = new System.Drawing.Size(121, 44);
+            this.radioAluno.Size = new System.Drawing.Size(151, 55);
             this.radioAluno.TabIndex = 13;
             this.radioAluno.TabStop = true;
             this.radioAluno.Text = "ALUNO";
@@ -172,9 +184,10 @@
             this.radioProf.BackColor = System.Drawing.Color.Transparent;
             this.radioProf.Font = new System.Drawing.Font("Pixelade", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.radioProf.ForeColor = System.Drawing.Color.SpringGreen;
-            this.radioProf.Location = new System.Drawing.Point(427, 154);
+            this.radioProf.Location = new System.Drawing.Point(378, 160);
+            this.radioProf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioProf.Name = "radioProf";
-            this.radioProf.Size = new System.Drawing.Size(185, 44);
+            this.radioProf.Size = new System.Drawing.Size(231, 55);
             this.radioProf.TabIndex = 12;
             this.radioProf.TabStop = true;
             this.radioProf.Text = "PROFESSOR";
@@ -188,10 +201,13 @@
             this.campoNome.BackColor = System.Drawing.Color.PaleGreen;
             this.campoNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoNome.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoNome.Location = new System.Drawing.Point(427, 292);
+            this.campoNome.Location = new System.Drawing.Point(606, 280);
+            this.campoNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.campoNome.MaximumSize = new System.Drawing.Size(293, 41);
             this.campoNome.Name = "campoNome";
-            this.campoNome.Size = new System.Drawing.Size(518, 35);
+            this.campoNome.Size = new System.Drawing.Size(293, 41);
             this.campoNome.TabIndex = 15;
+            this.campoNome.TextChanged += new System.EventHandler(this.campoNome_TextChanged);
             // 
             // campoRaMatricula
             // 
@@ -199,9 +215,11 @@
             this.campoRaMatricula.BackColor = System.Drawing.Color.PaleGreen;
             this.campoRaMatricula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoRaMatricula.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoRaMatricula.Location = new System.Drawing.Point(427, 231);
+            this.campoRaMatricula.Location = new System.Drawing.Point(606, 231);
+            this.campoRaMatricula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.campoRaMatricula.MaximumSize = new System.Drawing.Size(293, 41);
             this.campoRaMatricula.Name = "campoRaMatricula";
-            this.campoRaMatricula.Size = new System.Drawing.Size(518, 35);
+            this.campoRaMatricula.Size = new System.Drawing.Size(293, 41);
             this.campoRaMatricula.TabIndex = 14;
             // 
             // campoCampus
@@ -212,9 +230,11 @@
             this.campoCampus.BackColor = System.Drawing.Color.PaleGreen;
             this.campoCampus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoCampus.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoCampus.Location = new System.Drawing.Point(427, 347);
+            this.campoCampus.Location = new System.Drawing.Point(606, 333);
+            this.campoCampus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.campoCampus.MaximumSize = new System.Drawing.Size(293, 41);
             this.campoCampus.Name = "campoCampus";
-            this.campoCampus.Size = new System.Drawing.Size(518, 35);
+            this.campoCampus.Size = new System.Drawing.Size(293, 41);
             this.campoCampus.TabIndex = 16;
             // 
             // label3
@@ -224,11 +244,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Pixelade", 30.25F);
+            this.label3.Font = new System.Drawing.Font("Pixelade", 25F);
             this.label3.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label3.Location = new System.Drawing.Point(177, 395);
+            this.label3.Location = new System.Drawing.Point(270, 380);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 41);
+            this.label3.Size = new System.Drawing.Size(101, 42);
             this.label3.TabIndex = 19;
             this.label3.Text = "SENHA";
             // 
@@ -240,20 +261,22 @@
             this.campoSenha.BackColor = System.Drawing.Color.PaleGreen;
             this.campoSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoSenha.Font = new System.Drawing.Font("Pixelade", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoSenha.Location = new System.Drawing.Point(427, 401);
+            this.campoSenha.Location = new System.Drawing.Point(606, 384);
+            this.campoSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.campoSenha.MaximumSize = new System.Drawing.Size(293, 41);
             this.campoSenha.Name = "campoSenha";
             this.campoSenha.PasswordChar = '1';
-            this.campoSenha.Size = new System.Drawing.Size(518, 35);
+            this.campoSenha.Size = new System.Drawing.Size(293, 41);
             this.campoSenha.TabIndex = 20;
             this.campoSenha.UseSystemPasswordChar = true;
             // 
             // telaCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1184, 636);
+            this.ClientSize = new System.Drawing.Size(1182, 628);
             this.Controls.Add(this.campoSenha);
             this.Controls.Add(this.label3);
             this.Controls.Add(btnEnviar);
@@ -268,7 +291,8 @@
             this.Controls.Add(this.raMatricula);
             this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.gameLearningLogoMenor);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1200, 675);
             this.Name = "telaCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "telaCadastro";

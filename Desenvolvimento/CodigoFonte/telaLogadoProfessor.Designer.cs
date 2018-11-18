@@ -38,21 +38,23 @@
             this.gameLearningLogoMenor.BackColor = System.Drawing.Color.Transparent;
             this.gameLearningLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLearningLogoMenor.BackgroundImage")));
             this.gameLearningLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gameLearningLogoMenor.Location = new System.Drawing.Point(30, 30);
+            this.gameLearningLogoMenor.Location = new System.Drawing.Point(40, 37);
+            this.gameLearningLogoMenor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gameLearningLogoMenor.Name = "gameLearningLogoMenor";
-            this.gameLearningLogoMenor.Size = new System.Drawing.Size(120, 60);
+            this.gameLearningLogoMenor.Size = new System.Drawing.Size(160, 74);
             this.gameLearningLogoMenor.TabIndex = 2;
             this.gameLearningLogoMenor.TabStop = false;
             // 
             // telaLogadoProfessor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::gameLearning.Properties.Resources.mainBack;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1184, 636);
+            this.ClientSize = new System.Drawing.Size(1182, 628);
             this.Controls.Add(this.gameLearningLogoMenor);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1200, 675);
             this.Name = "telaLogadoProfessor";
             this.Text = "telaLogadoProfessor";
             ((System.ComponentModel.ISupportInitialize)(this.gameLearningLogoMenor)).EndInit();
