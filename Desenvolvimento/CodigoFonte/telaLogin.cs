@@ -92,7 +92,6 @@ namespace gameLearning
                 alunoLogado.Closed += (s, args) => this.Close();
                 alunoLogado.Show();
 
-
             }
             
         }

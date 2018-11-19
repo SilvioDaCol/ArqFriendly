@@ -148,7 +148,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximumSize = new System.Drawing.Size(1200, 675);
             this.Name = "telaLogadoAluno";
-            this.Text = "fulano ";
+            this.Text = "Logado";
             ((System.ComponentModel.ISupportInitialize)(this.gameLearningLogoMenor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
