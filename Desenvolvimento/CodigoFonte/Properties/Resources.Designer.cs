@@ -63,6 +63,26 @@ namespace gameLearning.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap algoRace {
+            get {
+                object obj = ResourceManager.GetObject("algoRace", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap algoRaceIcon {
+            get {
+                object obj = ResourceManager.GetObject("algoRaceIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_login {
             get {
                 object obj = ResourceManager.GetObject("btn_login", resourceCulture);
@@ -253,6 +273,26 @@ namespace gameLearning.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap introProgIcon {
+            get {
+                object obj = ResourceManager.GetObject("introProgIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap introProgr {
+            get {
+                object obj = ResourceManager.GetObject("introProgr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mainBack {
             get {
                 object obj = ResourceManager.GetObject("mainBack", resourceCulture);
@@ -266,6 +306,26 @@ namespace gameLearning.Properties {
         internal static System.Drawing.Bitmap SOBRE_O_PROGRAMA {
             get {
                 object obj = ResourceManager.GetObject("SOBRE_O_PROGRAMA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starWarsIcon {
+            get {
+                object obj = ResourceManager.GetObject("starWarsIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starWarsLow {
+            get {
+                object obj = ResourceManager.GetObject("starWarsLow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -316,6 +376,16 @@ namespace gameLearning.Properties {
         internal static System.Drawing.Bitmap TELA_PROFESSOR {
             get {
                 object obj = ResourceManager.GetObject("TELA_PROFESSOR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap telaPause {
+            get {
+                object obj = ResourceManager.GetObject("telaPause", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -32,8 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaLogin));
             System.Windows.Forms.PictureBox pictureBox3;
             System.Windows.Forms.PictureBox pictureBox1;
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.campoRaMatricula = new System.Windows.Forms.TextBox();
             this.raMatricula = new System.Windows.Forms.Label();
             this.senha = new System.Windows.Forms.Label();
@@ -93,40 +91,6 @@
             pictureBox1.Size = new System.Drawing.Size(180, 80);
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Font = new System.Drawing.Font("Pixelade", 30F, System.Drawing.FontStyle.Bold);
-            this.radioButton1.ForeColor = System.Drawing.Color.PaleGreen;
-            this.radioButton1.Location = new System.Drawing.Point(399, 188);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(231, 55);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "PROFESSOR";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton3.Font = new System.Drawing.Font("Pixelade", 30F, System.Drawing.FontStyle.Bold);
-            this.radioButton3.ForeColor = System.Drawing.Color.PaleGreen;
-            this.radioButton3.Location = new System.Drawing.Point(659, 188);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(151, 55);
-            this.radioButton3.TabIndex = 6;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "ALUNO";
-            this.radioButton3.UseVisualStyleBackColor = false;
             // 
             // campoRaMatricula
             // 
@@ -217,8 +181,6 @@
             this.Controls.Add(this.senha);
             this.Controls.Add(this.raMatricula);
             this.Controls.Add(this.campoRaMatricula);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.gameLogoMenor);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1200, 675);
@@ -235,9 +197,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.TextBox campoRaMatricula;
         private System.Windows.Forms.Label raMatricula;
         private System.Windows.Forms.Label senha;

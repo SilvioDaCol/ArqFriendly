@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.PictureBox pictureBox2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaSobre));
             this.gameLogoMenor = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCadastro = new System.Windows.Forms.PictureBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).BeginInit();
@@ -46,7 +48,7 @@
             pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             pictureBox2.Location = new System.Drawing.Point(510, 500);
-            pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             pictureBox2.MaximumSize = new System.Drawing.Size(180, 80);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
@@ -61,7 +63,7 @@
             this.gameLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLogoMenor.BackgroundImage")));
             this.gameLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gameLogoMenor.Location = new System.Drawing.Point(30, 30);
-            this.gameLogoMenor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gameLogoMenor.Margin = new System.Windows.Forms.Padding(4);
             this.gameLogoMenor.MaximumSize = new System.Drawing.Size(120, 60);
             this.gameLogoMenor.Name = "gameLogoMenor";
             this.gameLogoMenor.Size = new System.Drawing.Size(120, 60);
@@ -88,12 +90,18 @@
             this.btnCadastro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastro.BackgroundImage")));
             this.btnCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCadastro.Location = new System.Drawing.Point(510, 40);
-            this.btnCadastro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCadastro.Margin = new System.Windows.Forms.Padding(4);
             this.btnCadastro.MaximumSize = new System.Drawing.Size(180, 80);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(180, 80);
             this.btnCadastro.TabIndex = 5;
             this.btnCadastro.TabStop = false;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // telaSobre
             // 
@@ -123,5 +131,6 @@
         private System.Windows.Forms.PictureBox gameLogoMenor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnCadastro;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

@@ -75,6 +75,12 @@
     <Compile Include="telaInicial.Designer.cs">
       <DependentUpon>telaInicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="telaJogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaJogos.Designer.cs">
+      <DependentUpon>telaJogos.cs</DependentUpon>
+    </Compile>
     <Compile Include="telaLogadoAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="telaInicial.resx">
       <DependentUpon>telaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaJogos.resx">
+      <DependentUpon>telaJogos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telaLogadoAluno.resx">
       <DependentUpon>telaLogadoAluno.cs</DependentUpon>
@@ -202,6 +211,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btnOla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starWarsLow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telaPause.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\algoRace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\introProgr.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\algoRaceIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\introProgIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starWarsIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
