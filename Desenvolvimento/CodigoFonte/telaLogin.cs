@@ -75,5 +75,26 @@ namespace gameLearning
             voltarInicio.Closed += (s, args) => this.Close();
             voltarInicio.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if ((campoRaMatricula.Text == "") || (campoSenha.Text == ""))
+            {
+                MessageBox.Show("Existem campos não preenchidos!!!");
+
+            }
+
+            if ((campoRaMatricula.Text != "") && (campoSenha.Text != ""))
+            {
+
+                this.Hide();
+                telaLogadoAluno alunoLogado = new telaLogadoAluno();
+                alunoLogado.Closed += (s, args) => this.Close();
+                alunoLogado.Show();
+
+
+            }
+            
+        }
     }
 }
