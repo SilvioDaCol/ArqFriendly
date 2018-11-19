@@ -32,8 +32,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Npgsql, Version=4.0.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>packages\Npgsql.4.0.3\lib\net451\Npgsql.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.0\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aluno.cs" />
+    <Compile Include="Conexao.cs" />
     <Compile Include="Jogo.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="telaCadastro.cs">
@@ -61,6 +74,12 @@
     </Compile>
     <Compile Include="telaInicial.Designer.cs">
       <DependentUpon>telaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaJogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaJogos.Designer.cs">
+      <DependentUpon>telaJogos.cs</DependentUpon>
     </Compile>
     <Compile Include="telaLogadoAluno.cs">
       <SubType>Form</SubType>
@@ -104,6 +123,9 @@
     <EmbeddedResource Include="telaInicial.resx">
       <DependentUpon>telaInicial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="telaJogos.resx">
+      <DependentUpon>telaJogos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="telaLogadoAluno.resx">
       <DependentUpon>telaLogadoAluno.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +138,7 @@
     <EmbeddedResource Include="telaSobre.resx">
       <DependentUpon>telaSobre.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -188,6 +211,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btnOla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starWarsLow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telaPause.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\algoRace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\introProgr.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\algoRaceIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\introProgIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starWarsIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

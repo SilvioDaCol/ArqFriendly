@@ -63,6 +63,26 @@ namespace gameLearning.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap algoRace {
+            get {
+                object obj = ResourceManager.GetObject("algoRace", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap algoRaceIcon {
+            get {
+                object obj = ResourceManager.GetObject("algoRaceIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_login {
             get {
                 object obj = ResourceManager.GetObject("btn_login", resourceCulture);
@@ -103,6 +123,16 @@ namespace gameLearning.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnExerc {
+            get {
+                object obj = ResourceManager.GetObject("btnExerc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnInversoCadastro {
             get {
                 object obj = ResourceManager.GetObject("btnInversoCadastro", resourceCulture);
@@ -133,6 +163,26 @@ namespace gameLearning.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnInversoExerc {
+            get {
+                object obj = ResourceManager.GetObject("btnInversoExerc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnInversoJogar {
+            get {
+                object obj = ResourceManager.GetObject("btnInversoJogar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnInversoLogin {
             get {
                 object obj = ResourceManager.GetObject("btnInversoLogin", resourceCulture);
@@ -153,9 +203,29 @@ namespace gameLearning.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnInversoRanking {
+            get {
+                object obj = ResourceManager.GetObject("btnInversoRanking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnInversoSobre {
             get {
                 object obj = ResourceManager.GetObject("btnInversoSobre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnJogar {
+            get {
+                object obj = ResourceManager.GetObject("btnJogar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +253,39 @@ namespace gameLearning.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnRanking {
+            get {
+                object obj = ResourceManager.GetObject("btnRanking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnSobre {
             get {
                 object obj = ResourceManager.GetObject("btnSobre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap introProgIcon {
+            get {
+                object obj = ResourceManager.GetObject("introProgIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap introProgr {
+            get {
+                object obj = ResourceManager.GetObject("introProgr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +306,26 @@ namespace gameLearning.Properties {
         internal static System.Drawing.Bitmap SOBRE_O_PROGRAMA {
             get {
                 object obj = ResourceManager.GetObject("SOBRE_O_PROGRAMA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starWarsIcon {
+            get {
+                object obj = ResourceManager.GetObject("starWarsIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starWarsLow {
+            get {
+                object obj = ResourceManager.GetObject("starWarsLow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +376,16 @@ namespace gameLearning.Properties {
         internal static System.Drawing.Bitmap TELA_PROFESSOR {
             get {
                 object obj = ResourceManager.GetObject("TELA_PROFESSOR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap telaPause {
+            get {
+                object obj = ResourceManager.GetObject("telaPause", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

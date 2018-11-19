@@ -16,5 +16,13 @@ namespace gameLearning
         {
             InitializeComponent();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaInicial voltarInicio = new telaInicial();
+            voltarInicio.Closed += (s, args) => this.Close();
+            voltarInicio.Show();
+        }
     }
 }

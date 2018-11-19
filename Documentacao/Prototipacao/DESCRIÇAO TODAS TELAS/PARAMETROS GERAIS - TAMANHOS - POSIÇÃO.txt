@@ -1,22 +1,32 @@
-Form:
+Forms:
 size: 1200;675
 WindowsState: normal
 BackgroundLayout: Stretch
 StartPosition: Center
 
+LogoMaior
+BackgroundColor: Transparent
+BackgroundLayout: Stretch
+Size: 400;250
+location: 80;50
+
 LogoMenor
+BackgroundLayout: Stretch
+BackgroundColor: Transparent
 size: 120;60
 position: 30;30
 
 BOTÕES PRINCIPAIS
+BackgroundLayout: Stretch
+BackgroundColor: Transparent
 
 top
-tamanho: 180;120
+tamanho: 180;80
 localização: 510;40
 
 1 botão
 botton
-tamanho: 180;120
+tamanho: 180;80
 location: 510;500
 
 2 botões
@@ -32,6 +42,11 @@ location botão2
 510;500
 location botão3
 830;500
+
+TELA JOGOS
+
+CARDS JOGOS
+
 
 
 
