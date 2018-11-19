@@ -61,7 +61,7 @@ namespace gameLearning
             btnCadastro.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
-        private void btnLogin_MouseHover(object sender, EventArgs e)
+        private void btnLogin_MouseEnter(object sender, EventArgs e)
         {
             btnLogin.BackgroundImage = Properties.Resources.btnInversoLogin;
             btnLogin.BackgroundImageLayout = ImageLayout.Stretch;

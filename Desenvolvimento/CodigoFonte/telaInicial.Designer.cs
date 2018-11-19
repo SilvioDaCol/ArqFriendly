@@ -80,7 +80,7 @@
             this.btnLogin.TabStop = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             this.btnLogin.MouseLeave += new System.EventHandler(this.btnLogin_MouseLeave);
-            this.btnLogin.MouseHover += new System.EventHandler(this.btnLogin_MouseHover);
+            this.btnLogin.MouseEnter += new System.EventHandler(this.btnLogin_MouseEnter);
             // 
             // btnSobre
             // 
