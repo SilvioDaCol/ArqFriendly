@@ -1,11 +1,9 @@
-DROP DATABASE educAtivaDB CASCADE;
-
-CREATE DATABASE educAtivaDB;
-
+--CREATE DATABASE educAtivaDB;
+/*
 DROP SCHEMA public CASCADE;
 
 CREATE SCHEMA public;
-
+*/
 CREATE TABLE usuario(
 	cod_user serial primary key,
 	nome_user VARCHAR(50),
@@ -90,7 +88,4 @@ CREATE TABLE ranking_geral(
 	CONSTRAINT cod_aluno_ranking_geral FOREIGN KEY(Aluno)
 	REFERENCES aluno(cod_aluno) MATCH SIMPLE
 );
-
-
-
 

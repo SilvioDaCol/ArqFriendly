@@ -1,5 +1,5 @@
-INSERT INTO usuario (nome_usuario, email_usuario, senha_usuario) VALUES (Geraldy Fuzinelli, fuzinelli@hotmail.com, abcd-1234);
-INSERT INTO usuario (nome_usuario, email_usuario, senha_usuario) VALUES (Paule Henrique Belucci, phbelucci@hotmail.com, abcd-1234);
-INSERT INTO usuario (nome_usuario, email_usuario, senha_usuario) VALUES (Silvio da Col de Brito, silviocbrito@hotmail.com, abcd-1234);
+INSERT INTO usuario (nome_user, email_user, senha_user) VALUES ('Geraldy Fuzinelli', 'fuzinelli@hotmail.com', 'abcd-1234');
+INSERT INTO usuario (nome_user, email_user, senha_user) VALUES ('Paule Henrique Belucci', 'phbelucci@hotmail.com', 'abcd-1234');
+INSERT INTO usuario (nome_user, email_user, senha_user) VALUES ('Silvio da Col de Brito', 'silviocbrito@hotmail.com', 'abcd-1234');
 
 COPY usuario(nome_user, email_user, senha_user) FROM 'C:/Users/Silvio/Desktop/usuario.csv' USING DELIMITERS ';'
