@@ -1,0 +1,96 @@
+DROP DATABASE educAtivaDB CASCADE;
+
+CREATE DATABASE educAtivaDB;
+
+DROP SCHEMA public CASCADE;
+
+CREATE SCHEMA public;
+
+CREATE TABLE usuario(
+	cod_user serial primary key,
+	nome_user VARCHAR(50),
+	email_user VARCHAR(200),
+	senha_user VARCHAR(30) 
+);
+
+CREATE TABLE aluno(
+	cod_aluno serial primary key,
+	ra_aluno VARCHAR(30),
+	Usuario integer,
+	CONSTRAINT cod_user_aluno FOREIGN KEY(Usuario)
+	REFERENCES usuario(cod_user) MATCH SIMPLE 
+);
+
+CREATE TABLE professor(
+	cod_professor serial primary key,
+	registro VARCHAR(30),
+	Usuario integer,
+	CONSTRAINT cod_user_professor FOREIGN KEY(Usuario)
+	REFERENCES usuario(cod_user) MATCH SIMPLE 
+);
+
+CREATE TABLE turma(
+	cod_turma serial primary key,
+	curso VARCHAR(200),
+	disciplina VARCHAR(200),
+	semestre smallint,
+	ano smallint,
+	Prof integer,
+	CONSTRAINT cod_Prof_turma FOREIGN KEY(Prof)
+	REFERENCES professor(cod_professor) MATCH SIMPLE
+);
+
+CREATE TABLE matricula(
+	cod_mat serial primary key,
+	Turma integer,
+	Aluno integer,
+	CONSTRAINT cod_turma_matricula FOREIGN KEY(Turma)
+	REFERENCES turma(cod_turma) MATCH SIMPLE,
+	CONSTRAINT cod_aluno_matricula FOREIGN KEY(Aluno)
+	REFERENCES aluno(cod_aluno) MATCH SIMPLE
+);
+
+CREATE TABLE jogo(
+	cod_jogo serial primary key,
+	nome_jogo VARCHAR(200),
+	descricao_jogo VARCHAR(300),
+	caminho_jogo VARCHAR(400),
+	executavel_jogo VARCHAR(50)
+);
+
+CREATE TABLE atividade(
+	cod_atividade serial primary key,
+	prazo_atividade timestamp without time zone,
+	inicio_atividade timestamp without time zone,
+	Prof integer,
+	Jogo integer,
+	CONSTRAINT cod_prof_atividade FOREIGN KEY(Prof)
+	REFERENCES professor(cod_professor) MATCH SIMPLE,
+	CONSTRAINT cod_jogo_atividade FOREIGN KEY(Jogo)
+	REFERENCES jogo(cod_jogo) MATCH SIMPLE
+);
+
+CREATE TABLE inscreve(
+	cod_inscricao serial primary key,
+	Atividade integer,
+	Aluno integer,
+	pontuacao integer,
+	CONSTRAINT cod_atividade_inscricao FOREIGN KEY(Atividade)
+	REFERENCES atividade(cod_atividade) MATCH SIMPLE,
+	CONSTRAINT cod_aluno_inscricao FOREIGN KEY(Aluno)
+	REFERENCES aluno(cod_aluno) MATCH SIMPLE
+);
+
+CREATE TABLE ranking_geral(
+	Jogo integer,
+	Aluno integer,
+	PRIMARY KEY(Jogo, Aluno),
+	CONSTRAINT cod_jogo_ranking_geral FOREIGN KEY(Jogo)
+	REFERENCES jogo(cod_jogo) MATCH SIMPLE,
+	CONSTRAINT cod_aluno_ranking_geral FOREIGN KEY(Aluno)
+	REFERENCES aluno(cod_aluno) MATCH SIMPLE
+);
+
+
+
+
