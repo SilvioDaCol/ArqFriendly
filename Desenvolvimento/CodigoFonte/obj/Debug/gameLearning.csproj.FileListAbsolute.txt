@@ -269,3 +269,4 @@ C:\Users\Silvio\Documents\Google Drive\Carreira\Cursos\Software\Curso_GIT\EducaA
 C:\Users\Silvio\Documents\Google Drive\Carreira\Cursos\Software\Curso_GIT\EducaAtiva\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.exe.config
 C:\Users\Silvio\Documents\Google Drive\Carreira\Cursos\Software\Curso_GIT\EducaAtiva\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telaJogos.resources
 C:\Users\Silvio\Documents\Google Drive\Carreira\Cursos\Software\Curso_GIT\EducaAtiva\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.csproj.CopyComplete
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telaPreviaJogo.resources

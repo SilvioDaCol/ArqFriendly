@@ -24,5 +24,13 @@ namespace gameLearning
             voltarInicio.Closed += (s, args) => this.Close();
             voltarInicio.Show();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaJogos jogos = new telaJogos();
+            jogos.Closed += (s, args) => this.Close();
+            jogos.Show();
+        }
     }
 }

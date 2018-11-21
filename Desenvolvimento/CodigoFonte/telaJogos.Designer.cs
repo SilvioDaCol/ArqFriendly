@@ -74,9 +74,9 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
+            this.pictureBox1.BackgroundImage = global::gameLearning.Properties.Resources.btnJogos;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(510, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(510, 30);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.MaximumSize = new System.Drawing.Size(180, 80);
             this.pictureBox1.Name = "pictureBox1";
@@ -95,6 +95,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(180, 180);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label1
             // 
@@ -120,6 +121,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(100, 40);
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label2
             // 
@@ -144,6 +146,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(180, 180);
             this.pictureBox5.TabIndex = 16;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
@@ -156,6 +159,7 @@
             this.pictureBox6.Size = new System.Drawing.Size(180, 180);
             this.pictureBox6.TabIndex = 19;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label3
             // 
@@ -194,6 +198,7 @@
             this.pictureBox9.Size = new System.Drawing.Size(100, 40);
             this.pictureBox9.TabIndex = 23;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox4
             // 
@@ -207,6 +212,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(100, 40);
             this.pictureBox4.TabIndex = 25;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox7
             // 
@@ -220,6 +226,7 @@
             this.pictureBox7.Size = new System.Drawing.Size(100, 40);
             this.pictureBox7.TabIndex = 24;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox10
             // 
@@ -233,6 +240,7 @@
             this.pictureBox10.Size = new System.Drawing.Size(100, 40);
             this.pictureBox10.TabIndex = 27;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox11
             // 

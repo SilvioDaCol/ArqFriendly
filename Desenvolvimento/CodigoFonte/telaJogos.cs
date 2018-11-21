@@ -16,5 +16,63 @@ namespace gameLearning
         {
             InitializeComponent();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaPreviaJogo previaJogo = new telaPreviaJogo();
+            previaJogo.Closed += (s, args) => this.Close();
+            previaJogo.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaPreviaJogo previaJogo = new telaPreviaJogo();
+            previaJogo.Closed += (s, args) => this.Close();
+            previaJogo.Show();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaPreviaJogo previaJogo = new telaPreviaJogo();
+            previaJogo.Closed += (s, args) => this.Close();
+            previaJogo.Show();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaPreviaJogo previaJogo = new telaPreviaJogo();
+            previaJogo.Closed += (s, args) => this.Close();
+            previaJogo.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaPreviaJogo previaJogo = new telaPreviaJogo();
+            previaJogo.Closed += (s, args) => this.Close();
+            previaJogo.Show();
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaPreviaJogo previaJogo = new telaPreviaJogo();
+            previaJogo.Closed += (s, args) => this.Close();
+            previaJogo.Show();
+        }
     }
 }

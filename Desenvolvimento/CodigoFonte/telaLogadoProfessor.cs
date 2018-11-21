@@ -16,5 +16,13 @@ namespace gameLearning
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaJogos jogos = new telaJogos();
+            jogos.Closed += (s, args) => this.Close();
+            jogos.Show();
+        }
     }
 }
