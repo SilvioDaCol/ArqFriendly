@@ -1,0 +1,6 @@
+int main()
+{
+   Quem vai trabalhar 
+   na IBM e sera PAPAI?
+   %%Geraldy;;Paulao;;Silvio%% 
+}

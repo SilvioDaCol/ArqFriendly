@@ -49,7 +49,7 @@ namespace gameLearning
             sobre.Show();
         }
 
-        private void btnCadastro_MouseHover(object sender, EventArgs e)
+        private void btnCadastro_MouseEnter(object sender, EventArgs e)
         {
             btnCadastro.BackgroundImage = Properties.Resources.btnInversoCadastro;
             btnCadastro.BackgroundImageLayout = ImageLayout.Stretch;
@@ -73,7 +73,7 @@ namespace gameLearning
             btnLogin.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
-        private void btnSobre_MouseHover(object sender, EventArgs e)
+        private void btnSobre_MouseEnter(object sender, EventArgs e)
         {
             btnSobre.BackgroundImage = Properties.Resources.btnInversoSobre;
             btnSobre.BackgroundImageLayout = ImageLayout.Stretch;

@@ -33,7 +33,6 @@
             this.btnCadastro = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.PictureBox();
             this.btnSobre = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.logoMaior)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCadastro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).BeginInit();
@@ -46,7 +45,7 @@
             this.logoMaior.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoMaior.BackgroundImage")));
             this.logoMaior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.logoMaior.Location = new System.Drawing.Point(60, 41);
-            this.logoMaior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logoMaior.Margin = new System.Windows.Forms.Padding(2);
             this.logoMaior.Name = "logoMaior";
             this.logoMaior.Size = new System.Drawing.Size(300, 203);
             this.logoMaior.TabIndex = 0;
@@ -59,7 +58,7 @@
             this.btnCadastro.BackgroundImage = global::gameLearning.Properties.Resources.btnCadastro;
             this.btnCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCadastro.Location = new System.Drawing.Point(135, 406);
-            this.btnCadastro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCadastro.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastro.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(135, 65);
@@ -67,7 +66,7 @@
             this.btnCadastro.TabStop = false;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             this.btnCadastro.MouseLeave += new System.EventHandler(this.btnCadastro_MouseLeave);
-            this.btnCadastro.MouseHover += new System.EventHandler(this.btnCadastro_MouseHover);
+            this.btnCadastro.MouseHover += new System.EventHandler(this.btnCadastro_MouseEnter);
             // 
             // btnLogin
             // 
@@ -75,7 +74,7 @@
             this.btnLogin.BackgroundImage = global::gameLearning.Properties.Resources.btn_login;
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogin.Location = new System.Drawing.Point(382, 406);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(135, 65);
@@ -91,7 +90,7 @@
             this.btnSobre.BackgroundImage = global::gameLearning.Properties.Resources.btnSobre;
             this.btnSobre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSobre.Location = new System.Drawing.Point(622, 406);
-            this.btnSobre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSobre.Margin = new System.Windows.Forms.Padding(2);
             this.btnSobre.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Size = new System.Drawing.Size(135, 65);
@@ -99,19 +98,7 @@
             this.btnSobre.TabStop = false;
             this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
             this.btnSobre.MouseLeave += new System.EventHandler(this.btnSobre_MouseLeave);
-            this.btnSobre.MouseHover += new System.EventHandler(this.btnSobre_MouseHover);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "teste1",
-            "teste2",
-            "teste3"});
-            this.comboBox1.Location = new System.Drawing.Point(567, 161);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
+            this.btnSobre.MouseHover += new System.EventHandler(this.btnSobre_MouseEnter);
             // 
             // telaInicial
             // 
@@ -120,12 +107,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(886, 510);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnSobre);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.logoMaior);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(904, 556);
             this.Name = "telaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -144,6 +130,5 @@
         private System.Windows.Forms.PictureBox btnCadastro;
         private System.Windows.Forms.PictureBox btnLogin;
         private System.Windows.Forms.PictureBox btnSobre;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

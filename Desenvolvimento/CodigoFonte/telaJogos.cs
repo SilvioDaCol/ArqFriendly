@@ -19,12 +19,14 @@ namespace gameLearning
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            
+            Jogo Jogos = new Jogo();
+            Jogos.jogarStarWarsLC();
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-
+            Jogo Jogos = new Jogo();
+            Jogos.jogarAlgoRace();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -73,6 +75,20 @@ namespace gameLearning
             telaPreviaJogo previaJogo = new telaPreviaJogo();
             previaJogo.Closed += (s, args) => this.Close();
             previaJogo.Show();
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Jogo Jogos = new Jogo();
+            Jogos.jogarCTIGame();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaInicial voltarInicio = new telaInicial();
+            voltarInicio.Closed += (s, args) => this.Close();
+            voltarInicio.Show();
         }
     }
 }

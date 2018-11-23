@@ -63,11 +63,10 @@
             this.gameLearningLogoMenor.BackColor = System.Drawing.Color.Transparent;
             this.gameLearningLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLearningLogoMenor.BackgroundImage")));
             this.gameLearningLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gameLearningLogoMenor.Location = new System.Drawing.Point(30, 30);
-            this.gameLearningLogoMenor.Margin = new System.Windows.Forms.Padding(4);
-            this.gameLearningLogoMenor.MaximumSize = new System.Drawing.Size(120, 60);
+            this.gameLearningLogoMenor.Location = new System.Drawing.Point(22, 24);
+            this.gameLearningLogoMenor.MaximumSize = new System.Drawing.Size(90, 49);
             this.gameLearningLogoMenor.Name = "gameLearningLogoMenor";
-            this.gameLearningLogoMenor.Size = new System.Drawing.Size(120, 60);
+            this.gameLearningLogoMenor.Size = new System.Drawing.Size(90, 49);
             this.gameLearningLogoMenor.TabIndex = 11;
             this.gameLearningLogoMenor.TabStop = false;
             // 
@@ -76,11 +75,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::gameLearning.Properties.Resources.btnJogos;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(510, 30);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.MaximumSize = new System.Drawing.Size(180, 80);
+            this.pictureBox1.Location = new System.Drawing.Point(382, 24);
+            this.pictureBox1.MaximumSize = new System.Drawing.Size(135, 65);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(135, 65);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
@@ -89,10 +87,11 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::gameLearning.Properties.Resources.starWarsIcon;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(130, 186);
-            this.pictureBox2.MaximumSize = new System.Drawing.Size(180, 180);
+            this.pictureBox2.Location = new System.Drawing.Point(98, 151);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.MaximumSize = new System.Drawing.Size(135, 146);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(180, 180);
+            this.pictureBox2.Size = new System.Drawing.Size(135, 146);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -101,11 +100,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Font = new System.Drawing.Font("Pixelade", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(102, 151);
+            this.label1.Location = new System.Drawing.Point(76, 123);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 32);
+            this.label1.Size = new System.Drawing.Size(312, 30);
             this.label1.TabIndex = 14;
             this.label1.Text = "STAR WARS LOW COST";
             // 
@@ -114,11 +114,10 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(168, 373);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.MaximumSize = new System.Drawing.Size(180, 80);
+            this.pictureBox3.Location = new System.Drawing.Point(126, 303);
+            this.pictureBox3.MaximumSize = new System.Drawing.Size(135, 65);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 40);
+            this.pictureBox3.Size = new System.Drawing.Size(75, 32);
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
@@ -127,11 +126,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Font = new System.Drawing.Font("Pixelade", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(544, 151);
+            this.label2.Location = new System.Drawing.Point(408, 123);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 32);
+            this.label2.Size = new System.Drawing.Size(156, 30);
             this.label2.TabIndex = 17;
             this.label2.Text = "ALGORACE";
             // 
@@ -140,10 +140,11 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = global::gameLearning.Properties.Resources.algoRaceIcon;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(510, 186);
-            this.pictureBox5.MaximumSize = new System.Drawing.Size(180, 180);
+            this.pictureBox5.Location = new System.Drawing.Point(382, 151);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.MaximumSize = new System.Drawing.Size(135, 146);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(180, 180);
+            this.pictureBox5.Size = new System.Drawing.Size(135, 146);
             this.pictureBox5.TabIndex = 16;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
@@ -153,10 +154,11 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = global::gameLearning.Properties.Resources.introProgIcon;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(873, 186);
-            this.pictureBox6.MaximumSize = new System.Drawing.Size(180, 180);
+            this.pictureBox6.Location = new System.Drawing.Point(655, 151);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.MaximumSize = new System.Drawing.Size(135, 146);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(180, 180);
+            this.pictureBox6.Size = new System.Drawing.Size(135, 146);
             this.pictureBox6.TabIndex = 19;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
@@ -165,11 +167,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Font = new System.Drawing.Font("Pixelade", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(845, 151);
+            this.label3.Location = new System.Drawing.Point(634, 123);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(235, 32);
+            this.label3.Size = new System.Drawing.Size(301, 30);
             this.label3.TabIndex = 21;
             this.label3.Text = "INTRO PROGRAMMING";
             // 
@@ -178,24 +181,23 @@
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.BackgroundImage = global::gameLearning.Properties.Resources.btnCancelar;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(510, 530);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox8.MaximumSize = new System.Drawing.Size(180, 80);
+            this.pictureBox8.Location = new System.Drawing.Point(382, 431);
+            this.pictureBox8.MaximumSize = new System.Drawing.Size(135, 65);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(180, 80);
+            this.pictureBox8.Size = new System.Drawing.Size(135, 65);
             this.pictureBox8.TabIndex = 22;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.BackgroundImage = global::gameLearning.Properties.Resources.btnRanking;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(168, 446);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox9.MaximumSize = new System.Drawing.Size(180, 80);
+            this.pictureBox9.Location = new System.Drawing.Point(126, 362);
+            this.pictureBox9.MaximumSize = new System.Drawing.Size(135, 65);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(100, 40);
+            this.pictureBox9.Size = new System.Drawing.Size(75, 32);
             this.pictureBox9.TabIndex = 23;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
@@ -205,11 +207,10 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::gameLearning.Properties.Resources.btnRanking;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(550, 446);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.MaximumSize = new System.Drawing.Size(180, 80);
+            this.pictureBox4.Location = new System.Drawing.Point(412, 362);
+            this.pictureBox4.MaximumSize = new System.Drawing.Size(135, 65);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 40);
+            this.pictureBox4.Size = new System.Drawing.Size(75, 32);
             this.pictureBox4.TabIndex = 25;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
@@ -219,11 +220,10 @@
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(550, 373);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox7.MaximumSize = new System.Drawing.Size(180, 80);
+            this.pictureBox7.Location = new System.Drawing.Point(412, 303);
+            this.pictureBox7.MaximumSize = new System.Drawing.Size(135, 65);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(100, 40);
+            this.pictureBox7.Size = new System.Drawing.Size(75, 32);
             this.pictureBox7.TabIndex = 24;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
@@ -233,11 +233,10 @@
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.BackgroundImage = global::gameLearning.Properties.Resources.btnRanking;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(908, 446);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox10.MaximumSize = new System.Drawing.Size(180, 80);
+            this.pictureBox10.Location = new System.Drawing.Point(681, 362);
+            this.pictureBox10.MaximumSize = new System.Drawing.Size(135, 65);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(100, 40);
+            this.pictureBox10.Size = new System.Drawing.Size(75, 32);
             this.pictureBox10.TabIndex = 27;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
@@ -247,21 +246,21 @@
             this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox11.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
             this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox11.Location = new System.Drawing.Point(908, 373);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox11.MaximumSize = new System.Drawing.Size(180, 80);
+            this.pictureBox11.Location = new System.Drawing.Point(681, 303);
+            this.pictureBox11.MaximumSize = new System.Drawing.Size(135, 65);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(100, 40);
+            this.pictureBox11.Size = new System.Drawing.Size(75, 32);
             this.pictureBox11.TabIndex = 26;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // telaJogos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::gameLearning.Properties.Resources.mainBack;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.ClientSize = new System.Drawing.Size(886, 510);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox4);
@@ -277,6 +276,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gameLearningLogoMenor);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "telaJogos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "telaJogos";
