@@ -47,12 +47,11 @@
             pictureBox2.BackColor = System.Drawing.Color.Transparent;
             pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            pictureBox2.Location = new System.Drawing.Point(510, 500);
-            pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            pictureBox2.MaximumSize = new System.Drawing.Size(180, 80);
+            pictureBox2.Location = new System.Drawing.Point(382, 406);
+            pictureBox2.MaximumSize = new System.Drawing.Size(135, 65);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
-            pictureBox2.Size = new System.Drawing.Size(180, 80);
+            pictureBox2.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
+            pictureBox2.Size = new System.Drawing.Size(135, 65);
             pictureBox2.TabIndex = 12;
             pictureBox2.TabStop = false;
             pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
@@ -62,11 +61,10 @@
             this.gameLogoMenor.BackColor = System.Drawing.Color.Transparent;
             this.gameLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLogoMenor.BackgroundImage")));
             this.gameLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gameLogoMenor.Location = new System.Drawing.Point(30, 30);
-            this.gameLogoMenor.Margin = new System.Windows.Forms.Padding(4);
-            this.gameLogoMenor.MaximumSize = new System.Drawing.Size(120, 60);
+            this.gameLogoMenor.Location = new System.Drawing.Point(22, 24);
+            this.gameLogoMenor.MaximumSize = new System.Drawing.Size(90, 49);
             this.gameLogoMenor.Name = "gameLogoMenor";
-            this.gameLogoMenor.Size = new System.Drawing.Size(120, 60);
+            this.gameLogoMenor.Size = new System.Drawing.Size(90, 49);
             this.gameLogoMenor.TabIndex = 1;
             this.gameLogoMenor.TabStop = false;
             this.gameLogoMenor.Click += new System.EventHandler(this.gameLogoMenor_Click);
@@ -76,9 +74,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(168, 144);
+            this.label1.Location = new System.Drawing.Point(132, 100);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(867, 369);
+            this.label1.Size = new System.Drawing.Size(650, 300);
             this.label1.TabIndex = 2;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -89,11 +88,10 @@
             this.btnCadastro.BackColor = System.Drawing.Color.Transparent;
             this.btnCadastro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastro.BackgroundImage")));
             this.btnCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCadastro.Location = new System.Drawing.Point(510, 40);
-            this.btnCadastro.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCadastro.MaximumSize = new System.Drawing.Size(180, 80);
+            this.btnCadastro.Location = new System.Drawing.Point(382, 32);
+            this.btnCadastro.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnCadastro.Name = "btnCadastro";
-            this.btnCadastro.Size = new System.Drawing.Size(180, 80);
+            this.btnCadastro.Size = new System.Drawing.Size(135, 65);
             this.btnCadastro.TabIndex = 5;
             this.btnCadastro.TabStop = false;
             // 
@@ -105,20 +103,20 @@
             // 
             // telaSobre
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.ClientSize = new System.Drawing.Size(886, 510);
             this.Controls.Add(pictureBox2);
             this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gameLogoMenor);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1200, 675);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(904, 556);
             this.Name = "telaSobre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "telaSobre";
+            this.Text = "TelaSobre";
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCadastro)).EndInit();
