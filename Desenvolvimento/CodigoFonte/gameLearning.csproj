@@ -59,60 +59,111 @@
   <ItemGroup>
     <Compile Include="Aluno.cs" />
     <Compile Include="Conexao.cs" />
-    <Compile Include="Jogo.cs" />
-    <Compile Include="Professor.cs" />
-    <Compile Include="telaCadastro.cs">
+    <Compile Include="telas\telaCriarAtividade.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="telaCadastro.Designer.cs">
+    <Compile Include="telas\telaCriarAtividade.Designer.cs">
+      <DependentUpon>telaCriarAtividade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\telaDadosTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\telaDadosTurma.Designer.cs">
+      <DependentUpon>telaDadosTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\telaManterAtividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\telaManterAtividades.Designer.cs">
+      <DependentUpon>telaManterAtividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\TelaManterTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\TelaManterTurma.Designer.cs">
+      <DependentUpon>TelaManterTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\telaAtividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\telaAtividades.Designer.cs">
+      <DependentUpon>telaAtividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo.cs" />
+    <Compile Include="Professor.cs" />
+    <Compile Include="telas\telaCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\telaCadastro.Designer.cs">
       <DependentUpon>telaCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="telaInicial.cs">
+    <Compile Include="telas\telaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="telaInicial.Designer.cs">
+    <Compile Include="telas\telaInicial.Designer.cs">
       <DependentUpon>telaInicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="telaJogos.cs">
+    <Compile Include="telas\telaJogos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="telaJogos.Designer.cs">
+    <Compile Include="telas\telaJogos.Designer.cs">
       <DependentUpon>telaJogos.cs</DependentUpon>
     </Compile>
-    <Compile Include="telaLogadoAluno.cs">
+    <Compile Include="telas\telaLogadoAluno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="telaLogadoAluno.Designer.cs">
+    <Compile Include="telas\telaLogadoAluno.Designer.cs">
       <DependentUpon>telaLogadoAluno.cs</DependentUpon>
     </Compile>
-    <Compile Include="telaLogadoProfessor.cs">
+    <Compile Include="telas\telaLogadoProfessor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="telaLogadoProfessor.Designer.cs">
+    <Compile Include="telas\telaLogadoProfessor.Designer.cs">
       <DependentUpon>telaLogadoProfessor.cs</DependentUpon>
     </Compile>
-    <Compile Include="telaLogin.cs">
+    <Compile Include="telas\telaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="telaLogin.Designer.cs">
+    <Compile Include="telas\telaLogin.Designer.cs">
       <DependentUpon>telaLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="telaPreviaJogo.cs">
+    <Compile Include="telas\telaPontuacao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="telaPreviaJogo.Designer.cs">
+    <Compile Include="telas\telaPontuacao.Designer.cs">
+      <DependentUpon>telaPontuacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telas\telaPreviaJogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telas\telaPreviaJogo.Designer.cs">
       <DependentUpon>telaPreviaJogo.cs</DependentUpon>
     </Compile>
-    <Compile Include="telaSobre.cs">
+    <Compile Include="telas\telaSobre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="telaSobre.Designer.cs">
+    <Compile Include="telas\telaSobre.Designer.cs">
       <DependentUpon>telaSobre.cs</DependentUpon>
     </Compile>
     <Compile Include="Turma.cs" />
     <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="telas\telaCriarAtividade.resx">
+      <DependentUpon>telaCriarAtividade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\telaDadosTurma.resx">
+      <DependentUpon>telaDadosTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\telaManterAtividades.resx">
+      <DependentUpon>telaManterAtividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\TelaManterTurma.resx">
+      <DependentUpon>TelaManterTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\telaAtividades.resx">
+      <DependentUpon>telaAtividades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -123,28 +174,31 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="telaCadastro.resx">
+    <EmbeddedResource Include="telas\telaCadastro.resx">
       <DependentUpon>telaCadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="telaInicial.resx">
+    <EmbeddedResource Include="telas\telaInicial.resx">
       <DependentUpon>telaInicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="telaJogos.resx">
+    <EmbeddedResource Include="telas\telaJogos.resx">
       <DependentUpon>telaJogos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="telaLogadoAluno.resx">
+    <EmbeddedResource Include="telas\telaLogadoAluno.resx">
       <DependentUpon>telaLogadoAluno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="telaLogadoProfessor.resx">
+    <EmbeddedResource Include="telas\telaLogadoProfessor.resx">
       <DependentUpon>telaLogadoProfessor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="telaLogin.resx">
+    <EmbeddedResource Include="telas\telaLogin.resx">
       <DependentUpon>telaLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="telaPreviaJogo.resx">
+    <EmbeddedResource Include="telas\telaPontuacao.resx">
+      <DependentUpon>telaPontuacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telas\telaPreviaJogo.resx">
       <DependentUpon>telaPreviaJogo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="telaSobre.resx">
+    <EmbeddedResource Include="telas\telaSobre.resx">
       <DependentUpon>telaSobre.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
