@@ -30,9 +30,7 @@ CREATE TABLE professor(
 CREATE TABLE turma(
 	cod_turma serial primary key,
 	curso VARCHAR(200),
-	disciplina VARCHAR(200),
 	semestre smallint,
-	ano smallint,
 	Prof integer,
 	CONSTRAINT cod_Prof_turma FOREIGN KEY(Prof)
 	REFERENCES professor(cod_professor) MATCH SIMPLE

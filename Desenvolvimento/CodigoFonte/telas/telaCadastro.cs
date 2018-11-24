@@ -85,5 +85,21 @@ namespace gameLearning
         {
 
         }
+
+        private void radioProf_CheckedChanged(object sender, EventArgs e)
+        {
+            label5.Visible = false;
+            label6.Visible = false;
+            campoCurso.Visible = false;
+            campoSemestre.Visible = false;
+        }
+
+        private void radioAluno_CheckedChanged(object sender, EventArgs e)
+        {
+            label5.Visible = true;
+            label6.Visible = true;
+            campoCurso.Visible = true;
+            campoSemestre.Visible = true;
+        }
     }
 }
