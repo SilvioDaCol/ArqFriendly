@@ -65,11 +65,11 @@
     <Compile Include="telas\telaCriarAtividade.Designer.cs">
       <DependentUpon>telaCriarAtividade.cs</DependentUpon>
     </Compile>
-    <Compile Include="telas\telaDadosTurma.cs">
+    <Compile Include="telas\telaAlunosTurma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="telas\telaDadosTurma.Designer.cs">
-      <DependentUpon>telaDadosTurma.cs</DependentUpon>
+    <Compile Include="telas\telaAlunosTurma.Designer.cs">
+      <DependentUpon>telaAlunosTurma.cs</DependentUpon>
     </Compile>
     <Compile Include="telas\telaManterAtividades.cs">
       <SubType>Form</SubType>
@@ -152,8 +152,8 @@
     <EmbeddedResource Include="telas\telaCriarAtividade.resx">
       <DependentUpon>telaCriarAtividade.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="telas\telaDadosTurma.resx">
-      <DependentUpon>telaDadosTurma.cs</DependentUpon>
+    <EmbeddedResource Include="telas\telaAlunosTurma.resx">
+      <DependentUpon>telaAlunosTurma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telas\telaManterAtividades.resx">
       <DependentUpon>telaManterAtividades.cs</DependentUpon>
