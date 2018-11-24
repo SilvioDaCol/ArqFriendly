@@ -1,15 +1,15 @@
 Posicao:	Pontuacao:	Nome:
 1 º		100		UIEHFJFGF
 
-2 º		0		[VAZIO]
+2 º		100		HSJFHSDJF
 
-3 º		0		[VAZIO]
+3 º		100		DKJFKJDSN
 
-4 º		0		[VAZIO]
+4 º		100		HGJJGYG
 
-5 º		0		[VAZIO]
+5 º		100		SDNKJNDG
 
-6 º		0		[VAZIO]
+6 º		100		DJSFGJSDS
 
 7 º		0		[VAZIO]
 

@@ -17,7 +17,7 @@ namespace gameLearning
 
         private string executaJogo(string path, string exe)
         {
-            string resultado;
+            string resultado = "";
             System.Diagnostics.ProcessStartInfo processStartInfo = new System.Diagnostics.ProcessStartInfo("CMD.exe");
             processStartInfo.RedirectStandardInput = true;
             processStartInfo.RedirectStandardOutput = true;
@@ -30,14 +30,19 @@ namespace gameLearning
             // line added to stop process from hanging on ReadToEnd()
             process.StandardInput.Close();
 
-            resultado = process.StandardOutput.ReadToEnd();
+            resultado = process.StandardOutput.ReadToEnd();            
 
             /*
              * >>>AQUI<<<
              * PROCESSAR DADOS DEVOLVIDOS PELO JOGO E VALIDAR RESULTADO
              * ARMAZAENAR VALOR OBTIDO NA STRING RESULTADO
              */
-            pontuacao = resultado;
+            if (resultado.Contains("PONTO-INICIO") && resultado.Contains("PONTO-FIM"))
+            {
+                int pontuacaoIndex = resultado.IndexOf("PONTO-INICIO")+12;
+                int pontuacaoLenght = resultado.IndexOf("PONTO-FIM") - pontuacaoIndex;
+                pontuacao = resultado.Substring(pontuacaoIndex, pontuacaoLenght);    
+            }
 
             return pontuacao;
         }
