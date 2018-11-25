@@ -33,22 +33,22 @@
             System.Windows.Forms.PictureBox btnCancelar;
             this.gameLearningLogoMenor = new System.Windows.Forms.PictureBox();
             this.btnCadastro = new System.Windows.Forms.PictureBox();
-            this.raMatricula = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.radioAluno = new System.Windows.Forms.RadioButton();
-            this.radioProf = new System.Windows.Forms.RadioButton();
+            this.labelNome = new System.Windows.Forms.Label();
+            this.labelMatricula = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.campoMatriculaRa = new System.Windows.Forms.TextBox();
             this.campoNome = new System.Windows.Forms.TextBox();
-            this.campoRaMatricula = new System.Windows.Forms.TextBox();
-            this.campoCampus = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.campoEmail = new System.Windows.Forms.TextBox();
+            this.labelSenha = new System.Windows.Forms.Label();
             this.campoSenha = new System.Windows.Forms.TextBox();
             this.campoConfirmaSenha = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.campoCurso = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.campoSemestre = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelConfSenha = new System.Windows.Forms.Label();
+            this.labelCurso = new System.Windows.Forms.Label();
+            this.labelSemestre = new System.Windows.Forms.Label();
+            this.labelProfAluno = new System.Windows.Forms.Label();
+            this.campoOpcaoAlunoProfessor = new System.Windows.Forms.ComboBox();
+            this.campoCurso = new System.Windows.Forms.ComboBox();
+            this.campoSemestre = new System.Windows.Forms.ComboBox();
             btnEnviar = new System.Windows.Forms.PictureBox();
             btnCancelar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(btnEnviar)).BeginInit();
@@ -70,7 +70,7 @@
             btnEnviar.Size = new System.Drawing.Size(135, 65);
             btnEnviar.TabIndex = 18;
             btnEnviar.TabStop = false;
-            btnEnviar.Click += new System.EventHandler(this.pictureBox3_Click);
+            btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // btnCancelar
             // 
@@ -106,147 +106,114 @@
             this.btnCadastro.BackColor = System.Drawing.Color.Transparent;
             this.btnCadastro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastro.BackgroundImage")));
             this.btnCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCadastro.Enabled = false;
             this.btnCadastro.Location = new System.Drawing.Point(382, 32);
             this.btnCadastro.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(135, 65);
             this.btnCadastro.TabIndex = 4;
             this.btnCadastro.TabStop = false;
-            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
-            // raMatricula
+            // labelNome
             // 
-            this.raMatricula.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.raMatricula.AutoSize = true;
-            this.raMatricula.BackColor = System.Drawing.Color.Transparent;
-            this.raMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.raMatricula.ForeColor = System.Drawing.Color.PaleGreen;
-            this.raMatricula.Location = new System.Drawing.Point(343, 160);
-            this.raMatricula.Name = "raMatricula";
-            this.raMatricula.Size = new System.Drawing.Size(65, 20);
-            this.raMatricula.TabIndex = 9;
-            this.raMatricula.Text = "NOME:";
+            this.labelNome.AutoSize = true;
+            this.labelNome.BackColor = System.Drawing.Color.Transparent;
+            this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNome.ForeColor = System.Drawing.Color.PaleGreen;
+            this.labelNome.Location = new System.Drawing.Point(343, 160);
+            this.labelNome.Name = "labelNome";
+            this.labelNome.Size = new System.Drawing.Size(65, 20);
+            this.labelNome.TabIndex = 9;
+            this.labelNome.Text = "NOME:";
             // 
-            // label1
+            // labelMatricula
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelMatricula.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label1.Location = new System.Drawing.Point(267, 190);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 20);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "MATRÍCULA/RA";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelMatricula.AutoSize = true;
+            this.labelMatricula.BackColor = System.Drawing.Color.Transparent;
+            this.labelMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMatricula.ForeColor = System.Drawing.Color.PaleGreen;
+            this.labelMatricula.Location = new System.Drawing.Point(267, 190);
+            this.labelMatricula.Name = "labelMatricula";
+            this.labelMatricula.Size = new System.Drawing.Size(141, 20);
+            this.labelMatricula.TabIndex = 10;
+            this.labelMatricula.Text = "MATRÍCULA/RA";
             // 
-            // label2
+            // labelEmail
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label2.Location = new System.Drawing.Point(339, 220);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "E-MAIL";
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.BackColor = System.Drawing.Color.Transparent;
+            this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmail.ForeColor = System.Drawing.Color.PaleGreen;
+            this.labelEmail.Location = new System.Drawing.Point(339, 220);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(69, 20);
+            this.labelEmail.TabIndex = 11;
+            this.labelEmail.Text = "E-MAIL";
             // 
-            // radioAluno
+            // campoMatriculaRa
             // 
-            this.radioAluno.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioAluno.AutoSize = true;
-            this.radioAluno.BackColor = System.Drawing.Color.Transparent;
-            this.radioAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.radioAluno.ForeColor = System.Drawing.Color.SpringGreen;
-            this.radioAluno.Location = new System.Drawing.Point(493, 115);
-            this.radioAluno.Name = "radioAluno";
-            this.radioAluno.Size = new System.Drawing.Size(131, 35);
-            this.radioAluno.TabIndex = 13;
-            this.radioAluno.TabStop = true;
-            this.radioAluno.Text = "ALUNO";
-            this.radioAluno.UseVisualStyleBackColor = false;
-            this.radioAluno.CheckedChanged += new System.EventHandler(this.radioAluno_CheckedChanged);
-            // 
-            // radioProf
-            // 
-            this.radioProf.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioProf.AutoSize = true;
-            this.radioProf.BackColor = System.Drawing.Color.Transparent;
-            this.radioProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.radioProf.ForeColor = System.Drawing.Color.SpringGreen;
-            this.radioProf.Location = new System.Drawing.Point(284, 115);
-            this.radioProf.Name = "radioProf";
-            this.radioProf.Size = new System.Drawing.Size(212, 35);
-            this.radioProf.TabIndex = 12;
-            this.radioProf.TabStop = true;
-            this.radioProf.Text = "PROFESSOR";
-            this.radioProf.UseVisualStyleBackColor = false;
-            this.radioProf.CheckedChanged += new System.EventHandler(this.radioProf_CheckedChanged);
+            this.campoMatriculaRa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.campoMatriculaRa.BackColor = System.Drawing.Color.PaleGreen;
+            this.campoMatriculaRa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.campoMatriculaRa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoMatriculaRa.Location = new System.Drawing.Point(414, 188);
+            this.campoMatriculaRa.MaximumSize = new System.Drawing.Size(220, 41);
+            this.campoMatriculaRa.Name = "campoMatriculaRa";
+            this.campoMatriculaRa.Size = new System.Drawing.Size(220, 26);
+            this.campoMatriculaRa.TabIndex = 15;
+            this.campoMatriculaRa.TextChanged += new System.EventHandler(this.campoNome_TextChanged);
             // 
             // campoNome
             // 
-            this.campoNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.campoNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.campoNome.BackColor = System.Drawing.Color.PaleGreen;
             this.campoNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoNome.Location = new System.Drawing.Point(414, 188);
+            this.campoNome.Location = new System.Drawing.Point(414, 158);
             this.campoNome.MaximumSize = new System.Drawing.Size(220, 41);
             this.campoNome.Name = "campoNome";
             this.campoNome.Size = new System.Drawing.Size(220, 26);
-            this.campoNome.TabIndex = 15;
-            this.campoNome.TextChanged += new System.EventHandler(this.campoNome_TextChanged);
+            this.campoNome.TabIndex = 14;
             // 
-            // campoRaMatricula
+            // campoEmail
             // 
-            this.campoRaMatricula.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.campoRaMatricula.BackColor = System.Drawing.Color.PaleGreen;
-            this.campoRaMatricula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.campoRaMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoRaMatricula.Location = new System.Drawing.Point(414, 158);
-            this.campoRaMatricula.MaximumSize = new System.Drawing.Size(220, 41);
-            this.campoRaMatricula.Name = "campoRaMatricula";
-            this.campoRaMatricula.Size = new System.Drawing.Size(220, 26);
-            this.campoRaMatricula.TabIndex = 14;
-            // 
-            // campoCampus
-            // 
-            this.campoCampus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.campoEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.campoCampus.BackColor = System.Drawing.Color.PaleGreen;
-            this.campoCampus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.campoCampus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoCampus.Location = new System.Drawing.Point(414, 218);
-            this.campoCampus.MaximumSize = new System.Drawing.Size(220, 41);
-            this.campoCampus.Name = "campoCampus";
-            this.campoCampus.Size = new System.Drawing.Size(220, 26);
-            this.campoCampus.TabIndex = 16;
+            this.campoEmail.BackColor = System.Drawing.Color.PaleGreen;
+            this.campoEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.campoEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoEmail.Location = new System.Drawing.Point(414, 218);
+            this.campoEmail.MaximumSize = new System.Drawing.Size(220, 41);
+            this.campoEmail.Name = "campoEmail";
+            this.campoEmail.Size = new System.Drawing.Size(220, 26);
+            this.campoEmail.TabIndex = 16;
             // 
-            // label3
+            // labelSenha
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label3.Location = new System.Drawing.Point(338, 254);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 20);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "SENHA";
+            this.labelSenha.AutoSize = true;
+            this.labelSenha.BackColor = System.Drawing.Color.Transparent;
+            this.labelSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSenha.ForeColor = System.Drawing.Color.PaleGreen;
+            this.labelSenha.Location = new System.Drawing.Point(338, 254);
+            this.labelSenha.Name = "labelSenha";
+            this.labelSenha.Size = new System.Drawing.Size(70, 20);
+            this.labelSenha.TabIndex = 19;
+            this.labelSenha.Text = "SENHA";
             // 
             // campoSenha
             // 
@@ -280,82 +247,118 @@
             this.campoConfirmaSenha.TabIndex = 22;
             this.campoConfirmaSenha.UseSystemPasswordChar = true;
             // 
-            // label4
+            // labelConfSenha
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelConfSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label4.Location = new System.Drawing.Point(223, 282);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 20);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "CONFIRME A SENHA";
+            this.labelConfSenha.AutoSize = true;
+            this.labelConfSenha.BackColor = System.Drawing.Color.Transparent;
+            this.labelConfSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConfSenha.ForeColor = System.Drawing.Color.PaleGreen;
+            this.labelConfSenha.Location = new System.Drawing.Point(223, 282);
+            this.labelConfSenha.Name = "labelConfSenha";
+            this.labelConfSenha.Size = new System.Drawing.Size(185, 20);
+            this.labelConfSenha.TabIndex = 21;
+            this.labelConfSenha.Text = "CONFIRME A SENHA";
+            // 
+            // labelCurso
+            // 
+            this.labelCurso.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCurso.AutoSize = true;
+            this.labelCurso.BackColor = System.Drawing.Color.Transparent;
+            this.labelCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCurso.ForeColor = System.Drawing.Color.PaleGreen;
+            this.labelCurso.Location = new System.Drawing.Point(336, 323);
+            this.labelCurso.Name = "labelCurso";
+            this.labelCurso.Size = new System.Drawing.Size(72, 20);
+            this.labelCurso.TabIndex = 23;
+            this.labelCurso.Text = "CURSO";
+            this.labelCurso.Visible = false;
+            // 
+            // labelSemestre
+            // 
+            this.labelSemestre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelSemestre.AutoSize = true;
+            this.labelSemestre.BackColor = System.Drawing.Color.Transparent;
+            this.labelSemestre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSemestre.ForeColor = System.Drawing.Color.PaleGreen;
+            this.labelSemestre.Location = new System.Drawing.Point(302, 361);
+            this.labelSemestre.Name = "labelSemestre";
+            this.labelSemestre.Size = new System.Drawing.Size(106, 20);
+            this.labelSemestre.TabIndex = 25;
+            this.labelSemestre.Text = "SEMESTRE";
+            this.labelSemestre.Visible = false;
+            // 
+            // labelProfAluno
+            // 
+            this.labelProfAluno.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelProfAluno.AutoSize = true;
+            this.labelProfAluno.BackColor = System.Drawing.Color.Transparent;
+            this.labelProfAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelProfAluno.ForeColor = System.Drawing.Color.PaleGreen;
+            this.labelProfAluno.Location = new System.Drawing.Point(183, 128);
+            this.labelProfAluno.Name = "labelProfAluno";
+            this.labelProfAluno.Size = new System.Drawing.Size(225, 20);
+            this.labelProfAluno.TabIndex = 27;
+            this.labelProfAluno.Text = "PROFESSOR OU ALUNO: ";
+            // 
+            // campoOpcaoAlunoProfessor
+            // 
+            this.campoOpcaoAlunoProfessor.BackColor = System.Drawing.Color.PaleGreen;
+            this.campoOpcaoAlunoProfessor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoOpcaoAlunoProfessor.FormattingEnabled = true;
+            this.campoOpcaoAlunoProfessor.Items.AddRange(new object[] {
+            "PROFESSOR",
+            "ALUNO"});
+            this.campoOpcaoAlunoProfessor.Location = new System.Drawing.Point(414, 125);
+            this.campoOpcaoAlunoProfessor.Name = "campoOpcaoAlunoProfessor";
+            this.campoOpcaoAlunoProfessor.Size = new System.Drawing.Size(220, 28);
+            this.campoOpcaoAlunoProfessor.TabIndex = 29;
+            this.campoOpcaoAlunoProfessor.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // campoCurso
             // 
-            this.campoCurso.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.campoCurso.BackColor = System.Drawing.Color.PaleGreen;
-            this.campoCurso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoCurso.Location = new System.Drawing.Point(414, 313);
-            this.campoCurso.MaximumSize = new System.Drawing.Size(220, 41);
+            this.campoCurso.FormattingEnabled = true;
+            this.campoCurso.Items.AddRange(new object[] {
+            "TADS",
+            "ELETR",
+            "MEC",
+            "ENG",
+            "MED"});
+            this.campoCurso.Location = new System.Drawing.Point(414, 314);
             this.campoCurso.Name = "campoCurso";
-            this.campoCurso.Size = new System.Drawing.Size(220, 26);
-            this.campoCurso.TabIndex = 24;
+            this.campoCurso.Size = new System.Drawing.Size(220, 28);
+            this.campoCurso.TabIndex = 30;
             this.campoCurso.Visible = false;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label5.Location = new System.Drawing.Point(336, 323);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 20);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "CURSO";
-            this.label5.Visible = false;
             // 
             // campoSemestre
             // 
-            this.campoSemestre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.campoSemestre.BackColor = System.Drawing.Color.PaleGreen;
-            this.campoSemestre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoSemestre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoSemestre.Location = new System.Drawing.Point(414, 351);
-            this.campoSemestre.MaximumSize = new System.Drawing.Size(220, 41);
+            this.campoSemestre.FormattingEnabled = true;
+            this.campoSemestre.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.campoSemestre.Location = new System.Drawing.Point(414, 353);
             this.campoSemestre.Name = "campoSemestre";
-            this.campoSemestre.Size = new System.Drawing.Size(220, 26);
-            this.campoSemestre.TabIndex = 26;
+            this.campoSemestre.Size = new System.Drawing.Size(220, 28);
+            this.campoSemestre.TabIndex = 31;
             this.campoSemestre.Visible = false;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.PaleGreen;
-            this.label6.Location = new System.Drawing.Point(302, 361);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 20);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "SEMESTRE";
-            this.label6.Visible = false;
             // 
             // telaCadastro
             // 
@@ -365,23 +368,23 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(886, 510);
             this.Controls.Add(this.campoSemestre);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.campoCurso);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.campoOpcaoAlunoProfessor);
+            this.Controls.Add(this.labelProfAluno);
+            this.Controls.Add(this.labelSemestre);
+            this.Controls.Add(this.labelCurso);
             this.Controls.Add(this.campoConfirmaSenha);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelConfSenha);
             this.Controls.Add(this.campoSenha);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelSenha);
             this.Controls.Add(btnEnviar);
             this.Controls.Add(btnCancelar);
-            this.Controls.Add(this.campoCampus);
+            this.Controls.Add(this.campoEmail);
+            this.Controls.Add(this.campoMatriculaRa);
             this.Controls.Add(this.campoNome);
-            this.Controls.Add(this.campoRaMatricula);
-            this.Controls.Add(this.radioAluno);
-            this.Controls.Add(this.radioProf);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.raMatricula);
+            this.Controls.Add(this.labelEmail);
+            this.Controls.Add(this.labelMatricula);
+            this.Controls.Add(this.labelNome);
             this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.gameLearningLogoMenor);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -402,21 +405,21 @@
 
         private System.Windows.Forms.PictureBox gameLearningLogoMenor;
         private System.Windows.Forms.PictureBox btnCadastro;
-        private System.Windows.Forms.Label raMatricula;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioAluno;
-        private System.Windows.Forms.RadioButton radioProf;
+        private System.Windows.Forms.Label labelNome;
+        private System.Windows.Forms.Label labelMatricula;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.TextBox campoMatriculaRa;
         private System.Windows.Forms.TextBox campoNome;
-        private System.Windows.Forms.TextBox campoRaMatricula;
-        private System.Windows.Forms.TextBox campoCampus;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox campoEmail;
+        private System.Windows.Forms.Label labelSenha;
         private System.Windows.Forms.TextBox campoSenha;
         private System.Windows.Forms.TextBox campoConfirmaSenha;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox campoCurso;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox campoSemestre;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelConfSenha;
+        private System.Windows.Forms.Label labelCurso;
+        private System.Windows.Forms.Label labelSemestre;
+        private System.Windows.Forms.Label labelProfAluno;
+        private System.Windows.Forms.ComboBox campoOpcaoAlunoProfessor;
+        private System.Windows.Forms.ComboBox campoCurso;
+        private System.Windows.Forms.ComboBox campoSemestre;
     }
 }

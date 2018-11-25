@@ -250,3 +250,9 @@ C:\Users\Silvio\Documents\Google Drive\Carreira\Cursos\Software\Curso_GIT\EducaA
 C:\Users\Silvio\Documents\Google Drive\Carreira\Cursos\Software\Curso_GIT\EducaAtiva\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.exercicios.resources
 C:\Users\Silvio\Documents\Google Drive\Carreira\Cursos\Software\Curso_GIT\EducaAtiva\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telaAtividades.resources
 C:\Users\Silvio\Documents\Google Drive\Carreira\Cursos\Software\Curso_GIT\EducaAtiva\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telas.telaPontuacao.resources
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telas.telaCriarAtividade.resources
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telaDadosTurma.resources
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telaManterAtividades.resources
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.exercicios.resources
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telaAtividades.resources
+C:\Users\phbel\Desktop\ADS-2018-IFSP\2_SEMESTRE\PROJETO INTERDISCIPLINAR\ArqFriendly\Desenvolvimento\CodigoFonte\obj\Debug\gameLearning.telas.telaPontuacao.resources

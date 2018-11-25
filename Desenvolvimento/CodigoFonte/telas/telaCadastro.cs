@@ -17,28 +17,6 @@ namespace gameLearning
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCadastro_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-
-
-        }
-
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             this.Hide();
@@ -55,51 +33,91 @@ namespace gameLearning
             voltarInicio.Show();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-          
-
-            if((((campoRaMatricula.Text == "")||(campoNome.Text == "")||(campoCampus.Text == "")||(campoSenha.Text == ""))))
-            {
-                MessageBox.Show("Existem campos não preenchidos!!!");
-               
-
-            }
-
-            if ((((campoRaMatricula.Text != "")&&(campoNome.Text != "")&&(campoCampus.Text != "")&&(campoSenha.Text != ""))))
-            {
-                
-                MessageBox.Show("Dados Enviados com Sucesso!");
-                this.Hide();
-                telaInicial voltarInicio = new telaInicial();
-                voltarInicio.Closed += (s, args) => this.Close();
-                voltarInicio.Show();
-                
-                
-            }  
-
-        }
-
         private void campoNome_TextChanged(object sender, EventArgs e)
         {
-
+            campoMatriculaRa.MaxLength = 7;
+            
         }
+
 
         private void radioProf_CheckedChanged(object sender, EventArgs e)
         {
-            label5.Visible = false;
-            label6.Visible = false;
+            labelCurso.Visible = false;
+            labelSemestre.Visible = false;
             campoCurso.Visible = false;
             campoSemestre.Visible = false;
         }
 
         private void radioAluno_CheckedChanged(object sender, EventArgs e)
         {
-            label5.Visible = true;
-            label6.Visible = true;
+            labelCurso.Visible = true;
+            labelSemestre.Visible = true;
             campoCurso.Visible = true;
             campoSemestre.Visible = true;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (campoOpcaoAlunoProfessor.SelectedIndex == 0)//professor
+            {
+                campoCurso.Visible = !true;
+                campoSemestre.Visible = !true;
+                labelCurso.Visible = !true;
+                labelSemestre.Visible = !true;
+
+            }
+            if (campoOpcaoAlunoProfessor.SelectedIndex == 1)//aluno
+            {
+                campoCurso.Visible = true;
+                campoSemestre.Visible = true;
+                labelCurso.Visible = true;
+                labelSemestre.Visible = true;
+                
+            }
+            
+        }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            
+            //VALIDA SE OS CAMPOS ESTÃO PREENCHIDOS
+
+            if ((((campoNome.Text == "") || (campoMatriculaRa.Text == "") || (campoEmail.Text == "") || (campoSenha.Text == ""))))
+            {
+                MessageBox.Show("Existem campos não preenchidos!!!");
+            }
+
+            //SE ESTIVER OK... ENVIA PARA O BANCO PARA EXECUTAR O SCRIPT DE CRUD
+            if ((((campoNome.Text != "") && (campoMatriculaRa.Text != "") && (campoEmail.Text != "") && (campoSenha.Text != ""))))
+            {
+
+                string incluirNovoUsuario; //string usada para informar qual será o CRUD, referenciado na classe Conexão
+
+                if(campoOpcaoAlunoProfessor.SelectedIndex == 0)
+                {
+                    incluirNovoUsuario = campoNome.Text + "," + campoMatriculaRa.Text + "," + campoEmail.Text + "," + campoSenha.Text;
+                    Conexao novaconexao = new Conexao(incluirNovoUsuario);
+                    Console.WriteLine(incluirNovoUsuario);
+                }
+                if (campoOpcaoAlunoProfessor.SelectedIndex == 1)
+                {
+                    incluirNovoUsuario = campoNome.Text + "," + campoMatriculaRa.Text + "," + campoEmail.Text + "," + campoSenha.Text + "," + campoCurso.SelectedItem + "," + campoSemestre.SelectedIndex;
+                    Conexao novaconexao = new Conexao(incluirNovoUsuario);
+                    Console.WriteLine(incluirNovoUsuario);
+
+                }
+
+
+                MessageBox.Show("Dados Enviados com Sucesso!");
+
+                this.Hide();
+                telaInicial voltarInicio = new telaInicial();
+                voltarInicio.Closed += (s, args) => this.Close();
+                voltarInicio.Show();
+               
+
+            }
+
         }
     }
 }
