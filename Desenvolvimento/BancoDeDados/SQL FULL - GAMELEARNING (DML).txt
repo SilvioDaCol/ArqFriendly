@@ -7,13 +7,15 @@ CREATE SCHEMA public;
 CREATE TABLE usuario(
 	cod_user serial primary key,
 	nome_user VARCHAR(50) not null,
-	email_user VARCHAR(200) not null,
+	email_user VARCHAR(200) unique not null,
 	senha_user VARCHAR(30) not null 
 );
 
 CREATE TABLE aluno(
 	cod_aluno serial primary key,
 	ra_aluno VARCHAR(30) unique not null,
+	curso VARCHAR (50) not null,
+	semestre VARCHAR (3) not null, 
 	Usuario integer unique not null,
 	CONSTRAINT ch_estr_de_usuario_em_aluno FOREIGN KEY(Usuario)
 	REFERENCES usuario(cod_user) MATCH SIMPLE 
@@ -22,8 +24,8 @@ CREATE TABLE aluno(
 CREATE TABLE professor(
 	cod_professor serial primary key,
 	registro VARCHAR(30) unique not null,
-	Usuario integer not null,
-	CONSTRAINT ch_estr_de_usuario_em_professor FOREIGN KEY(Usuario)
+	usuario integer not null,
+	CONSTRAINT ch_estr_de_usuario_em_professor FOREIGN KEY(usuario)
 	REFERENCES usuario(cod_user) MATCH SIMPLE 
 );
 

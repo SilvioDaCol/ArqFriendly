@@ -79,45 +79,50 @@ namespace gameLearning
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            
-            //VALIDA SE OS CAMPOS ESTÃO PREENCHIDOS
+            string respostaBanco = "";
+            //SE ESTIVER OK... ENVIA PARA O BANCO PARA EXECUTAR O SCRIPT DE CRUD
+            if ((campoNome.Text != "") && (campoMatriculaRa.Text != "") && (campoEmail.Text != "") && (campoSenha.Text != ""))
+            {
 
-            if ((((campoNome.Text == "") || (campoMatriculaRa.Text == "") || (campoEmail.Text == "") || (campoSenha.Text == ""))))
+                if (campoSenha.Text == campoConfirmaSenha.Text)
+                {
+                    if (campoOpcaoAlunoProfessor.Text == "PROFESSOR")
+                    {
+                        Professor prof = new Professor();
+                        respostaBanco =  prof.cadastraProfessor(campoNome.Text, campoMatriculaRa.Text, campoEmail.Text, campoSenha.Text, campoConfirmaSenha.Text);
+                    }
+                    else if (campoOpcaoAlunoProfessor.Text == "ALUNO")
+                    {
+                        Aluno aluno = new Aluno();
+                        respostaBanco = aluno.cadastraAluno(campoNome.Text, campoMatriculaRa.Text, campoEmail.Text, campoSenha.Text, campoConfirmaSenha.Text, campoCurso.Text, campoSemestre.Text);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Escolha Aluno ou Professor");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Senha não confere !!!");
+                }
+            }
+            else
             {
                 MessageBox.Show("Existem campos não preenchidos!!!");
-            }
-
-            //SE ESTIVER OK... ENVIA PARA O BANCO PARA EXECUTAR O SCRIPT DE CRUD
-            if ((((campoNome.Text != "") && (campoMatriculaRa.Text != "") && (campoEmail.Text != "") && (campoSenha.Text != ""))))
+            }  
+         
+            if(respostaBanco == "Operacao realizada com sucesso")
             {
-
-                string incluirNovoUsuario; //string usada para informar qual será o CRUD, referenciado na classe Conexão
-
-                if(campoOpcaoAlunoProfessor.SelectedIndex == 0)
-                {
-                    incluirNovoUsuario = campoNome.Text + "," + campoMatriculaRa.Text + "," + campoEmail.Text + "," + campoSenha.Text;
-                    Conexao novaconexao = new Conexao(incluirNovoUsuario);
-                    Console.WriteLine(incluirNovoUsuario);
-                }
-                if (campoOpcaoAlunoProfessor.SelectedIndex == 1)
-                {
-                    incluirNovoUsuario = campoNome.Text + "," + campoMatriculaRa.Text + "," + campoEmail.Text + "," + campoSenha.Text + "," + campoCurso.SelectedItem + "," + campoSemestre.SelectedIndex;
-                    Conexao novaconexao = new Conexao(incluirNovoUsuario);
-                    Console.WriteLine(incluirNovoUsuario);
-
-                }
-
-
-                MessageBox.Show("Dados Enviados com Sucesso!");
-
+                MessageBox.Show(respostaBanco);
                 this.Hide();
                 telaInicial voltarInicio = new telaInicial();
                 voltarInicio.Closed += (s, args) => this.Close();
                 voltarInicio.Show();
-               
-
             }
-
+            else
+            {
+                MessageBox.Show(respostaBanco);
+            }
         }
     }
 }
