@@ -79,20 +79,25 @@ namespace gameLearning
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            string respostaBanco = "";
-            //SE ESTIVER OK... ENVIA PARA O BANCO PARA EXECUTAR O SCRIPT DE CRUD
+            string respostaBanco = ""; //Variavel que recebe resposta das operacoes no banco
+
+            //SE DADOS ESTAO PREENCHIDOS...
             if ((campoNome.Text != "") && (campoMatriculaRa.Text != "") && (campoEmail.Text != "") && (campoSenha.Text != ""))
             {
-
+                //SE SENHA CONFERE...
                 if (campoSenha.Text == campoConfirmaSenha.Text)
                 {
+                    //SE ESTIVER SELECIONADO PROFESSOR, ENVIA OS DADOS DE CADASTRO PARA A CLASSE PROFESSOR
                     if (campoOpcaoAlunoProfessor.Text == "PROFESSOR")
                     {
                         Professor prof = new Professor();
+                        //CHAMA O METODO DE CADASTRO DA CLASSE PROFESSOR, ESTA RETORNA SE FOI REALIZADO COM SUCESSO, OU O ERRO OCORRIDO NO BANCO DE DADOS
                         respostaBanco =  prof.cadastraProfessor(campoNome.Text, campoMatriculaRa.Text, campoEmail.Text, campoSenha.Text, campoConfirmaSenha.Text);
                     }
+                    //SE ESTIVER SELECIONADO ALUNO, ENVIA OS DADOS DE CADASTRO PARA A CLASSE ALUNO
                     else if (campoOpcaoAlunoProfessor.Text == "ALUNO")
                     {
+                        //CHAMA O METODO DE CADASTRO DA CLASSE ALUNO, ESTA RETORNA SE FOI REALIZADO COM SUCESSO, OU O ERRO OCORRIDO NO BANCO DE DADOS
                         Aluno aluno = new Aluno();
                         respostaBanco = aluno.cadastraAluno(campoNome.Text, campoMatriculaRa.Text, campoEmail.Text, campoSenha.Text, campoConfirmaSenha.Text, campoCurso.Text, campoSemestre.Text);
                     }
@@ -109,9 +114,10 @@ namespace gameLearning
             else
             {
                 MessageBox.Show("Existem campos não preenchidos!!!");
-            }  
-         
-            if(respostaBanco == "Operacao realizada com sucesso")
+            }
+
+            //SE A OPERACAO FOI REALIZADA COM SUCESSO, EXIBE MENSAGEM E VOLTA A TELA INICIO
+            if (respostaBanco == "Operacao realizada com sucesso")
             {
                 MessageBox.Show(respostaBanco);
                 this.Hide();
@@ -119,6 +125,7 @@ namespace gameLearning
                 voltarInicio.Closed += (s, args) => this.Close();
                 voltarInicio.Show();
             }
+            //SE HOUVE ERRO NA OPERAÇÃO DE CADASTRO DO BANCO EXIBE O ERRO OCORRIDO
             else
             {
                 MessageBox.Show(respostaBanco);

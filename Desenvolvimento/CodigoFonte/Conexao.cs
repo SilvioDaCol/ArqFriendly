@@ -15,7 +15,6 @@ namespace gameLearning
         private string chave;//chave de conexao com banco
         private string CRUD;//Qualquer alteração que sera feita no banco CRUD
         private string resposta; //Retorna mensagem de erro ou sucesso
-        private NpgsqlDataReader leitor;
 
         public Conexao()
         {
@@ -24,17 +23,19 @@ namespace gameLearning
             resposta = "";
         }
 
+        //ESTA FUNCAO SE CONECTA AO BANCO PARA ***SETAR*** DADOS
         private string conectarInserirDesconectar()
         {
-            //this.CRUD = CRUD;
-
             try
-            {                          
+            {       
+                //CHAMA NOVA CONEXAO E PASSA A CHAVE DO BANCO
                 NpgsqlConnection novaConexao = new NpgsqlConnection(chave);
+                //ABRE CONEXAO
                 novaConexao.Open();
 
-                //executa a Query
+                //INSTANCIA OS COMANDOS(DE ALTERACAO) DO POSTGRES E PASSA O CRUD E A CONEXAO
                 NpgsqlCommand inserenobanco = new NpgsqlCommand(CRUD, novaConexao);
+                //REALIZA A INSERCAO DE DADOS OU DELETE  (CRUD)
                 inserenobanco.ExecuteNonQuery();                
                 //MessageBox.Show("entrou na conexão");
                 novaConexao.Close();
@@ -46,20 +47,22 @@ namespace gameLearning
             }                 
         }
 
+        //ESTA FUNCAO SE CONECTA AO BANCO PARA ***CONSULTAR*** DADOS
         private string conectarConsultarDesconectar()
         {
-            //this.CRUD = CRUD;
-
             try
             {
+                //CHAMA NOVA CONEXAO E PASSA A CHAVE DO BANCO
                 NpgsqlConnection novaConexao = new NpgsqlConnection(chave);
+                //ABRE CONEXAO
                 novaConexao.Open();
-
-                //executa a Query
-                NpgsqlCommand consultanobanco = new NpgsqlCommand(CRUD, novaConexao);                
-                leitor = consultanobanco.ExecuteReader();
-
+                
+                //INSTANCIA OS COMANDOS(DE LEITURA) DO POSTGRES E PASSA O CRUD E A CONEXAO
+                NpgsqlCommand consultanobanco = new NpgsqlCommand(CRUD, novaConexao);
+                //REALIZA A QUERY(BUSCA) SOLICITADA  (CRUD)
+                NpgsqlDataReader leitor = consultanobanco.ExecuteReader();
                 resposta = "";
+                //RETORNA O CONTEUDO DO CAMPO SOLICITADO COMO STRING
                 while (leitor.Read())
                 {
                     resposta = leitor[0].ToString();
