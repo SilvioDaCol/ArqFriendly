@@ -12,15 +12,18 @@ namespace gameLearning
 {
     public partial class telaLogadoProfessor : Form
     {
-        public telaLogadoProfessor()
+        private string cod_user = "";
+
+        public telaLogadoProfessor(string cod_user)
         {
             InitializeComponent();
+            this.cod_user = cod_user;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            telaJogos jogos = new telaJogos();
+            telaJogos jogos = new telaJogos("PROFESSOR", cod_user);
             jogos.Closed += (s, args) => this.Close();
             jogos.Show();
         }

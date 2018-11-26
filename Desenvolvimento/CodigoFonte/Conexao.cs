@@ -26,7 +26,7 @@ namespace gameLearning
         private string conectarInserirDesconectar()
         {
             try
-            {       
+            {
                 //CHAMA NOVA CONEXAO E PASSA A CHAVE DO BANCO
                 NpgsqlConnection novaConexao = new NpgsqlConnection(chave);
                 //ABRE CONEXAO
@@ -35,15 +35,15 @@ namespace gameLearning
                 //INSTANCIA OS COMANDOS(DE ALTERACAO) DO POSTGRES E PASSA O CRUD E A CONEXAO
                 NpgsqlCommand inserenobanco = new NpgsqlCommand(CRUD, novaConexao);
                 //REALIZA A INSERCAO DE DADOS OU DELETE  (CRUD)
-                inserenobanco.ExecuteNonQuery();                
+                inserenobanco.ExecuteNonQuery();
                 //MessageBox.Show("entrou na conexão");
                 novaConexao.Close();
                 return "Operacao realizada com sucesso";
             }
-            catch(Exception erro)
+            catch (Exception erro)
             {
                 return "ERRO: " + erro.Message;
-            }                 
+            }
         }
 
         //ESTA FUNCAO SE CONECTA AO BANCO PARA ***CONSULTAR*** DADOS
@@ -54,7 +54,7 @@ namespace gameLearning
                 //CHAMA NOVA CONEXAO E PASSA A CHAVE DO BANCO
                 NpgsqlConnection novaConexao = new NpgsqlConnection(chave);
                 //ABRE CONEXAO
-                novaConexao.Open();               
+                novaConexao.Open();
                 //INSTANCIA OS COMANDOS(DE LEITURA) DO POSTGRES E PASSA O CRUD E A CONEXAO
                 NpgsqlCommand consultanobanco = new NpgsqlCommand(CRUD, novaConexao);
                 //REALIZA A QUERY(BUSCA) SOLICITADA  (CRUD)
@@ -86,8 +86,8 @@ namespace gameLearning
         public string getIDUsuario(string email)
         {
             CRUD = "select cod_user from usuario where email_user = '" + email + "';";
-            resposta = conectarConsultarDesconectar();          
-            return resposta;           
+            resposta = conectarConsultarDesconectar();
+            return resposta;
         }
 
         public string getSenhaUsuario(string email)
@@ -104,7 +104,7 @@ namespace gameLearning
             {
                 return resposta;
             }
-            else if(resposta != "")
+            else if (resposta != "")
             {
                 resposta = "PROFESSOR";
             }
@@ -113,7 +113,7 @@ namespace gameLearning
                 CRUD = "select cod_aluno from aluno where usuario = '" + cod_user + "';";
                 resposta = conectarConsultarDesconectar();
                 if ((resposta != "") && (!resposta.StartsWith("ERRO"))) resposta = "ALUNO";
-            }           
+            }
             return resposta;
         }
 
@@ -166,5 +166,19 @@ namespace gameLearning
             resposta = conectarInserirDesconectar();
             return resposta;
         }
+
+
+        public string salvaRankingGeral(string cod_jogo, string cod_user, string pontuacao)
+        {
+            CRUD = "delete FROM ranking_geral where jogo = '" + cod_jogo + "' and usuario = '" + cod_user + "';";
+            resposta = conectarInserirDesconectar();
+
+
+            CRUD = "insert into ranking_geral (jogo, usuario, pontuacao) values ('" + cod_jogo + "', '" + cod_user + "', '" + pontuacao + "');";
+            resposta = conectarInserirDesconectar();
+
+            return resposta;
+        }
+
     }
 }

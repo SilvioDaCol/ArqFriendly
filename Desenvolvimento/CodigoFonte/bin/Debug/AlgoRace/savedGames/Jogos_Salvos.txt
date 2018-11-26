@@ -11,7 +11,7 @@ Posicao:	Pontuacao:	Nome:
 
 6 º		100		DJSFGJSDS
 
-7 º		0		[VAZIO]
+7 º		100		FGDGDFGFD
 
 8 º		0		[VAZIO]
 

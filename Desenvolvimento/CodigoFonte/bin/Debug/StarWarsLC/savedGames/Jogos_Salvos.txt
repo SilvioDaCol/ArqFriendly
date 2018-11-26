@@ -5,11 +5,11 @@ Posicao:	Pontuacao:	Nome:
 
 3 º		315		JSDJSAFHS
 
-4 º		0		[VAZIO]
+4 º		270		SFSFSDF
 
-5 º		0		[VAZIO]
+5 º		195		DFSDFSDF
 
-6 º		0		[VAZIO]
+6 º		195		FDSFSGFD
 
 7 º		0		[VAZIO]
 

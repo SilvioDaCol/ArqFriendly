@@ -9,10 +9,12 @@ namespace gameLearning
     class Jogo
     {
         private string pontuacao;
+        private string resposta;
 
         public Jogo()
         {
             pontuacao = "0";
+            resposta = "";
         }
 
         private string executaJogo(string path, string exe)
@@ -60,6 +62,13 @@ namespace gameLearning
         public string jogarCTIGame()
         {
             return executaJogo("cd CTI_GAME\\", "CTI_Game.exe");
+        }
+
+        public string salvaRankingGeral(string cod_jogo, string cod_user, string pontuacao)
+        {
+            Conexao banco = new Conexao();
+            resposta = banco.salvaRankingGeral(cod_jogo, cod_user, pontuacao);
+            return resposta;
         }
     }
 }

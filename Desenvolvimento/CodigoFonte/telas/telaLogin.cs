@@ -89,14 +89,14 @@ namespace gameLearning
                 if (login == "PROFESSOR")
                 {
                     this.Hide();
-                    telaLogadoProfessor professorLogado = new telaLogadoProfessor();
+                    telaLogadoProfessor professorLogado = new telaLogadoProfessor(usuario.getIDUsuario(campoEmail.Text));
                     professorLogado.Closed += (s, args) => this.Close();
                     professorLogado.Show();
                 }
                 else if(login == "ALUNO")
                 {
                     this.Hide();
-                    telaLogadoAluno alunoLogado = new telaLogadoAluno();
+                    telaLogadoAluno alunoLogado = new telaLogadoAluno(usuario.getIDUsuario(campoEmail.Text));
                     alunoLogado.Closed += (s, args) => this.Close();
                     alunoLogado.Show();
                 }

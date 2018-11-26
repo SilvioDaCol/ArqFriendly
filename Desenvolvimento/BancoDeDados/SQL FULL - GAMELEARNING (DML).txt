@@ -80,10 +80,15 @@ CREATE TABLE inscreve(
 CREATE TABLE ranking_geral(
 	jogo integer not null,
 	usuario integer not null,
+	pontuacao VARCHAR(10) not null,
 	PRIMARY KEY(jogo, usuario),
 	CONSTRAINT ch_estr_de_jogo_em_ranking_geral FOREIGN KEY(jogo)
 	REFERENCES jogo(cod_jogo) MATCH SIMPLE,
 	CONSTRAINT ch_estr_de_usuario_em_ranking_geral FOREIGN KEY(usuario)
 	REFERENCES usuario(cod_user) MATCH SIMPLE
 );
+
+insert into jogo(nome_jogo, descricao_jogo) values ('StarWars LC','Explore mapas incriveis, cuidado com os meteoros!!');
+insert into jogo(nome_jogo, descricao_jogo) values ('AlgoRace','Dirija em alta velocidade sempre escolhendo os tuneis corretos!!');
+insert into jogo(nome_jogo, descricao_jogo) values ('CTI_Game','Aqui voce vai programar se divertindo muito!!');
 
