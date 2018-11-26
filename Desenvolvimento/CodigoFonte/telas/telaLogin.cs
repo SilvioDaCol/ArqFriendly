@@ -78,20 +78,32 @@ namespace gameLearning
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if ((campoRaMatricula.Text == "") || (campoSenha.Text == ""))
+            if ((campoEmail.Text == "") || (campoSenha.Text == ""))
             {
                 MessageBox.Show("Existem campos não preenchidos!!!");
-
             }
-
-            if ((campoRaMatricula.Text != "") && (campoSenha.Text != ""))
+            else
             {
-
-                this.Hide();
-                telaLogadoAluno alunoLogado = new telaLogadoAluno();
-                alunoLogado.Closed += (s, args) => this.Close();
-                alunoLogado.Show();
-
+                Usuario usuario = new Usuario();
+                string login = usuario.logarUsuario(campoEmail.Text, campoSenha.Text);
+                if (login == "PROFESSOR")
+                {
+                    this.Hide();
+                    telaLogadoProfessor professorLogado = new telaLogadoProfessor();
+                    professorLogado.Closed += (s, args) => this.Close();
+                    professorLogado.Show();
+                }
+                else if(login == "ALUNO")
+                {
+                    this.Hide();
+                    telaLogadoAluno alunoLogado = new telaLogadoAluno();
+                    alunoLogado.Closed += (s, args) => this.Close();
+                    alunoLogado.Show();
+                }
+                else
+                {
+                    MessageBox.Show(login);
+                }
             }
             
         }

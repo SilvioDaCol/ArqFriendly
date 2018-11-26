@@ -26,12 +26,48 @@ namespace gameLearning
             return resultado;
         }
 
+        public string getIDUsuario(string email)
+        {
+            Conexao banco = new Conexao();
+            return banco.getIDUsuario(email);
+        }
+
+        public string alunoOuProfessor(string cod_user)
+        {
+            Conexao banco = new Conexao();
+            return banco.alunoOuProfessor(cod_user);
+        }
+
+        public string getSenhaUsuario(string email)
+        {
+            Conexao banco = new Conexao();
+            return banco.getSenhaUsuario(email); 
+        }
+
         public string deletaUsuario(string email)
         {
             //INSTANCIA A CLASSE CONEXAO
             Conexao banco = new Conexao();
             //SOLICITA A CLASSE BANCO PARA DELETAR USUARIO (UTILIZANDO COMO REFERENCIA O EMAIL)
             return banco.deletaUsuario(email);
+        }
+
+        public string logarUsuario(string email, string senha)
+        {
+            string cod_user = getIDUsuario(email);
+            if (cod_user.StartsWith("ERRO:"))
+            {
+                return resultado;
+            }else if(cod_user == "")
+            {
+                return "Usuário não cadastrado no sistema";
+            }
+            else if(getSenhaUsuario(email) != senha)
+            {                
+                return "Senha não confere.";
+            }
+            
+            return alunoOuProfessor(cod_user);
         }
     }
 }

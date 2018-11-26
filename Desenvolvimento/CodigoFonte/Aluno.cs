@@ -26,13 +26,38 @@ namespace gameLearning
             {
                 //INSTANCIA A CLASSE CONEXAO
                 Conexao banco = new Conexao();
-                //BUSCA NO BANCO O ID DO USUARIO CADASTRADO (UTILIZANDO PARAMETRO EMAIL COMO FILTRO) OBS** O CAMPO EMAIL É UNICO NO BANCO.
-                string cod_user = banco.getIDUsuario(email);
-                //CHAMA FUNCAO DO BANCO QUE CADASTRA O ALUNO, RELACIONADO AO USUARIO QUE FOI CRIADO PARA ESTE.
-                resultado = banco.cadastraAluno(cod_user, ra_aluno, curso, semestre);
+                //VERIFICA SE HÁ TURMA CADASTRADA PARA CURSO E SEMESTRE INFORMADOS
+                string IDTurma = banco.getTurmaID(curso, semestre);
+                //SE NÃO RETORNAR UM ERRO  E TURMA CONSTAR NO BANCO
+                if (!IDTurma.StartsWith("ERRO:") && (IDTurma != ""))
+                {
+                    //BUSCA NO BANCO O ID DO USUARIO CADASTRADO (UTILIZANDO PARAMETRO EMAIL COMO FILTRO) OBS** O CAMPO EMAIL É UNICO NO BANCO.
+                    string cod_user = banco.getIDUsuario(email);
+                    //CHAMA FUNCAO DO BANCO QUE CADASTRA O ALUNO, RELACIONADO AO USUARIO QUE FOI CRIADO PARA ESTE.
+                    resultado = banco.cadastraAluno(cod_user, ra_aluno, curso, semestre);
+                    //SE ALUNO FOI CADASTRADO NO BANCO... 
+                    if (resultado == "Operacao realizada com sucesso")
+                    {
+                        //CONSULTA CODIGO DO ALUNO CRIADO UTILIZANDO COMO PARÂMETRO O CODIGO DO USUÁRIO E ARMAZENA EM COD_ALUNO
+                        string cod_aluno = banco.getIDAluno(cod_user);
+                        //REALIZA MATRICULA -> VINCULA ALUNO E TURMA
+                        resultado = banco.matriculaAlunoTurma(IDTurma, cod_aluno);
+                        //Se ocorreu erro ao realizar matricula, deleta aluno do banco
+                        if (resultado != "Operacao realizada com sucesso") banco.deletaAluno(cod_user);
+                    }                    
+                }
+                //SE HOUVE ERRO AO PESQUISAR TURMA
+                else
+                {
+                    resultado = "Não há turma cadastrada para este Curso/Semestre";
+                }
+                
             }
+            //SE USUARIO NAO FOI CADASTRADO COM SUCESSO NO BANCO, RETORNA O ERRO OCORRIDO
+            else return resultado;
+            
             //SE HOUVE ERRO NO CADASTRO DO ALUNO, DELETA USUARIO CRIADO 
-            else
+            if(resultado != "Operacao realizada com sucesso")
             {
                 usuario.deletaUsuario(email);
             }
