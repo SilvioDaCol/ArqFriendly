@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace gameLearning
 {
@@ -68,6 +69,26 @@ namespace gameLearning
         {
             Conexao banco = new Conexao();
             resposta = banco.salvaRankingGeral(cod_jogo, cod_user, pontuacao);
+            return resposta;
+        }
+
+        public DataTable carregaRankingGeral(string cod_jogo)
+        {
+            Conexao banco = new Conexao();
+            resposta = banco.carregaRankingGeral(cod_jogo);
+            return banco.getDataTable();
+        }
+
+        public string getNomeJogo(string cod_jogo)
+        {
+            Conexao banco = new Conexao();
+            resposta = banco.getNomeJogo(cod_jogo);
+            return resposta;
+        }
+        public string getDescricaoJogo(string cod_jogo)
+        {
+            Conexao banco = new Conexao();
+            resposta = banco.getDescricaoJogo(cod_jogo);
             return resposta;
         }
     }

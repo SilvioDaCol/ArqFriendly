@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
 using Npgsql;
 
 
@@ -14,6 +15,7 @@ namespace gameLearning
         private string chave;//chave de conexao com banco
         private string CRUD;//Qualquer alteração que sera feita no banco CRUD
         private string resposta; //Retorna mensagem de erro ou sucesso
+        private DataTable data_table; //Armazena tabelas consultadas a partir do banco
 
         public Conexao()
         {
@@ -74,6 +76,38 @@ namespace gameLearning
             }
         }
 
+
+        private string conectarTabelaDesconectar()
+        {
+            NpgsqlDataAdapter data_adapter;            
+
+            try
+            {
+                //CHAMA NOVA CONEXAO E PASSA A CHAVE DO BANCO
+                NpgsqlConnection novaConexao = new NpgsqlConnection(chave);
+                //ABRE CONEXAO
+                novaConexao.Open();
+                
+                //Cria um novo adaptador para os dados na tabela
+                data_adapter = new NpgsqlDataAdapter();
+                data_adapter.SelectCommand = new NpgsqlCommand(CRUD, novaConexao);              
+
+                //cria os comandos insert update e delete
+                NpgsqlCommandBuilder cmdBuilder = new NpgsqlCommandBuilder(data_adapter);
+
+                //cria e prenche uma tabela com os dados do banco usando o adaptador
+                data_table = new DataTable();
+                data_adapter.Fill(data_table);
+                resposta = "Operacao realizada com sucesso";
+            }
+            //monitora possíveis erros
+            catch (NpgsqlException ex)
+            {
+                resposta = "ERRO: " + ex.Message + ex.StackTrace;
+            }
+
+            return resposta;
+        }
 
         public string cadastraUsuario(string nome, string email, string senha)
         {
@@ -180,5 +214,31 @@ namespace gameLearning
             return resposta;
         }
 
+        public string carregaRankingGeral(string cod_jogo)
+        {
+            CRUD = "SELECT usuario.nome_user, ranking_geral.pontuacao from usuario " +
+                "inner join ranking_geral on usuario.cod_user = ranking_geral.usuario " +
+                "where ranking_geral.jogo = " + cod_jogo;         
+            resposta = conectarTabelaDesconectar();
+            return resposta;
+        }
+
+        public string getDescricaoJogo(string cod_jogo)
+        {
+            CRUD = "select descricao_jogo from jogo where cod_jogo = '" + cod_jogo + "';";
+            resposta = conectarConsultarDesconectar();
+            return resposta;
+        }
+        public string getNomeJogo(string cod_jogo)
+        {
+            CRUD = "select nome_jogo from jogo where cod_jogo = '" + cod_jogo + "';";
+            resposta = conectarConsultarDesconectar();
+            return resposta;
+        }
+
+        public DataTable getDataTable()
+        {
+            return data_table;
+        }
     }
 }

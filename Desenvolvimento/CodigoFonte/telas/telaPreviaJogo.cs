@@ -12,9 +12,21 @@ namespace gameLearning
 {
     public partial class telaPreviaJogo : Form
     {
-        public telaPreviaJogo()
+        private string cod_jogo;
+
+
+        public telaPreviaJogo(string cod_jogo)
         {
             InitializeComponent();
+            this.cod_jogo = cod_jogo;
+        }
+
+        private void telaPreviaJogo_Load(object sender, EventArgs e)
+        {
+            Jogo jogo = new Jogo();
+            gvRankingGeral.DataSource = jogo.carregaRankingGeral(cod_jogo);
+            nomeJogo.Text = jogo.getNomeJogo(cod_jogo);
+            descricaoJogo.Text = jogo.getDescricaoJogo(cod_jogo);
         }
     }
 }
