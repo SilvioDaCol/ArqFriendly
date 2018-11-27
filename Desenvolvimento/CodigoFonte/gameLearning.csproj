@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Aluno.cs" />
     <Compile Include="Conexao.cs" />
+    <Compile Include="Exercicio.cs" />
     <Compile Include="telas\telaCriarAtividade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,11 +87,11 @@
     <Compile Include="telas\telaAlunosTurma.Designer.cs">
       <DependentUpon>telaAlunosTurma.cs</DependentUpon>
     </Compile>
-    <Compile Include="telas\telaManterAtividades.cs">
+    <Compile Include="telas\telaManterExercicios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="telas\telaManterAtividades.Designer.cs">
-      <DependentUpon>telaManterAtividades.cs</DependentUpon>
+    <Compile Include="telas\telaManterExercicios.Designer.cs">
+      <DependentUpon>telaManterExercicios.cs</DependentUpon>
     </Compile>
     <Compile Include="telas\TelaManterTurma.cs">
       <SubType>Form</SubType>
@@ -170,8 +171,8 @@
     <EmbeddedResource Include="telas\telaAlunosTurma.resx">
       <DependentUpon>telaAlunosTurma.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="telas\telaManterAtividades.resx">
-      <DependentUpon>telaManterAtividades.cs</DependentUpon>
+    <EmbeddedResource Include="telas\telaManterExercicios.resx">
+      <DependentUpon>telaManterExercicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telas\TelaManterTurma.resx">
       <DependentUpon>TelaManterTurma.cs</DependentUpon>

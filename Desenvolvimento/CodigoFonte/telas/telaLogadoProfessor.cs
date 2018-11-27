@@ -40,5 +40,27 @@ namespace gameLearning
         {
           
         }
+
+        private void btnExercicios_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaManterExercicios telaExercicios = new telaManterExercicios(cod_user);
+            telaExercicios.Closed += (s, args) => this.Close();
+            telaExercicios.Show();
+        }
+
+        private void btnTurmas_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaManterTurma telaTurma = new telaManterTurma();
+            telaTurma.Closed += (s, args) => this.Close();
+            telaTurma.Show();
+        }
+
+        private void telaLogadoProfessor_Load(object sender, EventArgs e)
+        {
+            Usuario user = new Usuario();
+            lbNOME.Text = user.getNomeUsuario(cod_user);
+        }
     }
 }

@@ -17,5 +17,5 @@ Posicao:	Pontuacao:	Nome:
 
 9 º		70		FDGD
 
-10 º		0		[VAZIO]
+10 º		40		DFGF
 

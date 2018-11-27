@@ -29,86 +29,87 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaLogadoProfessor));
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.PictureBox();
+            this.btnExercicios = new System.Windows.Forms.PictureBox();
+            this.btnJogar = new System.Windows.Forms.PictureBox();
+            this.lbNOME = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gameLearningLogoMenor = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.btnTurmas = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExercicios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnJogar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLearningLogoMenor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTurmas)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox5
+            // btnCancelar
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = global::gameLearning.Properties.Resources.btnCancelar;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(891, 369);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.MaximumSize = new System.Drawing.Size(180, 80);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(180, 80);
-            this.pictureBox5.TabIndex = 16;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.BackgroundImage = global::gameLearning.Properties.Resources.btnCancelar;
+            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancelar.Location = new System.Drawing.Point(632, 290);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelar.MaximumSize = new System.Drawing.Size(135, 65);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(135, 65);
+            this.btnCancelar.TabIndex = 16;
+            this.btnCancelar.TabStop = false;
+            this.btnCancelar.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // pictureBox3
+            // btnExercicios
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::gameLearning.Properties.Resources.btnExerc;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(661, 369);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.MaximumSize = new System.Drawing.Size(180, 80);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(180, 80);
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
+            this.btnExercicios.BackColor = System.Drawing.Color.Transparent;
+            this.btnExercicios.BackgroundImage = global::gameLearning.Properties.Resources.btnExerc;
+            this.btnExercicios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExercicios.Location = new System.Drawing.Point(460, 290);
+            this.btnExercicios.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExercicios.MaximumSize = new System.Drawing.Size(135, 65);
+            this.btnExercicios.Name = "btnExercicios";
+            this.btnExercicios.Size = new System.Drawing.Size(135, 65);
+            this.btnExercicios.TabIndex = 14;
+            this.btnExercicios.TabStop = false;
+            this.btnExercicios.Click += new System.EventHandler(this.btnExercicios_Click);
             // 
-            // pictureBox2
+            // btnJogar
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(201, 369);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.MaximumSize = new System.Drawing.Size(180, 80);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(180, 80);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.btnJogar.BackColor = System.Drawing.Color.Transparent;
+            this.btnJogar.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
+            this.btnJogar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnJogar.Location = new System.Drawing.Point(115, 290);
+            this.btnJogar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnJogar.MaximumSize = new System.Drawing.Size(135, 65);
+            this.btnJogar.Name = "btnJogar";
+            this.btnJogar.Size = new System.Drawing.Size(135, 65);
+            this.btnJogar.TabIndex = 13;
+            this.btnJogar.TabStop = false;
+            this.btnJogar.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // label1
+            // lbNOME
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Silver;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(79, 182);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1013, 58);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "FULANO DE TAL, O QUE DESEJA FAZER?";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lbNOME.AutoSize = true;
+            this.lbNOME.BackColor = System.Drawing.Color.Silver;
+            this.lbNOME.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lbNOME.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.lbNOME.ForeColor = System.Drawing.Color.White;
+            this.lbNOME.Location = new System.Drawing.Point(377, 157);
+            this.lbNOME.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbNOME.Name = "lbNOME";
+            this.lbNOME.Size = new System.Drawing.Size(140, 46);
+            this.lbNOME.TabIndex = 12;
+            this.lbNOME.Text = "NOME";
+            this.lbNOME.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::gameLearning.Properties.Resources.btnOla;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(509, 39);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.MaximumSize = new System.Drawing.Size(180, 80);
+            this.pictureBox1.Location = new System.Drawing.Point(382, 32);
+            this.pictureBox1.MaximumSize = new System.Drawing.Size(135, 65);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(135, 65);
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
@@ -117,51 +118,52 @@
             this.gameLearningLogoMenor.BackColor = System.Drawing.Color.Transparent;
             this.gameLearningLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLearningLogoMenor.BackgroundImage")));
             this.gameLearningLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gameLearningLogoMenor.Location = new System.Drawing.Point(29, 30);
-            this.gameLearningLogoMenor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gameLearningLogoMenor.MaximumSize = new System.Drawing.Size(120, 60);
+            this.gameLearningLogoMenor.Location = new System.Drawing.Point(22, 24);
+            this.gameLearningLogoMenor.MaximumSize = new System.Drawing.Size(90, 49);
             this.gameLearningLogoMenor.Name = "gameLearningLogoMenor";
-            this.gameLearningLogoMenor.Size = new System.Drawing.Size(120, 60);
+            this.gameLearningLogoMenor.Size = new System.Drawing.Size(90, 49);
             this.gameLearningLogoMenor.TabIndex = 10;
             this.gameLearningLogoMenor.TabStop = false;
             // 
-            // pictureBox4
+            // btnTurmas
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::gameLearning.Properties.Resources.btnCadastro;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(436, 369);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.MaximumSize = new System.Drawing.Size(180, 80);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(180, 80);
-            this.pictureBox4.TabIndex = 17;
-            this.pictureBox4.TabStop = false;
+            this.btnTurmas.BackColor = System.Drawing.Color.Transparent;
+            this.btnTurmas.BackgroundImage = global::gameLearning.Properties.Resources.btnCadastro;
+            this.btnTurmas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTurmas.Location = new System.Drawing.Point(291, 290);
+            this.btnTurmas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTurmas.MaximumSize = new System.Drawing.Size(135, 65);
+            this.btnTurmas.Name = "btnTurmas";
+            this.btnTurmas.Size = new System.Drawing.Size(135, 65);
+            this.btnTurmas.TabIndex = 17;
+            this.btnTurmas.TabStop = false;
+            this.btnTurmas.Click += new System.EventHandler(this.btnTurmas_Click);
             // 
             // telaLogadoProfessor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::gameLearning.Properties.Resources.mainBack;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1181, 626);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(886, 509);
+            this.Controls.Add(this.btnTurmas);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnExercicios);
+            this.Controls.Add(this.btnJogar);
+            this.Controls.Add(this.lbNOME);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gameLearningLogoMenor);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1199, 673);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(903, 554);
             this.Name = "telaLogadoProfessor";
             this.Text = "telaLogadoProfessor";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Load += new System.EventHandler(this.telaLogadoProfessor_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExercicios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnJogar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLearningLogoMenor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTurmas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,12 +171,12 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox btnCancelar;
+        private System.Windows.Forms.PictureBox btnExercicios;
+        private System.Windows.Forms.PictureBox btnJogar;
+        private System.Windows.Forms.Label lbNOME;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox gameLearningLogoMenor;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox btnTurmas;
     }
 }

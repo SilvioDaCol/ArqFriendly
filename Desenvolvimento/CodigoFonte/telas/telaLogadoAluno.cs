@@ -35,5 +35,11 @@ namespace gameLearning
             jogos.Closed += (s, args) => this.Close();
             jogos.Show();
         }
+
+        private void telaLogadoAluno_Load(object sender, EventArgs e)
+        {
+            Usuario user = new Usuario();
+            lbNOME.Text = user.getNomeUsuario(cod_user);
+        }
     }
 }

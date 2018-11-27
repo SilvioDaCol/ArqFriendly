@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace gameLearning
 {
-    public partial class exercicios : Form
+    public partial class telaManterTurma : Form
     {
-        public exercicios()
+        public telaManterTurma()
         {
             InitializeComponent();
         }

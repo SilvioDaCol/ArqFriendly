@@ -32,6 +32,12 @@ namespace gameLearning
             return banco.getIDUsuario(email);
         }
 
+        public string getNomeUsuario(string cod_user)
+        {
+            Conexao banco = new Conexao();           
+            return banco.getNomeUsuario(cod_user);
+        }
+
         public string alunoOuProfessor(string cod_user)
         {
             Conexao banco = new Conexao();
