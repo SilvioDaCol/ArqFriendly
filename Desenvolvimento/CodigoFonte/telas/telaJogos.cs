@@ -41,7 +41,7 @@ namespace gameLearning
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            telaPreviaJogo previaJogo = new telaPreviaJogo("1");
+            telaPreviaJogo previaJogo = new telaPreviaJogo(telaAnterior, "1", cod_user);
             previaJogo.Closed += (s, args) => this.Close();
             previaJogo.Show();
         }
@@ -49,7 +49,7 @@ namespace gameLearning
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            telaPreviaJogo previaJogo = new telaPreviaJogo("2");
+            telaPreviaJogo previaJogo = new telaPreviaJogo(telaAnterior, "2", cod_user);
             previaJogo.Closed += (s, args) => this.Close();
             previaJogo.Show();
         }
@@ -57,7 +57,7 @@ namespace gameLearning
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            telaPreviaJogo previaJogo = new telaPreviaJogo("3");
+            telaPreviaJogo previaJogo = new telaPreviaJogo(telaAnterior, "3", cod_user);
             previaJogo.Closed += (s, args) => this.Close();
             previaJogo.Show();
         }
@@ -65,7 +65,7 @@ namespace gameLearning
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             this.Hide();
-            telaPreviaJogo previaJogo = new telaPreviaJogo("1");
+            telaPreviaJogo previaJogo = new telaPreviaJogo(telaAnterior, "1", cod_user);
             previaJogo.Closed += (s, args) => this.Close();
             previaJogo.Show();
         }
@@ -73,7 +73,7 @@ namespace gameLearning
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            telaPreviaJogo previaJogo = new telaPreviaJogo("2");
+            telaPreviaJogo previaJogo = new telaPreviaJogo(telaAnterior, "2", cod_user);
             previaJogo.Closed += (s, args) => this.Close();
             previaJogo.Show();
         }
@@ -81,7 +81,7 @@ namespace gameLearning
         private void pictureBox10_Click(object sender, EventArgs e)
         {
             this.Hide();
-            telaPreviaJogo previaJogo = new telaPreviaJogo("3");
+            telaPreviaJogo previaJogo = new telaPreviaJogo(telaAnterior, "3", cod_user);
             previaJogo.Closed += (s, args) => this.Close();
             previaJogo.Show();
         }

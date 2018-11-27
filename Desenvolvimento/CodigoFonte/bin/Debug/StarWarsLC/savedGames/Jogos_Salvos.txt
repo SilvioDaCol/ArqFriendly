@@ -3,19 +3,19 @@ Posicao:	Pontuacao:	Nome:
 
 2 º		600		SILVIO
 
-3 º		315		JSDJSAFHS
+3 º		580		DFSDF
 
-4 º		270		SFSFSDF
+4 º		315		JSDJSAFHS
 
-5 º		195		DFSDFSDF
+5 º		270		SFSFSDF
 
-6 º		195		FDSFSGFD
+6 º		195		DFSDFSDF
 
-7 º		90		432342
+7 º		195		FDSFSGFD
 
-8 º		0		[VAZIO]
+8 º		90		432342
 
-9 º		0		[VAZIO]
+9 º		70		FDGD
 
 10 º		0		[VAZIO]
 
