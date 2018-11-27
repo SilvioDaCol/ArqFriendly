@@ -35,14 +35,22 @@ namespace gameLearning
             switch (cod_jogo)
             {
                 case "1":
-                    imagemPrevia1.BackgroundImage = Properties.Resources.starWarsIcon;                    
-                    imagemPrevia2.BackgroundImage = Properties.Resources.starWarsIcon;
-                    logoJogo.BackgroundImage = Properties.Resources.starWarsIcon; 
+                    imagemPrevia1.BackgroundImage = Properties.Resources.starWarsLow;
+                    imagemPrevia1.BackgroundImageLayout = ImageLayout.Stretch;
+                    imagemPrevia2.BackgroundImage = Properties.Resources.telaPause;
+                    imagemPrevia2.BackgroundImageLayout = ImageLayout.Stretch;
+                    logoJogo.BackgroundImage = Properties.Resources.starWarsIcon;
+                    logoJogo.BackgroundImageLayout = ImageLayout.Stretch;
+                    logoJogo.BackColor = Color.Transparent;
                     break;
                 case "2":
-                    imagemPrevia1.BackgroundImage = Properties.Resources.algoRaceIcon;
-                    imagemPrevia2.BackgroundImage = Properties.Resources.algoRaceIcon;
-                    logoJogo.BackgroundImage = Properties.Resources.algoRaceIcon;
+                    imagemPrevia1.BackgroundImage = Properties.Resources.starWarsIcon;
+                    imagemPrevia1.BackgroundImageLayout = ImageLayout.Stretch;
+                    imagemPrevia2.BackgroundImage = Properties.Resources.algoRace;
+                    imagemPrevia2.BackgroundImageLayout = ImageLayout.Stretch;
+                    logoJogo.BackgroundImage = Properties.Resources.starWarsIcon;
+                    logoJogo.BackgroundImageLayout = ImageLayout.Stretch;
+                    logoJogo.BackColor = Color.Transparent;
                     break;
                 case "3":
                     imagemPrevia1.BackgroundImage = Properties.Resources.introProgIcon;
