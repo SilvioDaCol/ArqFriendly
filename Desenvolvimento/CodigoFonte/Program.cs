@@ -18,7 +18,7 @@ namespace gameLearning
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new telaInicial());
             //Application.Run(new telaCadastro());
-            //Application.Run(new telaJogos());
+            //Application.Run(new telaPreviaJogo());
         }
     }
 }
