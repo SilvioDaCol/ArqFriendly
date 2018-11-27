@@ -31,22 +31,23 @@ namespace gameLearning
             nomeJogo.Text = jogo.getNomeJogo(cod_jogo);
             descricaoJogo.Text = jogo.getDescricaoJogo(cod_jogo);
 
+            //Switch-case para carregar Imagens da tela
             switch (cod_jogo)
             {
                 case "1":
-                    imagemPrevia1.Image = Properties.Resources.introProgIcon;
-                    imagemPrevia2.Image = Properties.Resources.introProgIcon;
-                    logoJogo.Image = Properties.Resources.algoRaceIcon; 
+                    imagemPrevia1.BackgroundImage = Properties.Resources.starWarsIcon;                    
+                    imagemPrevia2.BackgroundImage = Properties.Resources.starWarsIcon;
+                    logoJogo.BackgroundImage = Properties.Resources.starWarsIcon; 
                     break;
                 case "2":
-                    imagemPrevia1.Image = Properties.Resources.introProgIcon;
-                    imagemPrevia2.Image = Properties.Resources.introProgIcon;
-                    logoJogo.Image = Properties.Resources.starWarsIcon;
+                    imagemPrevia1.BackgroundImage = Properties.Resources.algoRaceIcon;
+                    imagemPrevia2.BackgroundImage = Properties.Resources.algoRaceIcon;
+                    logoJogo.BackgroundImage = Properties.Resources.algoRaceIcon;
                     break;
                 case "3":
-                    imagemPrevia1.Image = Properties.Resources.introProgIcon;
-                    imagemPrevia2.Image = Properties.Resources.introProgIcon;
-                    logoJogo.Image = Properties.Resources.introProgIcon;
+                    imagemPrevia1.BackgroundImage = Properties.Resources.introProgIcon;
+                    imagemPrevia2.BackgroundImage = Properties.Resources.introProgIcon;
+                    logoJogo.BackgroundImage = Properties.Resources.introProgIcon;
                     break;
             }
         }
