@@ -27,5 +27,18 @@ namespace gameLearning
             jogos.Closed += (s, args) => this.Close();
             jogos.Show();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            telaLogin fazerlogin = new telaLogin();
+            fazerlogin.Closed += (s, args) => this.Close();
+            fazerlogin.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

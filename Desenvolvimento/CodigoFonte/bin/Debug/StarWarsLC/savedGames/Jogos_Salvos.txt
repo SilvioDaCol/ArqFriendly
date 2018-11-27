@@ -11,7 +11,7 @@ Posicao:	Pontuacao:	Nome:
 
 6 º		195		FDSFSGFD
 
-7 º		0		[VAZIO]
+7 º		90		432342
 
 8 º		0		[VAZIO]
 

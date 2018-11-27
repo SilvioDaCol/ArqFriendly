@@ -19,8 +19,8 @@ namespace gameLearning
 
         public Conexao()
         {
-            //chave = "Server=localhost;Port=5432;UserId=postgres;Password=Sophia20;Database=BDprojetoInterDisciplinar";           
-            chave = "Server=localhost;Port=5432;UserId=postgres;Password=dustcloth;Database=gamelearning_db";
+            chave = "Server=localhost;Port=5432;UserId=postgres;Password=Sophia20;Database=gamelearning_db";           
+            // chave = "Server=localhost;Port=5432;UserId=postgres;Password=dustcloth;Database=gamelearning_db";
             resposta = "";
         }
 
@@ -119,19 +119,24 @@ namespace gameLearning
 
         public string getIDUsuario(string email)
         {
+            //PEGA ID USUSÁRIO
             CRUD = "select cod_user from usuario where email_user = '" + email + "';";
             resposta = conectarConsultarDesconectar();
             return resposta;
         }
 
+        //CRUD RESPONSAVEL PELAS CONSULTA
+        
         public string getSenhaUsuario(string email)
         {
+            //PEGA SENHA DO USUARIO
             CRUD = "select senha_user from usuario where email_user = '" + email + "';";
             resposta = conectarConsultarDesconectar();
             return resposta;
         }
         public string alunoOuProfessor(string cod_user)
         {
+
             CRUD = "select cod_professor from professor where usuario = '" + cod_user + "';";
             resposta = conectarConsultarDesconectar();
             if (resposta.StartsWith("ERRO:"))
@@ -165,7 +170,7 @@ namespace gameLearning
 
             return resposta;
         }
-
+        
         public string cadastraAluno(string cod_user, string ra_aluno, string curso, string semestre)
         {
             CRUD = "insert into aluno (ra_aluno, usuario, curso, semestre) values ('" + ra_aluno + "', '" + cod_user + "', '" + curso + "', '" + semestre + "');";

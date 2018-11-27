@@ -121,9 +121,9 @@ namespace gameLearning
             {
                 MessageBox.Show(respostaBanco);
                 this.Hide();
-                telaInicial voltarInicio = new telaInicial();
-                voltarInicio.Closed += (s, args) => this.Close();
-                voltarInicio.Show();
+                telaLogin fazerlogin = new telaLogin();
+                fazerlogin.Closed += (s, args) => this.Close();
+                fazerlogin.Show();
             }
             //SE HOUVE ERRO NA OPERAÇÃO DE CADASTRO DO BANCO EXIBE O ERRO OCORRIDO
             else

@@ -28,5 +28,10 @@ namespace gameLearning
             nomeJogo.Text = jogo.getNomeJogo(cod_jogo);
             descricaoJogo.Text = jogo.getDescricaoJogo(cod_jogo);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
