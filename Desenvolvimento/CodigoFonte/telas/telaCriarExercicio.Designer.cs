@@ -1,6 +1,6 @@
-﻿namespace gameLearning.telas
+﻿namespace gameLearning
 {
-    partial class telaCriarAtividade
+    partial class telaCriarExercicio
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaCriarAtividade));
             System.Windows.Forms.PictureBox btnEnviar;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaCriarExercicio));
             System.Windows.Forms.PictureBox btnCancelar;
             this.gameLogoMenor = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -38,7 +38,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbTitulo = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -49,14 +49,43 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             btnEnviar = new System.Windows.Forms.PictureBox();
             btnCancelar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(btnEnviar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(btnCancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(btnEnviar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(btnCancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnEnviar
+            // 
+            btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            btnEnviar.BackColor = System.Drawing.Color.Transparent;
+            btnEnviar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEnviar.BackgroundImage")));
+            btnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnEnviar.Location = new System.Drawing.Point(568, 401);
+            btnEnviar.MaximumSize = new System.Drawing.Size(135, 65);
+            btnEnviar.Name = "btnEnviar";
+            btnEnviar.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
+            btnEnviar.Size = new System.Drawing.Size(135, 65);
+            btnEnviar.TabIndex = 39;
+            btnEnviar.TabStop = false;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            btnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelar.BackgroundImage")));
+            btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnCancelar.Location = new System.Drawing.Point(726, 401);
+            btnCancelar.MaximumSize = new System.Drawing.Size(135, 65);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
+            btnCancelar.Size = new System.Drawing.Size(135, 65);
+            btnCancelar.TabIndex = 38;
+            btnCancelar.TabStop = false;
+            btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // gameLogoMenor
             // 
@@ -143,20 +172,21 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "CTI_Game";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // label3
+            // lbTitulo
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Silver;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(195, 27);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(506, 46);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "GERENCIAR ATIVIDADES";
+            this.lbTitulo.AutoSize = true;
+            this.lbTitulo.BackColor = System.Drawing.Color.Silver;
+            this.lbTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.lbTitulo.ForeColor = System.Drawing.Color.White;
+            this.lbTitulo.Location = new System.Drawing.Point(195, 27);
+            this.lbTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTitulo.Name = "lbTitulo";
+            this.lbTitulo.Size = new System.Drawing.Size(515, 46);
+            this.lbTitulo.TabIndex = 30;
+            this.lbTitulo.Text = "GERENCIAR EXERCICIOS";
             // 
             // comboBox1
             // 
@@ -219,34 +249,6 @@
             this.lsAlunosAtividade.Size = new System.Drawing.Size(196, 134);
             this.lsAlunosAtividade.TabIndex = 33;
             // 
-            // btnEnviar
-            // 
-            btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            btnEnviar.BackColor = System.Drawing.Color.Transparent;
-            btnEnviar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEnviar.BackgroundImage")));
-            btnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            btnEnviar.Location = new System.Drawing.Point(568, 401);
-            btnEnviar.MaximumSize = new System.Drawing.Size(135, 65);
-            btnEnviar.Name = "btnEnviar";
-            btnEnviar.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
-            btnEnviar.Size = new System.Drawing.Size(135, 65);
-            btnEnviar.TabIndex = 39;
-            btnEnviar.TabStop = false;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            btnCancelar.BackColor = System.Drawing.Color.Transparent;
-            btnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelar.BackgroundImage")));
-            btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            btnCancelar.Location = new System.Drawing.Point(726, 401);
-            btnCancelar.MaximumSize = new System.Drawing.Size(135, 65);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
-            btnCancelar.Size = new System.Drawing.Size(135, 65);
-            btnCancelar.TabIndex = 38;
-            btnCancelar.TabStop = false;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -255,7 +257,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(504, 220);
             this.dataGridView1.TabIndex = 23;
             // 
-            // telaCriarAtividade
+            // telaCriarExercicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -271,7 +273,7 @@
             this.Controls.Add(this.lsAlunosAtividade);
             this.Controls.Add(this.lsAlunosTurma);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbTitulo);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -283,15 +285,16 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(904, 556);
             this.MinimumSize = new System.Drawing.Size(904, 556);
-            this.Name = "telaCriarAtividade";
+            this.Name = "telaCriarExercicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "telaCriarAtividade";
+            this.Text = "telaCriarExercicio";
+            this.Load += new System.EventHandler(this.telaCriarExercicio_Load);
+            ((System.ComponentModel.ISupportInitialize)(btnEnviar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(btnCancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(btnEnviar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(btnCancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -307,7 +310,7 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbTitulo;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
