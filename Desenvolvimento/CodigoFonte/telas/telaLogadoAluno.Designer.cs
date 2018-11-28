@@ -35,14 +35,14 @@
             this.btnJogar = new System.Windows.Forms.PictureBox();
             this.btnIniciarExercicio = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gvAtividadesAluno = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gameLearningLogoMenor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnJogar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnIniciarExercicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvAtividadesAluno)).BeginInit();
             this.SuspendLayout();
             // 
             // gameLearningLogoMenor
@@ -87,7 +87,7 @@
             this.btnJogar.BackColor = System.Drawing.Color.Transparent;
             this.btnJogar.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
             this.btnJogar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnJogar.Location = new System.Drawing.Point(205, 359);
+            this.btnJogar.Location = new System.Drawing.Point(204, 405);
             this.btnJogar.Margin = new System.Windows.Forms.Padding(2);
             this.btnJogar.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnJogar.Name = "btnJogar";
@@ -101,7 +101,7 @@
             this.btnIniciarExercicio.BackColor = System.Drawing.Color.Transparent;
             this.btnIniciarExercicio.BackgroundImage = global::gameLearning.Properties.Resources.btnExerc;
             this.btnIniciarExercicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIniciarExercicio.Location = new System.Drawing.Point(383, 359);
+            this.btnIniciarExercicio.Location = new System.Drawing.Point(382, 405);
             this.btnIniciarExercicio.Margin = new System.Windows.Forms.Padding(2);
             this.btnIniciarExercicio.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnIniciarExercicio.Name = "btnIniciarExercicio";
@@ -114,7 +114,7 @@
             this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
             this.btnCancelar.BackgroundImage = global::gameLearning.Properties.Resources.btnCancelar;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCancelar.Location = new System.Drawing.Point(561, 359);
+            this.btnCancelar.Location = new System.Drawing.Point(560, 405);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnCancelar.Name = "btnCancelar";
@@ -123,13 +123,13 @@
             this.btnCancelar.TabStop = false;
             this.btnCancelar.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // dataGridView1
+            // gvAtividadesAluno
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(205, 258);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(491, 59);
-            this.dataGridView1.TabIndex = 10;
+            this.gvAtividadesAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvAtividadesAluno.Location = new System.Drawing.Point(170, 233);
+            this.gvAtividadesAluno.Name = "gvAtividadesAluno";
+            this.gvAtividadesAluno.Size = new System.Drawing.Size(559, 146);
+            this.gvAtividadesAluno.TabIndex = 10;
             // 
             // label2
             // 
@@ -138,7 +138,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(199, 213);
+            this.label2.Location = new System.Drawing.Point(199, 185);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(497, 32);
@@ -153,7 +153,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(886, 510);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gvAtividadesAluno);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIniciarExercicio);
             this.Controls.Add(this.btnJogar);
@@ -170,7 +170,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnJogar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnIniciarExercicio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvAtividadesAluno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,7 +184,7 @@
         private System.Windows.Forms.PictureBox btnJogar;
         private System.Windows.Forms.PictureBox btnIniciarExercicio;
         private System.Windows.Forms.PictureBox btnCancelar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gvAtividadesAluno;
         private System.Windows.Forms.Label label2;
     }
 }

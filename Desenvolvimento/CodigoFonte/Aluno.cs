@@ -82,5 +82,11 @@ namespace gameLearning
             //RETORNA PARA A INTERFACE SE O CADASTRO FOI BEM SUCEDIDO OU O ERRO OCORRIDO
             return resultado;
         }
+
+        public string getIDAluno(string cod_user)
+        {
+            Conexao banco = new Conexao();
+            return banco.getIDAluno(cod_user);
+        }
     }
 }

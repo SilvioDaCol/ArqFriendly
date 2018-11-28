@@ -24,6 +24,18 @@ namespace gameLearning
             return dt;
         }
 
+        public DataTable carregaAtividadesAluno(string cod_aluno)
+        {
+            Conexao banco = new Conexao();
+            resposta = banco.carregaAtividadesAluno(cod_aluno);
+            DataTable dt = new DataTable();
+            if (resposta == "Operacao realizada com sucesso")
+            {
+                dt = banco.getDataTable();
+            }
+            return dt;
+        }
+
         public string cadastraAtividade(string dataPrazo, string dataInicio, string cod_professor, string cod_jogo)
         {
             Conexao banco = new Conexao();

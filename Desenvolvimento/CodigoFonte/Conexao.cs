@@ -321,6 +321,18 @@ namespace gameLearning
             return resposta;
         }
 
+        public string carregaAtividadesAluno(string cod_aluno)
+        {
+            CRUD = "select a.cod_atividade, a.inicio_atividade, a.prazo_atividade, u.nome_user, j.nome_jogo from atividade a " +
+                "inner join professor p on p.cod_professor = a.prof " +
+                "inner join usuario u on p.usuario = u.cod_user " +
+                "inner join jogo j on j.cod_jogo = a.Jogo " +
+                "inner join inscreve i on i.atividade = a.cod_atividade " +
+                "where i.aluno=" + cod_aluno;
+            resposta = conectarTabelaDesconectar();
+            return resposta;
+        }
+
         public string deletaAtividade(string cod_atividade)
         {
             //DELETA AS  INSCRICOES RELACIONADAS
