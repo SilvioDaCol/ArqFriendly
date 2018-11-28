@@ -24,9 +24,9 @@ namespace gameLearning
 
         private void telaManterExercicios_Load(object sender, EventArgs e)
         {
-            Exercicio exercicio = new Exercicio();
-            Conexao banco = new Conexao();
-            cod_prof = banco.getIDProfessor(cod_user);
+            Exercicio exercicio = new Exercicio();          
+            Professor p = new Professor();
+            cod_prof = p.getIDProfessor(cod_user);
             dtExecicios = exercicio.carregaAtividadesProfessor(cod_prof);
             gvAtividadesProfessor.DataSource = dtExecicios;
 
@@ -57,22 +57,38 @@ namespace gameLearning
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow item in this.gvAtividadesProfessor.SelectedRows)
+            try
             {
-                gvAtividadesProfessor.Rows.RemoveAt(item.Index);
-            }          
-            //Rotina para excluir exercicio
-            //Rotina para atualizar GridView
+                //Rotina para excluir exercicio:
+                //Identifica a linha selecionada no GridView, extrai o codigo da atividade e o armazena na variavel
+                DataGridViewRow item = gvAtividadesProfessor.SelectedRows[0];
+                string cod_atividade = dtExecicios.Rows[item.Index]["cod_atividade"].ToString();
+
+                //Exclui Atividade
+                Exercicio exercicio = new Exercicio();
+                MessageBox.Show(exercicio.excluiAtividade(cod_atividade));
+
+                /* ATUALIZA DATAGRID */
+                Professor p = new Professor();
+                cod_prof = p.getIDProfessor(cod_user);
+                dtExecicios = exercicio.carregaAtividadesProfessor(cod_prof);
+                gvAtividadesProfessor.DataSource = dtExecicios;
+            }
+            catch (ArgumentException)
+            {
+                MessageBox.Show("SELECIONE UM EXERCICIO NA LISTA ACIMA");
+            }            
         }
 
         private void btnPontuacaoPorAluno_Click(object sender, EventArgs e)
         {
             try
-            {
+            {             
                 //Identifica a linha selecionada no GridView, extrai o codigo da atividade e o armazena na variavel
                 DataGridViewRow item = gvAtividadesProfessor.SelectedRows[0];
                 string cod_atividade = dtExecicios.Rows[item.Index]["cod_atividade"].ToString();
 
+                //Mostra tela de pontuacao
                 this.Hide();
                 telaPontuacao PontuacaoPorAluno = new telaPontuacao(cod_user, cod_atividade);
                 PontuacaoPorAluno.Closed += (s, args) => this.Close();

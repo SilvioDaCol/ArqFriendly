@@ -108,7 +108,45 @@ namespace gameLearning
 
             return resposta;
         }
-        
+
+
+        private string conectarUpdateTabelaDesconectar()
+        {
+            NpgsqlDataAdapter data_adapter;
+
+            try
+            {
+                //CHAMA NOVA CONEXAO E PASSA A CHAVE DO BANCO
+                NpgsqlConnection novaConexao = new NpgsqlConnection(chave);
+                //ABRE CONEXAO
+                novaConexao.Open();
+
+                //Cria um novo adaptador para os dados na tabela
+                data_adapter = new NpgsqlDataAdapter();
+                data_adapter.SelectCommand = new NpgsqlCommand(CRUD, novaConexao);
+
+                //cria os comandos insert update e delete
+                NpgsqlCommandBuilder cmdBuilder = new NpgsqlCommandBuilder(data_adapter);
+                //Diz que iremos utilizar "colchetes" para especificar objetos 
+                //de banco de dados (tabelas, colunas...)cujos nomes contenham caracteres 
+                //como espaços ou símbolos reservados;
+                cmdBuilder.QuotePrefix = "[";
+                cmdBuilder.QuoteSuffix = "]";
+
+                //Atualiza banco com oas dados da tabela
+                data_adapter.Update(data_table);
+
+                resposta = "Operacao realizada com sucesso";
+            }
+            //monitora possíveis erros
+            catch (NpgsqlException ex)
+            {
+                resposta = "ERRO: " + ex.Message + ex.StackTrace;
+            }
+
+            return resposta;
+        }
+
 
         public string cadastraUsuario(string nome, string email, string senha)
         {
@@ -283,10 +321,19 @@ namespace gameLearning
             return resposta;
         }
 
-        public void deletaAtividade(string cod_atividade)
+        public string deletaAtividade(string cod_atividade)
         {
-            CRUD = "delete FROM atividade where cod_atividade = '" + cod_atividade + "';";
+            //DELETA AS  INSCRICOES RELACIONADAS
+            CRUD = "delete from inscreve where atividade = '" + cod_atividade + "';";
             resposta = conectarInserirDesconectar();
+            if(resposta == "Operacao realizada com sucesso")
+            {
+                //DELETA A ATIVIDADE
+                CRUD = "delete FROM atividade where cod_atividade = '" + cod_atividade + "';";
+                resposta = conectarInserirDesconectar();
+            }
+            
+            return resposta;
         }
 
         public string cadastraAtividade(string dataPrazo, string dataInicio, string cod_professor, string cod_jogo)
@@ -319,7 +366,6 @@ namespace gameLearning
             resposta = resposta = conectarInserirDesconectar();
             return resposta;
         }
-
 
         public DataTable getDataTable()
         {

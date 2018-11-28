@@ -58,5 +58,11 @@ namespace gameLearning
             return resposta;
         }
 
+        public string excluiAtividade(string cod_atividade)
+        {
+            Conexao banco = new Conexao();
+            return banco.deletaAtividade(cod_atividade);
+        }
+
     }
 }
