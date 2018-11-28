@@ -87,6 +87,7 @@
             this.Name = "telaPontuacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "telaPontuacao";
+            this.Load += new System.EventHandler(this.telaPontuacao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvPontuacaoPorAluno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).EndInit();
             this.ResumeLayout(false);

@@ -19,8 +19,8 @@ namespace gameLearning
 
         public Conexao()
         {
-            chave = "Server=localhost;Port=5432;UserId=postgres;Password=Sophia20;Database=gamelearning_db";           
-            //chave = "Server=localhost;Port=5432;UserId=postgres;Password=dustcloth;Database=gamelearning_db";
+            //chave = "Server=localhost;Port=5432;UserId=postgres;Password=Sophia20;Database=gamelearning_db";           
+            chave = "Server=localhost;Port=5432;UserId=postgres;Password=dustcloth;Database=gamelearning_db";
             resposta = "";
         }
 
@@ -108,6 +108,7 @@ namespace gameLearning
 
             return resposta;
         }
+        
 
         public string cadastraUsuario(string nome, string email, string senha)
         {
@@ -186,16 +187,7 @@ namespace gameLearning
             resposta = conectarConsultarDesconectar();
             return resposta;
         }
-
-        public string carregaAtividadesProfessor(string cod_professor)
-        {
-            CRUD = "SELECT a.cod_atividade, a.inicio_atividade, a.prazo_atividade, jogo.nome_jogo from atividade a " +
-                "inner join jogo on a.jogo = jogo.cod_jogo " +
-                "where a.prof = " + cod_professor;
-            resposta = conectarTabelaDesconectar();
-            return resposta;
-        }      
-        
+       
         public string cadastraAluno(string cod_user, string ra_aluno, string curso, string semestre)
         {
             CRUD = "insert into aluno (ra_aluno, usuario, curso, semestre) values ('" + ra_aluno + "', '" + cod_user + "', '" + curso + "', '" + semestre + "');";
@@ -223,6 +215,21 @@ namespace gameLearning
             return resposta;
         }
 
+        public string getListaTurmas() {
+            CRUD = "SELECT * from turma";
+            resposta = conectarTabelaDesconectar();
+            return resposta;
+        }
+
+        public string getAlunosTurma(string cod_turma)
+        {
+            CRUD = "select u.cod_user, u.nome_user, u.email_user, a.cod_aluno, a.ra_aluno from usuario u " +
+                "inner join aluno a on u.cod_user = a.usuario " +
+                "inner join matricula m on m.aluno = a.cod_aluno " +
+                "where m.turma = "+ cod_turma;
+            resposta = conectarTabelaDesconectar();
+            return resposta;
+        }
 
         public string matriculaAlunoTurma(string IDTurma, string cod_aluno)
         {
@@ -264,7 +271,55 @@ namespace gameLearning
             CRUD = "select nome_jogo from jogo where cod_jogo = '" + cod_jogo + "';";
             resposta = conectarConsultarDesconectar();
             return resposta;
-        }               
+        }
+
+
+        public string carregaAtividadesProfessor(string cod_professor)
+        {
+            CRUD = "SELECT a.cod_atividade, a.inicio_atividade, a.prazo_atividade, jogo.nome_jogo from atividade a " +
+                "inner join jogo on a.jogo = jogo.cod_jogo " +
+                "where a.prof = " + cod_professor;
+            resposta = conectarTabelaDesconectar();
+            return resposta;
+        }
+
+        public void deletaAtividade(string cod_atividade)
+        {
+            CRUD = "delete FROM atividade where cod_atividade = '" + cod_atividade + "';";
+            resposta = conectarInserirDesconectar();
+        }
+
+        public string cadastraAtividade(string dataPrazo, string dataInicio, string cod_professor, string cod_jogo)
+        {
+            CRUD = "insert into atividade (prazo_atividade, inicio_atividade, prof, jogo) values ('" + dataPrazo + "', '" + dataInicio + "', '" + cod_professor + "', '" + cod_jogo + "');";
+            resposta = conectarInserirDesconectar();
+            return resposta;
+        }
+
+        public string getAtividades()
+        {
+            CRUD = "SELECT * from atividade";
+            resposta = conectarTabelaDesconectar();
+            return resposta;
+        }
+
+        public string getAlunosAtividade(string cod_atividade)
+        {
+            CRUD = "select u.nome_user, a.ra_aluno, i.pontuacao, u.email_user from usuario u " +
+                "inner join aluno a on u.cod_user = a.usuario " +
+                "inner join inscreve i on a.cod_aluno = i.aluno " +
+                "where i.atividade = "+cod_atividade;
+            resposta = conectarTabelaDesconectar();
+            return resposta;
+        }
+
+        public string cadastraAlunosAtividade(string cod_aluno, string cod_atividade)
+        {
+            CRUD = "INSERT INTO inscreve (aluno, atividade) values ('"+ cod_aluno +"', '"+ cod_atividade +"');";
+            resposta = resposta = conectarInserirDesconectar();
+            return resposta;
+        }
+
 
         public DataTable getDataTable()
         {

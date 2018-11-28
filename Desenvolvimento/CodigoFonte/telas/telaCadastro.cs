@@ -126,7 +126,7 @@ namespace gameLearning
                 fazerlogin.Show();
             }
             //SE HOUVE ERRO NA OPERAÇÃO DE CADASTRO DO BANCO EXIBE O ERRO OCORRIDO
-            else
+            else if(respostaBanco != "")
             {
                 MessageBox.Show(respostaBanco);
             }

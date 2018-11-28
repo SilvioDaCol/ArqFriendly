@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace gameLearning
 {
@@ -11,13 +12,29 @@ namespace gameLearning
         private string resultado;
         private Usuario usuario;
 
+        public string cod_user;
+        public string nome_user;
+        public string email_user;
+        public string cod_aluno;
+        public string ra_aluno;
+        public string nome_raAluno;
+
         public Aluno()
         {
             resultado = "";
             usuario = new Usuario();
         }
+        public Aluno(DataRow drAluno)
+        {
+            cod_user = drAluno["cod_user"].ToString();            
+            nome_user = drAluno["nome_user"].ToString();
+            email_user = drAluno["email_user"].ToString();
+            cod_aluno = drAluno["cod_aluno"].ToString();
+            ra_aluno = drAluno["ra_aluno"].ToString();
+            nome_raAluno = nome_user + " - RA: " + ra_aluno;
+        }
 
-        public string cadastraAluno(string nome, string ra_aluno, string email, string senha, string ConfirmaSenha, string curso, string semestre)
+            public string cadastraAluno(string nome, string ra_aluno, string email, string senha, string ConfirmaSenha, string curso, string semestre)
         {
             //SOLICITA A CLASSE USUARIO PARA REGISTRAR NO BANCO OS DADOS REFERENTES AO USUARIO E ARMAZERNA RESPOSTA(SUCESSO OU ERRO DO BANCO) NA VARIAVEL RESULTADO
             resultado = usuario.cadastraUsuario(nome, email, senha, ConfirmaSenha);

@@ -23,5 +23,40 @@ namespace gameLearning
             }
             return dt;
         }
+
+        public string cadastraAtividade(string dataPrazo, string dataInicio, string cod_professor, string cod_jogo)
+        {
+            Conexao banco = new Conexao();
+            //Cadastra a atividade
+            resposta = banco.cadastraAtividade(dataPrazo, dataInicio, cod_professor, cod_jogo);
+            //Se a atividade foi cadastrada com sucesso...
+            if(resposta == "Operacao realizada com sucesso")
+            {
+                //Recupera tabeladas atividades cadastradas
+                resposta = banco.getAtividades();
+                DataTable dtAtividades = banco.getDataTable();
+                //Lê o codigo da última atividade da lista e armazena em variavel resposta
+                resposta = dtAtividades.Rows[dtAtividades.Rows.Count - 1]["cod_atividade"].ToString();
+            }            
+
+            return resposta;
+        }
+
+        public DataTable getAlunosAtividade(string cod_atividade)
+        {
+            Conexao banco = new Conexao();
+            resposta = banco.getAlunosAtividade(cod_atividade);
+
+            return banco.getDataTable();
+        }
+
+        public string cadastraAlunosAtividade(string cod_aluno, string cod_atividade)
+        {
+            Conexao banco = new Conexao();
+            resposta = banco.cadastraAlunosAtividade(cod_aluno, cod_atividade);
+
+            return resposta;
+        }
+
     }
 }

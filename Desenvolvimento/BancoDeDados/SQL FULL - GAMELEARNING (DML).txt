@@ -88,7 +88,14 @@ CREATE TABLE ranking_geral(
 	REFERENCES usuario(cod_user) MATCH SIMPLE
 );
 
+/* Insercao dos Jogos */
 insert into jogo(nome_jogo, descricao_jogo) values ('StarWars LC','Explore mapas incriveis, cuidado com os meteoros!!');
 insert into jogo(nome_jogo, descricao_jogo) values ('AlgoRace','Dirija em alta velocidade sempre escolhendo os tuneis corretos!!');
 insert into jogo(nome_jogo, descricao_jogo) values ('CTI_Game','Aqui voce vai programar se divertindo muito!!');
 
+/* Insercao das Turmas */
+insert into turma (curso, semestre, prof) values('TADS', '1' , '1');
+insert into turma (curso, semestre, prof) values('ELETR', '3' , '1');
+insert into turma (curso, semestre, prof) values('ENG', '8' , '1');
+insert into turma (curso, semestre, prof) values('MED', '6' , '1');
+insert into turma (curso, semestre, prof) values('TADS', '2' , '1');

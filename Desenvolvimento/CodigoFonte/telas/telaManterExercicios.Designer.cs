@@ -36,23 +36,21 @@
             this.btnCancelar = new System.Windows.Forms.PictureBox();
             this.btnPontuacaoPorAluno = new System.Windows.Forms.PictureBox();
             this.btnExcluir = new System.Windows.Forms.PictureBox();
-            this.btnAlterar = new System.Windows.Forms.PictureBox();
             this.btnCriar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gvAtividadesProfessor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPontuacaoPorAluno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExcluir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAlterar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCriar)).BeginInit();
             this.SuspendLayout();
             // 
             // gvAtividadesProfessor
             // 
             this.gvAtividadesProfessor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvAtividadesProfessor.Location = new System.Drawing.Point(125, 227);
+            this.gvAtividadesProfessor.Location = new System.Drawing.Point(233, 168);
             this.gvAtividadesProfessor.Name = "gvAtividadesProfessor";
-            this.gvAtividadesProfessor.Size = new System.Drawing.Size(652, 115);
+            this.gvAtividadesProfessor.Size = new System.Drawing.Size(447, 194);
             this.gvAtividadesProfessor.TabIndex = 24;
             // 
             // lbNOME
@@ -72,7 +70,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(234, 160);
+            this.label3.Location = new System.Drawing.Point(234, 108);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(446, 46);
@@ -96,7 +94,7 @@
             this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
             this.btnCancelar.BackgroundImage = global::gameLearning.Properties.Resources.btnCancelar;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCancelar.Location = new System.Drawing.Point(707, 400);
+            this.btnCancelar.Location = new System.Drawing.Point(642, 400);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnCancelar.Name = "btnCancelar";
@@ -110,7 +108,7 @@
             this.btnPontuacaoPorAluno.BackColor = System.Drawing.Color.Transparent;
             this.btnPontuacaoPorAluno.BackgroundImage = global::gameLearning.Properties.Resources.btnEnviar;
             this.btnPontuacaoPorAluno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPontuacaoPorAluno.Location = new System.Drawing.Point(548, 400);
+            this.btnPontuacaoPorAluno.Location = new System.Drawing.Point(470, 400);
             this.btnPontuacaoPorAluno.Margin = new System.Windows.Forms.Padding(2);
             this.btnPontuacaoPorAluno.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnPontuacaoPorAluno.Name = "btnPontuacaoPorAluno";
@@ -124,7 +122,7 @@
             this.btnExcluir.BackColor = System.Drawing.Color.Transparent;
             this.btnExcluir.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
             this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExcluir.Location = new System.Drawing.Point(392, 400);
+            this.btnExcluir.Location = new System.Drawing.Point(293, 400);
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(2);
             this.btnExcluir.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnExcluir.Name = "btnExcluir";
@@ -133,26 +131,12 @@
             this.btnExcluir.TabStop = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // btnAlterar
-            // 
-            this.btnAlterar.BackColor = System.Drawing.Color.Transparent;
-            this.btnAlterar.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
-            this.btnAlterar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAlterar.Location = new System.Drawing.Point(234, 400);
-            this.btnAlterar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAlterar.MaximumSize = new System.Drawing.Size(135, 65);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(135, 65);
-            this.btnAlterar.TabIndex = 25;
-            this.btnAlterar.TabStop = false;
-            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
-            // 
             // btnCriar
             // 
             this.btnCriar.BackColor = System.Drawing.Color.Transparent;
             this.btnCriar.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
             this.btnCriar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCriar.Location = new System.Drawing.Point(79, 400);
+            this.btnCriar.Location = new System.Drawing.Point(125, 400);
             this.btnCriar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCriar.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnCriar.Name = "btnCriar";
@@ -172,7 +156,6 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnPontuacaoPorAluno);
             this.Controls.Add(this.btnExcluir);
-            this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.gvAtividadesProfessor);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbNOME);
@@ -189,7 +172,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPontuacaoPorAluno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExcluir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAlterar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCriar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -205,7 +187,6 @@
         private System.Windows.Forms.PictureBox btnCancelar;
         private System.Windows.Forms.PictureBox btnPontuacaoPorAluno;
         private System.Windows.Forms.PictureBox btnExcluir;
-        private System.Windows.Forms.PictureBox btnAlterar;
         private System.Windows.Forms.PictureBox btnCriar;
     }
 }

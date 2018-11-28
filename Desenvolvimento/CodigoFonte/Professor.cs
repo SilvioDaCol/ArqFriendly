@@ -40,7 +40,14 @@ namespace gameLearning
 
             //RETORNA PARA A INTERFACE SE O CADASTRO FOI BEM SUCEDIDO OU O ERRO OCORRIDO
             return resultado;
-        }        
+        }  
         
+        public string getIDProfessor(string cod_user)
+        {
+            Conexao banco = new Conexao();
+            return banco.getIDProfessor(cod_user);
+        }
+
+
     }
 }
