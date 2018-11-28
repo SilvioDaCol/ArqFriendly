@@ -51,7 +51,7 @@
             this.gameLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLogoMenor.BackgroundImage")));
             this.gameLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gameLogoMenor.Location = new System.Drawing.Point(29, 30);
-            this.gameLogoMenor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gameLogoMenor.Margin = new System.Windows.Forms.Padding(4);
             this.gameLogoMenor.MaximumSize = new System.Drawing.Size(120, 60);
             this.gameLogoMenor.Name = "gameLogoMenor";
             this.gameLogoMenor.Size = new System.Drawing.Size(120, 60);
@@ -123,6 +123,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(180, 80);
             this.pictureBox5.TabIndex = 18;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // label3
             // 
@@ -142,7 +143,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.PaleGreen;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(163, 277);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(869, 142);
             this.dataGridView1.TabIndex = 20;

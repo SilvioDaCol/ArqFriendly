@@ -52,7 +52,7 @@ namespace gameLearning
         private void btnTurmas_Click(object sender, EventArgs e)
         {
             this.Hide();
-            telaManterTurma telaTurma = new telaManterTurma();
+            telaManterTurma telaTurma = new telaManterTurma(cod_user);
             telaTurma.Closed += (s, args) => this.Close();
             telaTurma.Show();
         }

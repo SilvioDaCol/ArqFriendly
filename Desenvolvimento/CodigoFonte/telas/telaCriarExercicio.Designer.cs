@@ -64,7 +64,7 @@
             btnSalvar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalvar.BackgroundImage")));
             btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             btnSalvar.Location = new System.Drawing.Point(303, 529);
-            btnSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            btnSalvar.Margin = new System.Windows.Forms.Padding(4);
             btnSalvar.MaximumSize = new System.Drawing.Size(180, 80);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
@@ -80,7 +80,7 @@
             btnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelar.BackgroundImage")));
             btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             btnCancelar.Location = new System.Drawing.Point(717, 529);
-            btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             btnCancelar.MaximumSize = new System.Drawing.Size(180, 80);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Padding = new System.Windows.Forms.Padding(0, 199, 0, 0);
@@ -95,7 +95,7 @@
             this.gameLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLogoMenor.BackgroundImage")));
             this.gameLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gameLogoMenor.Location = new System.Drawing.Point(29, 30);
-            this.gameLogoMenor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gameLogoMenor.Margin = new System.Windows.Forms.Padding(4);
             this.gameLogoMenor.MaximumSize = new System.Drawing.Size(120, 60);
             this.gameLogoMenor.Name = "gameLogoMenor";
             this.gameLogoMenor.Size = new System.Drawing.Size(120, 60);
@@ -107,7 +107,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = global::gameLearning.Properties.Resources.introProgIcon;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(813, 245);
+            this.pictureBox6.Location = new System.Drawing.Point(745, 262);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.MaximumSize = new System.Drawing.Size(180, 180);
             this.pictureBox6.Name = "pictureBox6";
@@ -120,7 +120,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = global::gameLearning.Properties.Resources.algoRaceIcon;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(813, 151);
+            this.pictureBox5.Location = new System.Drawing.Point(745, 168);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.MaximumSize = new System.Drawing.Size(180, 180);
             this.pictureBox5.Name = "pictureBox5";
@@ -133,7 +133,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::gameLearning.Properties.Resources.starWarsIcon;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(813, 62);
+            this.pictureBox2.Location = new System.Drawing.Point(745, 79);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.MaximumSize = new System.Drawing.Size(180, 180);
             this.pictureBox2.Name = "pictureBox2";
@@ -145,8 +145,8 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(920, 95);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Location = new System.Drawing.Point(875, 111);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(126, 22);
             this.radioButton1.TabIndex = 27;
@@ -159,8 +159,8 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(920, 185);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton2.Location = new System.Drawing.Point(875, 201);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(101, 22);
             this.radioButton2.TabIndex = 28;
@@ -173,8 +173,8 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(920, 278);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton3.Location = new System.Drawing.Point(875, 294);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(109, 22);
             this.radioButton3.TabIndex = 29;
@@ -190,7 +190,7 @@
             this.lbTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
             this.lbTitulo.ForeColor = System.Drawing.Color.White;
-            this.lbTitulo.Location = new System.Drawing.Point(256, 33);
+            this.lbTitulo.Location = new System.Drawing.Point(293, 32);
             this.lbTitulo.Name = "lbTitulo";
             this.lbTitulo.Size = new System.Drawing.Size(661, 58);
             this.lbTitulo.TabIndex = 30;
@@ -199,12 +199,12 @@
             // cbRelacaoTurmas
             // 
             this.cbRelacaoTurmas.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cbRelacaoTurmas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRelacaoTurmas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRelacaoTurmas.FormattingEnabled = true;
-            this.cbRelacaoTurmas.Location = new System.Drawing.Point(79, 138);
-            this.cbRelacaoTurmas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRelacaoTurmas.Location = new System.Drawing.Point(43, 140);
+            this.cbRelacaoTurmas.Margin = new System.Windows.Forms.Padding(4);
             this.cbRelacaoTurmas.Name = "cbRelacaoTurmas";
-            this.cbRelacaoTurmas.Size = new System.Drawing.Size(260, 25);
+            this.cbRelacaoTurmas.Size = new System.Drawing.Size(260, 28);
             this.cbRelacaoTurmas.TabIndex = 31;
             this.cbRelacaoTurmas.Text = "SELECIONE UM TURMA";
             this.cbRelacaoTurmas.SelectedIndexChanged += new System.EventHandler(this.cbRelacaoTurmas_SelectedIndexChanged);
@@ -213,22 +213,22 @@
             // 
             this.lbPrazo.AutoSize = true;
             this.lbPrazo.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.lbPrazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.3F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPrazo.Location = new System.Drawing.Point(80, 48);
+            this.lbPrazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrazo.Location = new System.Drawing.Point(39, 51);
             this.lbPrazo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPrazo.Name = "lbPrazo";
-            this.lbPrazo.Size = new System.Drawing.Size(273, 17);
+            this.lbPrazo.Size = new System.Drawing.Size(324, 20);
             this.lbPrazo.TabIndex = 41;
             this.lbPrazo.Text = "INFORME UM PRAZO DE ENTREGA:";
             // 
             // dtpPrazo
             // 
-            this.dtpPrazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpPrazo.Location = new System.Drawing.Point(407, 46);
-            this.dtpPrazo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpPrazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpPrazo.Location = new System.Drawing.Point(417, 46);
+            this.dtpPrazo.Margin = new System.Windows.Forms.Padding(4);
             this.dtpPrazo.MinDate = new System.DateTime(2018, 10, 30, 0, 0, 0, 0);
             this.dtpPrazo.Name = "dtpPrazo";
-            this.dtpPrazo.Size = new System.Drawing.Size(315, 24);
+            this.dtpPrazo.Size = new System.Drawing.Size(247, 27);
             this.dtpPrazo.TabIndex = 43;
             // 
             // groupBox1
@@ -248,11 +248,11 @@
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.cbRelacaoTurmas);
-            this.groupBox1.Location = new System.Drawing.Point(29, 132);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(61, 127);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(1120, 364);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1040, 364);
             this.groupBox1.TabIndex = 44;
             this.groupBox1.TabStop = false;
             // 
@@ -260,23 +260,23 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.3F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(817, 36);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(741, 46);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(242, 17);
+            this.label2.Size = new System.Drawing.Size(285, 20);
             this.label2.TabIndex = 45;
-            this.label2.Text = "SELECIONE UM JOGO A BAIXO:";
+            this.label2.Text = "SELECIONE UM JOGO ABAIXO:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.3F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(403, 142);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(417, 143);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 17);
+            this.label1.Size = new System.Drawing.Size(247, 20);
             this.label1.TabIndex = 44;
             this.label1.Text = "LISTA DE PARTICIPANTES:";
             // 
@@ -285,10 +285,10 @@
             this.lsAlunosAtividade.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.lsAlunosAtividade.FormattingEnabled = true;
             this.lsAlunosAtividade.ItemHeight = 16;
-            this.lsAlunosAtividade.Location = new System.Drawing.Point(79, 185);
-            this.lsAlunosAtividade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lsAlunosAtividade.Location = new System.Drawing.Point(43, 186);
+            this.lsAlunosAtividade.Margin = new System.Windows.Forms.Padding(4);
             this.lsAlunosAtividade.Name = "lsAlunosAtividade";
-            this.lsAlunosAtividade.Size = new System.Drawing.Size(643, 148);
+            this.lsAlunosAtividade.Size = new System.Drawing.Size(621, 148);
             this.lsAlunosAtividade.TabIndex = 33;
             // 
             // telaCriarExercicio
