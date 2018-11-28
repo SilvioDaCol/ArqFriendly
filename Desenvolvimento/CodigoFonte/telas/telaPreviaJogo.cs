@@ -44,18 +44,22 @@ namespace gameLearning
                     logoJogo.BackColor = Color.Transparent;
                     break;
                 case "2":
-                    imagemPrevia1.BackgroundImage = Properties.Resources.starWarsIcon;
+                    imagemPrevia1.BackgroundImage = Properties.Resources.algoRace;
                     imagemPrevia1.BackgroundImageLayout = ImageLayout.Stretch;
-                    imagemPrevia2.BackgroundImage = Properties.Resources.algoRace;
+                    imagemPrevia2.BackgroundImage = Properties.Resources.AlgoRaceRanking;
                     imagemPrevia2.BackgroundImageLayout = ImageLayout.Stretch;
-                    logoJogo.BackgroundImage = Properties.Resources.starWarsIcon;
+                    logoJogo.BackgroundImage = Properties.Resources.algoRaceIcon;
                     logoJogo.BackgroundImageLayout = ImageLayout.Stretch;
                     logoJogo.BackColor = Color.Transparent;
                     break;
                 case "3":
-                    imagemPrevia1.BackgroundImage = Properties.Resources.introProgIcon;
-                    imagemPrevia2.BackgroundImage = Properties.Resources.introProgIcon;
+                    imagemPrevia1.BackgroundImage = Properties.Resources.tutorial;
+                    imagemPrevia1.BackgroundImageLayout = ImageLayout.Stretch;
+                    imagemPrevia2.BackgroundImage = Properties.Resources.introProgr;
+                    imagemPrevia2.BackgroundImageLayout = ImageLayout.Stretch;
                     logoJogo.BackgroundImage = Properties.Resources.introProgIcon;
+                    logoJogo.BackgroundImageLayout = ImageLayout.Stretch;
+                    logoJogo.BackColor = Color.Transparent;
                     break;
             }
         }

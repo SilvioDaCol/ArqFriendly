@@ -47,33 +47,37 @@
             // 
             // gvAtividadesProfessor
             // 
+            this.gvAtividadesProfessor.BackgroundColor = System.Drawing.Color.PaleGreen;
             this.gvAtividadesProfessor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvAtividadesProfessor.Location = new System.Drawing.Point(233, 168);
+            this.gvAtividadesProfessor.Location = new System.Drawing.Point(311, 207);
+            this.gvAtividadesProfessor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gvAtividadesProfessor.Name = "gvAtividadesProfessor";
-            this.gvAtividadesProfessor.Size = new System.Drawing.Size(447, 194);
+            this.gvAtividadesProfessor.Size = new System.Drawing.Size(596, 239);
             this.gvAtividadesProfessor.TabIndex = 24;
             // 
             // lbNOME
             // 
             this.lbNOME.AutoSize = true;
-            this.lbNOME.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNOME.Location = new System.Drawing.Point(162, 42);
+            this.lbNOME.BackColor = System.Drawing.Color.Transparent;
+            this.lbNOME.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNOME.ForeColor = System.Drawing.Color.White;
+            this.lbNOME.Location = new System.Drawing.Point(283, 30);
+            this.lbNOME.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNOME.Name = "lbNOME";
-            this.lbNOME.Size = new System.Drawing.Size(331, 31);
+            this.lbNOME.Size = new System.Drawing.Size(637, 55);
             this.lbNOME.TabIndex = 22;
-            this.lbNOME.Text = "Nome do usuario logado...";
+            this.lbNOME.Text = "NOME USUARIO LOGADO";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Silver;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(234, 108);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(338, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(446, 46);
+            this.label3.Size = new System.Drawing.Size(555, 58);
             this.label3.TabIndex = 23;
             this.label3.Text = "ATIVIDADES CRIADAS";
             // 
@@ -82,10 +86,11 @@
             this.gameLogoMenor.BackColor = System.Drawing.Color.Transparent;
             this.gameLogoMenor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gameLogoMenor.BackgroundImage")));
             this.gameLogoMenor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gameLogoMenor.Location = new System.Drawing.Point(22, 24);
-            this.gameLogoMenor.MaximumSize = new System.Drawing.Size(90, 49);
+            this.gameLogoMenor.Location = new System.Drawing.Point(29, 30);
+            this.gameLogoMenor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gameLogoMenor.MaximumSize = new System.Drawing.Size(120, 60);
             this.gameLogoMenor.Name = "gameLogoMenor";
-            this.gameLogoMenor.Size = new System.Drawing.Size(90, 49);
+            this.gameLogoMenor.Size = new System.Drawing.Size(120, 60);
             this.gameLogoMenor.TabIndex = 21;
             this.gameLogoMenor.TabStop = false;
             // 
@@ -94,11 +99,11 @@
             this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
             this.btnCancelar.BackgroundImage = global::gameLearning.Properties.Resources.btnCancelar;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCancelar.Location = new System.Drawing.Point(642, 400);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCancelar.MaximumSize = new System.Drawing.Size(135, 65);
+            this.btnCancelar.Location = new System.Drawing.Point(856, 492);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancelar.MaximumSize = new System.Drawing.Size(180, 80);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(135, 65);
+            this.btnCancelar.Size = new System.Drawing.Size(180, 80);
             this.btnCancelar.TabIndex = 28;
             this.btnCancelar.TabStop = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -108,11 +113,11 @@
             this.btnPontuacaoPorAluno.BackColor = System.Drawing.Color.Transparent;
             this.btnPontuacaoPorAluno.BackgroundImage = global::gameLearning.Properties.Resources.btnEnviar;
             this.btnPontuacaoPorAluno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPontuacaoPorAluno.Location = new System.Drawing.Point(470, 400);
-            this.btnPontuacaoPorAluno.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPontuacaoPorAluno.MaximumSize = new System.Drawing.Size(135, 65);
+            this.btnPontuacaoPorAluno.Location = new System.Drawing.Point(627, 492);
+            this.btnPontuacaoPorAluno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPontuacaoPorAluno.MaximumSize = new System.Drawing.Size(180, 80);
             this.btnPontuacaoPorAluno.Name = "btnPontuacaoPorAluno";
-            this.btnPontuacaoPorAluno.Size = new System.Drawing.Size(135, 65);
+            this.btnPontuacaoPorAluno.Size = new System.Drawing.Size(180, 80);
             this.btnPontuacaoPorAluno.TabIndex = 27;
             this.btnPontuacaoPorAluno.TabStop = false;
             this.btnPontuacaoPorAluno.Click += new System.EventHandler(this.btnPontuacaoPorAluno_Click);
@@ -122,11 +127,11 @@
             this.btnExcluir.BackColor = System.Drawing.Color.Transparent;
             this.btnExcluir.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
             this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExcluir.Location = new System.Drawing.Point(293, 400);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExcluir.MaximumSize = new System.Drawing.Size(135, 65);
+            this.btnExcluir.Location = new System.Drawing.Point(391, 492);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExcluir.MaximumSize = new System.Drawing.Size(180, 80);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(135, 65);
+            this.btnExcluir.Size = new System.Drawing.Size(180, 80);
             this.btnExcluir.TabIndex = 26;
             this.btnExcluir.TabStop = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -136,22 +141,22 @@
             this.btnCriar.BackColor = System.Drawing.Color.Transparent;
             this.btnCriar.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
             this.btnCriar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCriar.Location = new System.Drawing.Point(125, 400);
-            this.btnCriar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCriar.MaximumSize = new System.Drawing.Size(135, 65);
+            this.btnCriar.Location = new System.Drawing.Point(167, 492);
+            this.btnCriar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCriar.MaximumSize = new System.Drawing.Size(180, 80);
             this.btnCriar.Name = "btnCriar";
-            this.btnCriar.Size = new System.Drawing.Size(135, 65);
+            this.btnCriar.Size = new System.Drawing.Size(180, 80);
             this.btnCriar.TabIndex = 29;
             this.btnCriar.TabStop = false;
             this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
             // 
             // telaManterExercicios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::gameLearning.Properties.Resources.mainBack;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(888, 517);
+            this.ClientSize = new System.Drawing.Size(1181, 626);
             this.Controls.Add(this.btnCriar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnPontuacaoPorAluno);
@@ -160,9 +165,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbNOME);
             this.Controls.Add(this.gameLogoMenor);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(904, 556);
-            this.MinimumSize = new System.Drawing.Size(904, 556);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1199, 673);
+            this.MinimumSize = new System.Drawing.Size(1199, 673);
             this.Name = "telaManterExercicios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "telaManterExercicio";
