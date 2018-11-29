@@ -70,7 +70,7 @@ CREATE TABLE inscreve(
 	cod_inscricao serial primary key,
 	atividade integer not null,
 	aluno integer not null,
-	pontuacao integer default 0,
+	pontuacao integer default -1,
 	CONSTRAINT ch_estr_de_atividade_em_inscricao FOREIGN KEY(atividade)
 	REFERENCES atividade(cod_atividade) MATCH SIMPLE,
 	CONSTRAINT ch_estr_de_aluno_em_inscricao FOREIGN KEY(aluno)

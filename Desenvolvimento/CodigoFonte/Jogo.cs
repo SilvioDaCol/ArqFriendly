@@ -91,5 +91,12 @@ namespace gameLearning
             resposta = banco.getDescricaoJogo(cod_jogo);
             return resposta;
         }
+
+        public string getIDJogo(string nome_jogo)
+        {
+            Conexao banco = new Conexao();
+            resposta = banco.getIDJogo(nome_jogo);
+            return resposta;
+        }
     }
 }

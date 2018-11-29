@@ -76,5 +76,11 @@ namespace gameLearning
             return banco.deletaAtividade(cod_atividade);
         }
 
+        public string salvaPontuacaoAluno(string cod_atividade, string cod_aluno, string pontuacao){
+            Conexao banco = new Conexao();
+            resposta = banco.salvaPontuacaoAluno(cod_atividade, cod_aluno, pontuacao);
+            return resposta;
+        }
+
     }
 }

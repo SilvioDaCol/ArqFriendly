@@ -19,8 +19,8 @@ namespace gameLearning
 
         public Conexao()
         {
-            chave = "Server=localhost;Port=5432;UserId=postgres;Password=Sophia20;Database=gamelearning_db";           
-            //chave = "Server=localhost;Port=5432;UserId=postgres;Password=dustcloth;Database=gamelearning_db";
+            //chave = "Server=localhost;Port=5432;UserId=postgres;Password=Sophia20;Database=gamelearning_db";           
+            chave = "Server=localhost;Port=5432;UserId=postgres;Password=dustcloth;Database=gamelearning_db";
             resposta = "";
         }
 
@@ -311,6 +311,11 @@ namespace gameLearning
             return resposta;
         }
 
+        public string getIDJogo(string nome_jogo)
+        {
+            CRUD = "select cod_jogo from jogo where nome_jogo = '" + nome_jogo + "';";
+            return resposta;
+        }
 
         public string carregaAtividadesProfessor(string cod_professor)
         {
@@ -328,7 +333,7 @@ namespace gameLearning
                 "inner join usuario u on p.usuario = u.cod_user " +
                 "inner join jogo j on j.cod_jogo = a.Jogo " +
                 "inner join inscreve i on i.atividade = a.cod_atividade " +
-                "where i.aluno=" + cod_aluno;
+                "where i.aluno = " + cod_aluno + " and i.pontuacao = -1 ";
             resposta = conectarTabelaDesconectar();
             return resposta;
         }
@@ -376,6 +381,14 @@ namespace gameLearning
         {
             CRUD = "INSERT INTO inscreve (aluno, atividade) values ('"+ cod_aluno +"', '"+ cod_atividade +"');";
             resposta = resposta = conectarInserirDesconectar();
+            return resposta;
+        }
+
+        public string salvaPontuacaoAluno(string cod_atividade, string cod_aluno, string pontuacao)
+        {
+            CRUD = "UPDATE inscreve SET pontuacao = '"+ pontuacao +"'" +
+                "WHERE atividade = '" + cod_atividade + "' and aluno = '" + cod_aluno + "';";
+            resposta = conectarInserirDesconectar();
             return resposta;
         }
 
