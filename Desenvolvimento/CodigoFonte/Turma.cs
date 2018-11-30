@@ -41,6 +41,13 @@ namespace gameLearning
 
         }
 
+        public string cadastrarTurma(string curso, string semestre, string cod_professor)
+        {
+            Conexao banco = new Conexao();            
+            string resposta = banco.cadastrarTurma(curso, semestre, cod_professor);
+            return resposta;
+        }
+
         public DataTable getTurmas()
         {
             Conexao banco = new Conexao();
@@ -55,6 +62,13 @@ namespace gameLearning
             banco.getAlunosTurma(cod_turma);
 
             return banco.getDataTable();
+        }
+
+        public string deletaTurma(string cod_turma)
+        {
+            Conexao banco = new Conexao();
+            string resposta = banco.deletaTurma(cod_turma);
+            return resposta;
         }
     }
 }

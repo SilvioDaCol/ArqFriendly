@@ -99,12 +99,6 @@
     <Compile Include="telas\TelaManterTurma.Designer.cs">
       <DependentUpon>TelaManterTurma.cs</DependentUpon>
     </Compile>
-    <Compile Include="telas\telaAtividades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="telas\telaAtividades.Designer.cs">
-      <DependentUpon>telaAtividades.cs</DependentUpon>
-    </Compile>
     <Compile Include="Jogo.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="telas\telaCadastro.cs">
@@ -176,9 +170,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="telas\TelaManterTurma.resx">
       <DependentUpon>TelaManterTurma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="telas\telaAtividades.resx">
-      <DependentUpon>telaAtividades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

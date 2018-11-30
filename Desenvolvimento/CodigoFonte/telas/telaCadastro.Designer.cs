@@ -353,7 +353,11 @@
             "5",
             "6",
             "7",
-            "8"});
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
             this.campoSemestre.Location = new System.Drawing.Point(414, 353);
             this.campoSemestre.Name = "campoSemestre";
             this.campoSemestre.Size = new System.Drawing.Size(220, 28);

@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbExercicio = new System.Windows.Forms.Label();
             this.gvPontuacaoPorAluno = new System.Windows.Forms.DataGridView();
             this.btnVoltar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gvPontuacaoPorAluno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).BeginInit();
             this.SuspendLayout();
             // 
-            // label3
+            // lbExercicio
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Silver;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(275, 9);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(356, 46);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "EXERCICIO TAL...";
+            this.lbExercicio.AutoSize = true;
+            this.lbExercicio.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbExercicio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lbExercicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.lbExercicio.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.lbExercicio.Location = new System.Drawing.Point(275, 9);
+            this.lbExercicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbExercicio.Name = "lbExercicio";
+            this.lbExercicio.Size = new System.Drawing.Size(372, 46);
+            this.lbExercicio.TabIndex = 24;
+            this.lbExercicio.Text = "EXERCICIO TAL...";
             // 
             // gvPontuacaoPorAluno
             // 
@@ -78,7 +78,7 @@
             this.BackgroundImage = global::gameLearning.Properties.Resources.mainBack;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(888, 517);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbExercicio);
             this.Controls.Add(this.gvPontuacaoPorAluno);
             this.Controls.Add(this.btnVoltar);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -97,7 +97,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbExercicio;
         private System.Windows.Forms.DataGridView gvPontuacaoPorAluno;
         private System.Windows.Forms.PictureBox btnVoltar;
     }

@@ -46,21 +46,21 @@
             // 
             // imagemPrevia1
             // 
-            this.imagemPrevia1.Location = new System.Drawing.Point(12, 11);
-            this.imagemPrevia1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imagemPrevia1.MaximumSize = new System.Drawing.Size(400, 250);
+            this.imagemPrevia1.Location = new System.Drawing.Point(9, 9);
+            this.imagemPrevia1.Margin = new System.Windows.Forms.Padding(2);
+            this.imagemPrevia1.MaximumSize = new System.Drawing.Size(300, 203);
             this.imagemPrevia1.Name = "imagemPrevia1";
-            this.imagemPrevia1.Size = new System.Drawing.Size(400, 250);
+            this.imagemPrevia1.Size = new System.Drawing.Size(300, 203);
             this.imagemPrevia1.TabIndex = 0;
             this.imagemPrevia1.TabStop = false;
             // 
             // logoJogo
             // 
-            this.logoJogo.Location = new System.Drawing.Point(509, 81);
-            this.logoJogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.logoJogo.MaximumSize = new System.Drawing.Size(180, 180);
+            this.logoJogo.Location = new System.Drawing.Point(400, 66);
+            this.logoJogo.Margin = new System.Windows.Forms.Padding(2);
+            this.logoJogo.MaximumSize = new System.Drawing.Size(135, 146);
             this.logoJogo.Name = "logoJogo";
-            this.logoJogo.Size = new System.Drawing.Size(180, 180);
+            this.logoJogo.Size = new System.Drawing.Size(135, 146);
             this.logoJogo.TabIndex = 3;
             this.logoJogo.TabStop = false;
             // 
@@ -69,13 +69,14 @@
             this.nomeJogo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nomeJogo.AutoSize = true;
-            this.nomeJogo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.nomeJogo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.nomeJogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomeJogo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nomeJogo.Location = new System.Drawing.Point(456, 12);
-            this.nomeJogo.MaximumSize = new System.Drawing.Size(300, 39);
+            this.nomeJogo.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.nomeJogo.Location = new System.Drawing.Point(389, 10);
+            this.nomeJogo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nomeJogo.MaximumSize = new System.Drawing.Size(225, 32);
             this.nomeJogo.Name = "nomeJogo";
-            this.nomeJogo.Size = new System.Drawing.Size(283, 39);
+            this.nomeJogo.Size = new System.Drawing.Size(150, 32);
             this.nomeJogo.TabIndex = 4;
             this.nomeJogo.Text = "NOME DO JOGO";
             // 
@@ -83,30 +84,32 @@
             // 
             this.gvRankingGeral.BackgroundColor = System.Drawing.Color.PaleGreen;
             this.gvRankingGeral.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvRankingGeral.Location = new System.Drawing.Point(770, 12);
-            this.gvRankingGeral.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gvRankingGeral.Location = new System.Drawing.Point(636, 10);
+            this.gvRankingGeral.Margin = new System.Windows.Forms.Padding(2);
             this.gvRankingGeral.Name = "gvRankingGeral";
             this.gvRankingGeral.RowTemplate.Height = 24;
-            this.gvRankingGeral.Size = new System.Drawing.Size(401, 604);
+            this.gvRankingGeral.Size = new System.Drawing.Size(243, 491);
             this.gvRankingGeral.TabIndex = 5;
             // 
             // imagemPrevia2
             // 
-            this.imagemPrevia2.Location = new System.Drawing.Point(12, 366);
-            this.imagemPrevia2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imagemPrevia2.MaximumSize = new System.Drawing.Size(400, 250);
+            this.imagemPrevia2.Location = new System.Drawing.Point(9, 297);
+            this.imagemPrevia2.Margin = new System.Windows.Forms.Padding(2);
+            this.imagemPrevia2.MaximumSize = new System.Drawing.Size(300, 203);
             this.imagemPrevia2.Name = "imagemPrevia2";
-            this.imagemPrevia2.Size = new System.Drawing.Size(400, 250);
+            this.imagemPrevia2.Size = new System.Drawing.Size(300, 203);
             this.imagemPrevia2.TabIndex = 6;
             this.imagemPrevia2.TabStop = false;
             // 
             // descricaoJogo
             // 
             this.descricaoJogo.BackColor = System.Drawing.Color.PaleGreen;
-            this.descricaoJogo.Location = new System.Drawing.Point(419, 366);
-            this.descricaoJogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.descricaoJogo.Font = new System.Drawing.Font("Lucida Calligraphy", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descricaoJogo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.descricaoJogo.Location = new System.Drawing.Point(314, 297);
+            this.descricaoJogo.Margin = new System.Windows.Forms.Padding(2);
             this.descricaoJogo.Name = "descricaoJogo";
-            this.descricaoJogo.Size = new System.Drawing.Size(345, 250);
+            this.descricaoJogo.Size = new System.Drawing.Size(318, 204);
             this.descricaoJogo.TabIndex = 7;
             this.descricaoJogo.Text = "";
             // 
@@ -115,10 +118,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(533, 282);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(418, 229);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 68);
+            this.pictureBox1.Size = new System.Drawing.Size(98, 55);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -128,21 +131,21 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::gameLearning.Properties.Resources.btnVoltar;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(144, 282);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(108, 229);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(131, 68);
+            this.pictureBox3.Size = new System.Drawing.Size(98, 55);
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // telaPreviaJogo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::gameLearning.Properties.Resources.mainBack;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1181, 628);
+            this.ClientSize = new System.Drawing.Size(886, 510);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.descricaoJogo);
@@ -151,7 +154,7 @@
             this.Controls.Add(this.nomeJogo);
             this.Controls.Add(this.logoJogo);
             this.Controls.Add(this.imagemPrevia1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "telaPreviaJogo";
             this.Text = "telaPreviaJogo";
             this.Load += new System.EventHandler(this.telaPreviaJogo_Load);

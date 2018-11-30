@@ -63,7 +63,7 @@ namespace gameLearning
             string cod_user = getIDUsuario(email);
             if (cod_user.StartsWith("ERRO:"))
             {
-                return resultado;
+                return cod_user;
             }else if(cod_user == "")
             {
                 return "Usuário não cadastrado no sistema";

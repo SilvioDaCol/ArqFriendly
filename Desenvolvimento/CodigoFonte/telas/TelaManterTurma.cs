@@ -24,6 +24,7 @@ namespace gameLearning
 
         private void telaManterTurma_Load(object sender, EventArgs e)
         {
+            gpbDadosTurma.Visible = false;
             Turma turma = new Turma();
             dtTurmas = turma.getTurmas();
             gvTurmasCriadas.DataSource = dtTurmas;
@@ -41,7 +42,7 @@ namespace gameLearning
         {
             try
             {
-                //Identifica a linha selecionada no GridView, extrai o codigo da atividade e o armazena na variavel
+                //Identifica a linha selecionada no GridView, extrai o codigo da turma e o armazena na variavel
                 DataGridViewRow item = gvTurmasCriadas.SelectedRows[0];
                 cod_turma = dtTurmas.Rows[item.Index]["cod_turma"].ToString();
 
@@ -55,6 +56,52 @@ namespace gameLearning
             }            
         }
 
-        
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            gpbDadosTurma.Visible = false;
+        }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            //Obtem codigo do professor
+            Professor p = new Professor();
+            string cod_professor = p.getIDProfessor(cod_user);
+            //Cadastra a turma
+            Turma turma = new Turma();
+            string resposta = turma.cadastrarTurma(campoCurso.Text, campoSemestre.Text, cod_professor);
+            //Atualiza gridview
+            dtTurmas = turma.getTurmas();
+            gvTurmasCriadas.DataSource = dtTurmas;
+            //Mostra resultadoda operação e volta a tela ManterTurmas
+            MessageBox.Show(resposta);
+            gpbDadosTurma.Visible = false;
+        }
+
+        private void btnCriar_Click(object sender, EventArgs e)
+        {
+            gpbDadosTurma.Visible = true;
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Identifica a linha selecionada no GridView, extrai o codigo da turma e o armazena na variavel
+                DataGridViewRow item = gvTurmasCriadas.SelectedRows[0];
+                cod_turma = dtTurmas.Rows[item.Index]["cod_turma"].ToString();
+                //Exclui turma e mostra resultado
+                Turma turma = new Turma();
+                string resposta = turma.deletaTurma(cod_turma);
+                MessageBox.Show(resposta);
+
+                //Atualiza gridview
+                dtTurmas = turma.getTurmas();
+                gvTurmasCriadas.DataSource = dtTurmas;
+            }
+            catch (ArgumentException)
+            {
+                MessageBox.Show("Selecione uma Turma acima.");
+            }
+        }
     }
 }

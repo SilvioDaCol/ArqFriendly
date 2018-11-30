@@ -95,7 +95,7 @@ insert into jogo(nome_jogo, descricao_jogo) values ('CTI_Game','Aqui voce vai pr
 
 /* Insercao das Turmas */
 insert into turma (curso, semestre, prof) values('TADS', '1' , '1');
-insert into turma (curso, semestre, prof) values('ELETR', '3' , '1');
-insert into turma (curso, semestre, prof) values('ENG', '8' , '1');
-insert into turma (curso, semestre, prof) values('MED', '6' , '1');
+insert into turma (curso, semestre, prof) values('ELETR', '1' , '1');
+insert into turma (curso, semestre, prof) values('ENG', '1' , '1');
+insert into turma (curso, semestre, prof) values('MED', '1' , '1');
 insert into turma (curso, semestre, prof) values('TADS', '2' , '1');

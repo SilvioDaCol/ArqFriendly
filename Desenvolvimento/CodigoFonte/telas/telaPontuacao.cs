@@ -22,18 +22,19 @@ namespace gameLearning
             this.cod_atividade = cod_atividade;
         }
 
+        private void telaPontuacao_Load(object sender, EventArgs e)
+        {
+            lbExercicio.Text = "Exercício nº " + cod_atividade;
+            Exercicio exercicio = new Exercicio();
+            gvPontuacaoPorAluno.DataSource = exercicio.getAlunosAtividade(cod_atividade);
+        }
+
         private void btnVoltar_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             telaManterExercicios manterExercicio = new telaManterExercicios(cod_user);
             manterExercicio.Closed += (s, args) => this.Close();
             manterExercicio.Show();
-        }
-
-        private void telaPontuacao_Load(object sender, EventArgs e)
-        {
-            Exercicio exercicio = new Exercicio();
-            gvPontuacaoPorAluno.DataSource = exercicio.getAlunosAtividade(cod_atividade);
-        }
+        }        
     }
 }

@@ -71,10 +71,10 @@
             // lbNOME
             // 
             this.lbNOME.AutoSize = true;
-            this.lbNOME.BackColor = System.Drawing.Color.Transparent;
+            this.lbNOME.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbNOME.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lbNOME.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNOME.ForeColor = System.Drawing.Color.White;
+            this.lbNOME.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.lbNOME.Location = new System.Drawing.Point(367, 117);
             this.lbNOME.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNOME.Name = "lbNOME";
@@ -85,10 +85,10 @@
             // btnJogar
             // 
             this.btnJogar.BackColor = System.Drawing.Color.Transparent;
-            this.btnJogar.BackgroundImage = global::gameLearning.Properties.Resources.btnJogar;
+            this.btnJogar.BackgroundImage = global::gameLearning.Properties.Resources.btnJogos;
             this.btnJogar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnJogar.Location = new System.Drawing.Point(204, 405);
-            this.btnJogar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnJogar.Margin = new System.Windows.Forms.Padding(2);
             this.btnJogar.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnJogar.Name = "btnJogar";
             this.btnJogar.Size = new System.Drawing.Size(135, 65);
@@ -102,7 +102,7 @@
             this.btnIniciarExercicio.BackgroundImage = global::gameLearning.Properties.Resources.btnExerc;
             this.btnIniciarExercicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIniciarExercicio.Location = new System.Drawing.Point(382, 405);
-            this.btnIniciarExercicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIniciarExercicio.Margin = new System.Windows.Forms.Padding(2);
             this.btnIniciarExercicio.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnIniciarExercicio.Name = "btnIniciarExercicio";
             this.btnIniciarExercicio.Size = new System.Drawing.Size(135, 65);
@@ -116,7 +116,7 @@
             this.btnCancelar.BackgroundImage = global::gameLearning.Properties.Resources.btnCancelar;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancelar.Location = new System.Drawing.Point(560, 405);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.MaximumSize = new System.Drawing.Size(135, 65);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(135, 65);
@@ -128,18 +128,18 @@
             // 
             this.gvAtividadesAluno.BackgroundColor = System.Drawing.Color.PaleGreen;
             this.gvAtividadesAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvAtividadesAluno.Location = new System.Drawing.Point(170, 233);
+            this.gvAtividadesAluno.Location = new System.Drawing.Point(184, 233);
             this.gvAtividadesAluno.Name = "gvAtividadesAluno";
-            this.gvAtividadesAluno.Size = new System.Drawing.Size(559, 146);
+            this.gvAtividadesAluno.Size = new System.Drawing.Size(528, 146);
             this.gvAtividadesAluno.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.label2.Location = new System.Drawing.Point(186, 185);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -162,7 +162,7 @@
             this.Controls.Add(this.lbNOME);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gameLearningLogoMenor);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(903, 554);
             this.Name = "telaLogadoAluno";
             this.Text = "telaAlunoLogado";

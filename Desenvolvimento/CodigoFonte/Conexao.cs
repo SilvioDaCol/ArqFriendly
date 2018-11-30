@@ -17,13 +17,17 @@ namespace gameLearning
         private string resposta; //Retorna mensagem de erro ou sucesso
         private DataTable data_table; //Armazena tabelas consultadas a partir do banco
 
+
+        /*  OPERAÇÕES NO BANCO  */
+        #region
         public Conexao()
         {
-            chave = "Server=localhost;Port=5432;UserId=postgres;Password=Sophia20;Database=gamelearning_db";           
-            //chave = "Server=localhost;Port=5432;UserId=postgres;Password=dustcloth;Database=gamelearning_db";
+            //chave = "Server=localhost;Port=5432;UserId=postgres;Password=Sophia20;Database=gamelearning_db";           
+            chave = "Server=localhost;Port=5432;UserId=postgres;Password=dustcloth;Database=gamelearning_db";
             resposta = "";
         }
 
+        
         //ESTA FUNCAO SE CONECTA AO BANCO PARA ***SETAR*** DADOS
         private string conectarInserirDesconectar()
         {
@@ -147,7 +151,14 @@ namespace gameLearning
             return resposta;
         }
 
+        public DataTable getDataTable()
+        {
+            return data_table;
+        }
+        #endregion
 
+        /* PARAMESTROS / SQL DE USUARIOS */
+        #region
         public string cadastraUsuario(string nome, string email, string senha)
         {
             //CADASTRO DE NOVO USARIO NO BANCO
@@ -210,8 +221,10 @@ namespace gameLearning
 
             return resposta;
         }
+        #endregion
 
-
+        /* PARAMESTROS / SQL DE PROFESORES */
+        #region
         public string cadastraProfessor(string cod_user, string matricula)
         {
             CRUD = "insert into professor (registro, usuario) values ('" + matricula + "', '" + cod_user + "');";
@@ -225,7 +238,10 @@ namespace gameLearning
             resposta = conectarConsultarDesconectar();
             return resposta;
         }
-       
+        #endregion
+
+        /* PARAMESTROS / SQL DE ALUNOS */
+        #region
         public string cadastraAluno(string cod_user, string ra_aluno, string curso, string semestre)
         {
             CRUD = "insert into aluno (ra_aluno, usuario, curso, semestre) values ('" + ra_aluno + "', '" + cod_user + "', '" + curso + "', '" + semestre + "');";
@@ -245,8 +261,18 @@ namespace gameLearning
             CRUD = "delete FROM aluno where usuario = '" + cod_user + "';";
             resposta = conectarInserirDesconectar();
         }
+        #endregion
 
-        public string getTurmaID(string curso, string semestre)
+        /* PARAMESTROS / SQL DE TURMAS */
+        #region
+        public string cadastrarTurma(string curso, string semestre, string cod_professor)
+        {
+            CRUD = "insert into turma (curso, semestre, prof) values ('" + curso + "', '" + semestre + "', '" + cod_professor + "');";
+            resposta = conectarInserirDesconectar();
+            return resposta;
+        }
+
+            public string getTurmaID(string curso, string semestre)
         {
             CRUD = "select * from turma where curso = '" + curso + "' and semestre = '" + semestre + "';";
             resposta = conectarConsultarDesconectar();
@@ -276,7 +302,23 @@ namespace gameLearning
             return resposta;
         }
 
+        public string deletaTurma(string cod_turma)
+        {
+            //DELETA AS  MATRICULAS RELACIONADAS
+            CRUD = "delete from matricula where turma = '" + cod_turma + "';";
+            resposta = conectarInserirDesconectar();
+            if (resposta == "Operacao realizada com sucesso")
+            {
+                //DELETA A TURMA
+                CRUD = "delete FROM turma where cod_turma = '" + cod_turma + "';";
+                resposta = conectarInserirDesconectar();
+            }
+            return resposta;
+        }
+        #endregion
 
+        /* PARAMESTROS / SQL DE JOGOS */
+        #region
         public string salvaRankingGeral(string cod_jogo, string cod_user, string pontuacao)
         {
             CRUD = "delete FROM ranking_geral where jogo = '" + cod_jogo + "' and usuario = '" + cod_user + "';";
@@ -316,7 +358,10 @@ namespace gameLearning
             CRUD = "select cod_jogo from jogo where nome_jogo = '" + nome_jogo + "';";
             return resposta;
         }
+        #endregion
 
+        /* PARAMESTROS / SQL DE EXERCICIOS */
+        #region
         public string carregaAtividadesProfessor(string cod_professor)
         {
             CRUD = "SELECT a.cod_atividade, a.inicio_atividade, a.prazo_atividade, jogo.nome_jogo from atividade a " +
@@ -391,10 +436,6 @@ namespace gameLearning
             resposta = conectarInserirDesconectar();
             return resposta;
         }
-
-        public DataTable getDataTable()
-        {
-            return data_table;
-        }
+        #endregion        
     }
 }
