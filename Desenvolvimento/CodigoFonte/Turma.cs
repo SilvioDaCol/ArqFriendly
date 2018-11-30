@@ -68,6 +68,10 @@ namespace gameLearning
         {
             Conexao banco = new Conexao();
             string resposta = banco.deletaTurma(cod_turma);
+            if(resposta.StartsWith("ERRO: "))
+            {
+                resposta = "Não foi possível deletar turma, pois há alunos matriculados";
+            }
             return resposta;
         }
     }

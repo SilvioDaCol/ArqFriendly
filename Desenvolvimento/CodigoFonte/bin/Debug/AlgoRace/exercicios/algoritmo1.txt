@@ -1,6 +1,10 @@
 int main()
 {
-   Quem vai trabalhar 
-   na IBM e sera PAPAI?
-   %%Geraldy;;Paulao;;Silvio%% 
+   %%int;;char;;boolean%%  a, b, soma;
+   a = 2;
+   b = 3;
+   soma = a + b;
+   %%printf;;float;;while%% ("%d", soma);
+    
+   %%return;;void;;close%%  0;
 }
