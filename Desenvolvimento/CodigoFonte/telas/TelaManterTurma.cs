@@ -24,6 +24,9 @@ namespace gameLearning
 
         private void telaManterTurma_Load(object sender, EventArgs e)
         {
+            Usuario user = new Usuario();
+            lbNOME.Text = "Professor " + user.getNomeUsuario(cod_user);
+
             gpbDadosTurma.Visible = false;
             Turma turma = new Turma();
             dtTurmas = turma.getTurmas();

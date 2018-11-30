@@ -364,7 +364,7 @@ namespace gameLearning
         #region
         public string carregaAtividadesProfessor(string cod_professor)
         {
-            CRUD = "SELECT a.cod_atividade, a.inicio_atividade, a.prazo_atividade, jogo.nome_jogo from atividade a " +
+            CRUD = "SELECT a.cod_atividade as CODIGO, a.inicio_atividade as INICIO, a.prazo_atividade as PRAZO, jogo.nome_jogo as JOGO from atividade a " +
                 "inner join jogo on a.jogo = jogo.cod_jogo " +
                 "where a.prof = " + cod_professor;
             resposta = conectarTabelaDesconectar();
@@ -373,7 +373,7 @@ namespace gameLearning
 
         public string carregaAtividadesAluno(string cod_aluno)
         {
-            CRUD = "select a.cod_atividade, a.inicio_atividade, a.prazo_atividade, u.nome_user, j.nome_jogo from atividade a " +
+            CRUD = "select a.cod_atividade as CODIGO, a.inicio_atividade as INICIO, a.prazo_atividade as PRAZO, u.nome_user as PROFESSOR, j.nome_jogo as JOGO from atividade a " +
                 "inner join professor p on p.cod_professor = a.prof " +
                 "inner join usuario u on p.usuario = u.cod_user " +
                 "inner join jogo j on j.cod_jogo = a.Jogo " +
@@ -414,7 +414,7 @@ namespace gameLearning
 
         public string getAlunosAtividade(string cod_atividade)
         {
-            CRUD = "select u.nome_user, a.ra_aluno, i.pontuacao, u.email_user from usuario u " +
+            CRUD = "select u.nome_user as ALUNO, a.ra_aluno as PRONTUARIO, i.pontuacao as PONTOS, u.email_user as EMAIL from usuario u " +
                 "inner join aluno a on u.cod_user = a.usuario " +
                 "inner join inscreve i on a.cod_aluno = i.aluno " +
                 "where i.atividade = "+cod_atividade;
@@ -424,7 +424,7 @@ namespace gameLearning
 
         public string cadastraAlunosAtividade(string cod_aluno, string cod_atividade)
         {
-            CRUD = "INSERT INTO inscreve (aluno, atividade) values ('"+ cod_aluno +"', '"+ cod_atividade +"');";
+            CRUD = "INSERT INTO inscreve (aluno, atividade, pontuacao) values ('"+ cod_aluno +"', '"+ cod_atividade +"', '-1');";
             resposta = resposta = conectarInserirDesconectar();
             return resposta;
         }

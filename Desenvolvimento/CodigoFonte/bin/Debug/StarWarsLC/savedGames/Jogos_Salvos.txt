@@ -13,9 +13,9 @@ Posicao:	Pontuacao:	Nome:
 
 7 º		270		FDGDGDFG
 
-8 º		195		DFSDFSDF
+8 º		240		EERW
 
-9 º		195		FDSFSGFD
+9 º		195		DFSDFSDF
 
-10 º		195		TESTE
+10 º		60		GDFDG
 

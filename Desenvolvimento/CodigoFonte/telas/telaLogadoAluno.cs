@@ -59,9 +59,9 @@ namespace gameLearning
             {
                 //Obtem codigo do exercicio selecionado no GridView
                 DataGridViewRow item = gvAtividadesAluno.SelectedRows[0];
-                string cod_atividade = dtExercicios.Rows[item.Index]["cod_atividade"].ToString();
+                string cod_atividade = dtExercicios.Rows[item.Index]["codigo"].ToString();
                 //Obtem codigo do jogo selecionado no GridView
-                string nome_jogo = dtExercicios.Rows[item.Index]["nome_jogo"].ToString();
+                string nome_jogo = dtExercicios.Rows[item.Index]["jogo"].ToString();
 
                 Jogo Jogos = new Jogo();
                 string cod_jogo = Jogos.getIDJogo(nome_jogo);
@@ -80,7 +80,7 @@ namespace gameLearning
                     dtExercicios = exercicio.carregaAtividadesAluno(cod_aluno);
                     gvAtividadesAluno.DataSource = dtExercicios;
                     //Exibe pontuacao obtida
-                    if (!resposta.StartsWith("ERRO:")) resposta = "Atividade concluída!! Sua pontuação foi: "+pontuacao;
+                    if (!resposta.StartsWith("ERRO:")) resposta = "Atividade concluída!! Sua pontuação foi: "+ pontuacao;
                     MessageBox.Show(resposta);
                 }
             }

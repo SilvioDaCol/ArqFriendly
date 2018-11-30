@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaManterTurma));
             System.Windows.Forms.PictureBox btnCancelar;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaManterTurma));
             System.Windows.Forms.PictureBox btnEnviar;
             this.gameLogoMenor = new System.Windows.Forms.PictureBox();
-            this.usuarioLogado = new System.Windows.Forms.Label();
+            this.lbNOME = new System.Windows.Forms.Label();
             this.btnCriar = new System.Windows.Forms.PictureBox();
             this.btnExcluir = new System.Windows.Forms.PictureBox();
             this.btnListaAlunos = new System.Windows.Forms.PictureBox();
@@ -47,16 +47,46 @@
             this.gpbDadosTurma = new System.Windows.Forms.GroupBox();
             btnCancelar = new System.Windows.Forms.PictureBox();
             btnEnviar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(btnCancelar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(btnEnviar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCriar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExcluir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnListaAlunos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvTurmasCriadas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(btnCancelar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(btnEnviar)).BeginInit();
             this.gpbDadosTurma.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            btnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelar.BackgroundImage")));
+            btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnCancelar.Location = new System.Drawing.Point(368, 354);
+            btnCancelar.MaximumSize = new System.Drawing.Size(135, 65);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
+            btnCancelar.Size = new System.Drawing.Size(135, 65);
+            btnCancelar.TabIndex = 36;
+            btnCancelar.TabStop = false;
+            btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnEnviar
+            // 
+            btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            btnEnviar.BackColor = System.Drawing.Color.Transparent;
+            btnEnviar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEnviar.BackgroundImage")));
+            btnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnEnviar.Location = new System.Drawing.Point(131, 354);
+            btnEnviar.MaximumSize = new System.Drawing.Size(135, 65);
+            btnEnviar.Name = "btnEnviar";
+            btnEnviar.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
+            btnEnviar.Size = new System.Drawing.Size(135, 65);
+            btnEnviar.TabIndex = 37;
+            btnEnviar.TabStop = false;
+            btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // gameLogoMenor
             // 
@@ -70,18 +100,18 @@
             this.gameLogoMenor.TabIndex = 2;
             this.gameLogoMenor.TabStop = false;
             // 
-            // usuarioLogado
+            // lbNOME
             // 
-            this.usuarioLogado.AutoSize = true;
-            this.usuarioLogado.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.usuarioLogado.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usuarioLogado.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.usuarioLogado.Location = new System.Drawing.Point(220, 37);
-            this.usuarioLogado.Name = "usuarioLogado";
-            this.usuarioLogado.Size = new System.Drawing.Size(515, 46);
-            this.usuarioLogado.TabIndex = 3;
-            this.usuarioLogado.Text = "NOME USUARIO LOGADO";
-            this.usuarioLogado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbNOME.AutoSize = true;
+            this.lbNOME.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbNOME.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNOME.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.lbNOME.Location = new System.Drawing.Point(220, 37);
+            this.lbNOME.Name = "lbNOME";
+            this.lbNOME.Size = new System.Drawing.Size(515, 46);
+            this.lbNOME.TabIndex = 3;
+            this.lbNOME.Text = "NOME USUARIO LOGADO";
+            this.lbNOME.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnCriar
             // 
@@ -244,36 +274,6 @@
             this.labelSemestre.TabIndex = 35;
             this.labelSemestre.Text = "SEMESTRE";
             // 
-            // btnCancelar
-            // 
-            btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            btnCancelar.BackColor = System.Drawing.Color.Transparent;
-            btnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelar.BackgroundImage")));
-            btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            btnCancelar.Location = new System.Drawing.Point(368, 354);
-            btnCancelar.MaximumSize = new System.Drawing.Size(135, 65);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
-            btnCancelar.Size = new System.Drawing.Size(135, 65);
-            btnCancelar.TabIndex = 36;
-            btnCancelar.TabStop = false;
-            btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnEnviar
-            // 
-            btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            btnEnviar.BackColor = System.Drawing.Color.Transparent;
-            btnEnviar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEnviar.BackgroundImage")));
-            btnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            btnEnviar.Location = new System.Drawing.Point(131, 354);
-            btnEnviar.MaximumSize = new System.Drawing.Size(135, 65);
-            btnEnviar.Name = "btnEnviar";
-            btnEnviar.Padding = new System.Windows.Forms.Padding(0, 162, 0, 0);
-            btnEnviar.Size = new System.Drawing.Size(135, 65);
-            btnEnviar.TabIndex = 37;
-            btnEnviar.TabStop = false;
-            btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
-            // 
             // gpbDadosTurma
             // 
             this.gpbDadosTurma.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -306,7 +306,7 @@
             this.Controls.Add(this.btnListaAlunos);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnCriar);
-            this.Controls.Add(this.usuarioLogado);
+            this.Controls.Add(this.lbNOME);
             this.Controls.Add(this.gameLogoMenor);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(902, 553);
@@ -315,14 +315,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MANTER TURMAS";
             this.Load += new System.EventHandler(this.telaManterTurma_Load);
+            ((System.ComponentModel.ISupportInitialize)(btnCancelar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(btnEnviar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameLogoMenor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCriar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExcluir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnListaAlunos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvTurmasCriadas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(btnCancelar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(btnEnviar)).EndInit();
             this.gpbDadosTurma.ResumeLayout(false);
             this.gpbDadosTurma.PerformLayout();
             this.ResumeLayout(false);
@@ -333,7 +333,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox gameLogoMenor;
-        private System.Windows.Forms.Label usuarioLogado;
+        private System.Windows.Forms.Label lbNOME;
         private System.Windows.Forms.PictureBox btnCriar;
         private System.Windows.Forms.PictureBox btnExcluir;
         private System.Windows.Forms.PictureBox btnListaAlunos;

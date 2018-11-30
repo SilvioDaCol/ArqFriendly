@@ -62,7 +62,7 @@ namespace gameLearning
                 //Rotina para excluir exercicio:
                 //Identifica a linha selecionada no GridView, extrai o codigo da atividade e o armazena na variavel
                 DataGridViewRow item = gvAtividadesProfessor.SelectedRows[0];
-                string cod_atividade = dtExecicios.Rows[item.Index]["cod_atividade"].ToString();
+                string cod_atividade = dtExecicios.Rows[item.Index]["codigo"].ToString();
 
                 //Exclui Atividade
                 Exercicio exercicio = new Exercicio();
@@ -86,7 +86,7 @@ namespace gameLearning
             {             
                 //Identifica a linha selecionada no GridView, extrai o codigo da atividade e o armazena na variavel
                 DataGridViewRow item = gvAtividadesProfessor.SelectedRows[0];
-                string cod_atividade = dtExecicios.Rows[item.Index]["cod_atividade"].ToString();
+                string cod_atividade = dtExecicios.Rows[item.Index]["codigo"].ToString();
 
                 //Mostra tela de pontuacao
                 this.Hide();
