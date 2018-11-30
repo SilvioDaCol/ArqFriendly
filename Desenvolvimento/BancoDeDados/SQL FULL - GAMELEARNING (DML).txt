@@ -4,14 +4,14 @@ DROP SCHEMA public CASCADE;
 
 CREATE SCHEMA public;
 */
-CREATE TABLE tb_usuario(
+CREATE TABLE usuario(
 	cod_user serial primary key,
 	nome_user VARCHAR(50) not null,
 	email_user VARCHAR(200) unique not null,
 	senha_user VARCHAR(30) not null 
 );
 
-CREATE TABLE tb_aluno(
+CREATE TABLE aluno(
 	cod_aluno serial primary key,
 	ra_aluno VARCHAR(30) unique not null,
 	curso VARCHAR (50) not null,
@@ -21,7 +21,7 @@ CREATE TABLE tb_aluno(
 	REFERENCES usuario(cod_user) MATCH SIMPLE 
 );
 
-CREATE TABLE tb_professor(
+CREATE TABLE professor(
 	cod_professor serial primary key,
 	registro VARCHAR(30) unique not null,
 	usuario integer not null,
@@ -29,7 +29,7 @@ CREATE TABLE tb_professor(
 	REFERENCES usuario(cod_user) MATCH SIMPLE 
 );
 
-CREATE TABLE tb_turma(
+CREATE TABLE turma(
 	cod_turma serial primary key,
 	curso VARCHAR(200) not null,
 	semestre smallint not null,
@@ -38,7 +38,7 @@ CREATE TABLE tb_turma(
 	REFERENCES professor(cod_professor) MATCH SIMPLE
 );
 
-CREATE TABLE tb_matricula(
+CREATE TABLE matricula(
 	cod_mat serial primary key,
 	Turma integer not null,
 	Aluno integer not null,
@@ -48,13 +48,13 @@ CREATE TABLE tb_matricula(
 	REFERENCES aluno(cod_aluno) MATCH SIMPLE
 );
 
-CREATE TABLE tb_jogo(
+CREATE TABLE jogo(
 	cod_jogo serial primary key,
 	nome_jogo VARCHAR(200) unique not null,
 	descricao_jogo VARCHAR(300)
 );
 
-CREATE TABLE tb_atividade(
+CREATE TABLE atividade(
 	cod_atividade serial primary key,
 	prazo_atividade timestamp without time zone not null,
 	inicio_atividade timestamp without time zone not null,
@@ -66,7 +66,7 @@ CREATE TABLE tb_atividade(
 	REFERENCES jogo(cod_jogo) MATCH SIMPLE
 );
 
-CREATE TABLE tb_inscreve(
+CREATE TABLE inscreve(
 	cod_inscricao serial primary key,
 	atividade integer not null,
 	aluno integer not null,
@@ -77,7 +77,7 @@ CREATE TABLE tb_inscreve(
 	REFERENCES aluno(cod_aluno) MATCH SIMPLE
 );
 
-CREATE TABLE tb_ranking_geral(
+CREATE TABLE ranking_geral(
 	jogo integer not null,
 	usuario integer not null,
 	pontuacao VARCHAR(10) not null,
@@ -89,13 +89,13 @@ CREATE TABLE tb_ranking_geral(
 );
 
 /* Insercao dos Jogos */
-insert into tb_jogo(nome_jogo, descricao_jogo) values ('StarWars LC','Explore mapas incriveis, cuidado com os meteoros!!');
-insert into tb_jogo(nome_jogo, descricao_jogo) values ('AlgoRace','Dirija em alta velocidade sempre escolhendo os tuneis corretos!!');
-insert into tb_jogo(nome_jogo, descricao_jogo) values ('CTI_Game','Aqui voce vai programar se divertindo muito!!');
+insert into jogo(nome_jogo, descricao_jogo) values ('StarWars LC','Explore mapas incriveis, cuidado com os meteoros!!');
+insert into jogo(nome_jogo, descricao_jogo) values ('AlgoRace','Dirija em alta velocidade sempre escolhendo os tuneis corretos!!');
+insert into jogo(nome_jogo, descricao_jogo) values ('CTI_Game','Aqui voce vai programar se divertindo muito!!');
 
 /* Insercao das Turmas */
-insert into tb_turma (curso, semestre, prof) values('TADS', '1' , '1');
-insert into tb_turma (curso, semestre, prof) values('ELETR', '1' , '1');
-insert into tb_turma (curso, semestre, prof) values('ENG', '1' , '1');
-insert into tb_turma (curso, semestre, prof) values('MED', '1' , '1');
-insert into tb_turma (curso, semestre, prof) values('TADS', '2' , '1');
+insert into turma (curso, semestre, prof) values('TADS', '1' , '1');
+insert into turma (curso, semestre, prof) values('ELETR', '1' , '1');
+insert into turma (curso, semestre, prof) values('ENG', '1' , '1');
+insert into turma (curso, semestre, prof) values('MED', '1' , '1');
+insert into turma (curso, semestre, prof) values('TADS', '2' , '1');

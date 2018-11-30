@@ -304,16 +304,15 @@ namespace gameLearning
 
         public string deletaTurma(string cod_turma)
         {
-            /*
-            DELETA AS  MATRICULAS RELACIONADAS
+            //DELETA AS  MATRICULAS RELACIONADAS
             CRUD = "delete from matricula where turma = '" + cod_turma + "';";
             resposta = conectarInserirDesconectar();
-            */
-
-            //DELETA A TURMA
-            CRUD = "delete FROM turma where cod_turma = '" + cod_turma + "';";
-            resposta = conectarInserirDesconectar();
-            
+            if (resposta == "Operacao realizada com sucesso")
+            {
+                //DELETA A TURMA
+                CRUD = "delete FROM turma where cod_turma = '" + cod_turma + "';";
+                resposta = conectarInserirDesconectar();
+            }
             return resposta;
         }
         #endregion
