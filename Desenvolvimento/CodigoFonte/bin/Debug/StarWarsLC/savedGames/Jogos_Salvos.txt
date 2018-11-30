@@ -17,5 +17,5 @@ Posicao:	Pontuacao:	Nome:
 
 9 º		195		FDSFSGFD
 
-10 º		10		FDGDG
+10 º		195		TESTE
 

@@ -334,6 +334,10 @@
     <Content Include="Resources\AlgoRaceRanking.jpg" />
     <None Include="Resources\btnTurmas.png" />
     <None Include="Resources\btnExerc.png" />
+    <None Include="Resources\btnCriar.png" />
+    <None Include="Resources\btnExcluir.png" />
+    <None Include="Resources\btnScoreAluno.png" />
+    <None Include="Resources\btnListaAlunos.png" />
     <Content Include="Resources\tutorial.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
